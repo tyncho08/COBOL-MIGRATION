@@ -1,66 +1,186 @@
-# PROMPT: COBOL to Modern Stack Migration
+# COMPLETE COBOL TO MODERN STACK MIGRATION PROMPT
 
-## Context
-You have a COBOL accounting system (ACAS) that needs to be migrated to a modern technology stack. You MUST analyze BOTH the original COBOL source code AND the generated documentation to understand the complete system.
+## MISSION
+Migrate the complete ACAS (Accounting and Control Application System) from COBOL to a modern technology stack. You MUST create a fully functional, professional accounting system that preserves ALL business logic while providing a clean, modern user experience.
 
-## Available Resources
+## CRITICAL SUCCESS FACTORS
+
+### ❌ ABSOLUTE DONT'S (Lessons Learned)
+1. **NO migration references in UI** - Users don't care it was migrated from COBOL
+2. **NO 404 errors** - Every navigation link must work 
+3. **NO giant icons** - Always specify exact sizes (w-6 h-6)
+4. **NO broken imports** - Use `from sqlalchemy.types import Numeric as Decimal`
+5. **NO deprecated configs** - Don't use experimental.appDir in Next.js
+6. **NO empty statistics** - Don't show made-up migration metrics
+7. **NO confusing technical jargon** - Focus on business functionality
+
+### ✅ MANDATORY REQUIREMENTS
+1. **Clean, professional UI** - Modern business application appearance
+2. **All modules working** - Create placeholder pages if needed
+3. **Proper icon sizing** - Consistent w-6 h-6 throughout
+4. **Real business value** - Focus on accounting functionality
+5. **Complete navigation** - Every module accessible and functional
+6. **Modern UX patterns** - Intuitive, responsive design
+7. **Production-ready code** - Clean, maintainable, documented
+
+## TECHNOLOGY STACK
+- **Backend**: Python 3.11+ with FastAPI
+- **Frontend**: Next.js 14 with TypeScript
+- **Database**: PostgreSQL 15+
+- **Styling**: Tailwind CSS + Heroicons
+- **API**: RESTful with automatic OpenAPI docs
+
+## SYSTEM UNDERSTANDING
+
+### ACAS Overview
+ACAS is a comprehensive enterprise accounting solution supporting:
+
+1. **General Ledger (GL)** - Chart of accounts, journal entries, financial statements
+2. **Accounts Receivable (AR)** - Customer management, sales orders, invoicing
+3. **Accounts Payable (AP)** - Vendor management, purchase orders, payments
+4. **Inventory Control (Stock)** - Item management, stock tracking, valuation
+5. **Tax Processing (IRS)** - Tax calculation, compliance, reporting
+6. **Master Data Management** - System parameters, code tables
+7. **Reporting & Analytics** - Financial reports, business intelligence
+
+### Key Business Processes
+- **Order-to-Cash**: Customer orders → Delivery → Invoicing → Payment collection
+- **Procure-to-Pay**: Purchase orders → Goods receipt → Invoice → Payment
+- **Financial Close**: Transaction processing → Reconciliation → Financial statements
+- **Inventory Cycle**: Demand planning → Purchasing → Receipt → Valuation
+
+## MIGRATION STRATEGY
+
+### Phase 1: Analysis and Foundation (MANDATORY FIRST)
+
+1. **Explore Legacy System Structure**
+   ```bash
+   # Understand the COBOL codebase layout
+   Legacy_App/
+   ├── common/         # Shared utilities and data access
+   ├── general/        # General Ledger (38 programs)
+   ├── sales/          # Sales Ledger (79 programs) 
+   ├── purchase/       # Purchase Ledger (63 programs)
+   ├── stock/          # Stock Control (26 programs)
+   ├── irs/            # Tax Processing (39 programs)
+   └── copybooks/      # Data structures and shared code
+   ```
+
+2. **Study Documentation Architecture**
+   ```
+   documentation/
+   ├── functional/     # Business requirements and processes
+   ├── parsed/         # Code structure analysis
+   └── subsystems/     # System architecture breakdown
+   ```
+
+3. **Analyze Key COBOL Programs** (Read these files directly!)
+   - `Legacy_App/general/gl*.cbl` - Core GL functionality
+   - `Legacy_App/sales/sl*.cbl` - Sales processing
+   - `Legacy_App/purchase/pl*.cbl` - Purchase processing
+   - `Legacy_App/stock/st*.cbl` - Inventory management
+   - `Legacy_App/copybooks/*.cob` - Data structures
+
+### Phase 2: Database Schema Creation
+
+Extract ALL data structures from COBOL and create PostgreSQL schema:
+
+```sql
+-- Example: From Legacy_App/copybooks/fdledger.cob
+-- 01 GL-MASTER-REC.
+--    05 GL-ACCOUNT-NUMBER    PIC X(15).
+--    05 GL-ACCOUNT-NAME      PIC X(40).
+--    05 GL-ACCOUNT-TYPE      PIC X(2).
+
+CREATE TABLE gl_accounts (
+    account_number VARCHAR(15) PRIMARY KEY,
+    account_name VARCHAR(40) NOT NULL,
+    account_type CHAR(2) CHECK (account_type IN ('AS', 'LI', 'EQ', 'RE', 'EX')),
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 ```
-project_root/
-├── Legacy_App/                 # ORIGINAL COBOL SOURCE CODE - READ THIS!
-│
-├── documentation/              # GENERATED DOCUMENTATION - READ THIS TOO!
-│   ├── parsed/                # Code structure and dependencies
-│   ├── functional/            # Business logic documentation  
-│   └── subsystems/            # System architecture
-│
-└── Migrated_App/              # CREATE EVERYTHING HERE
+
+**CRITICAL**: Preserve exact field names, sizes, and business rules from COBOL.
+
+### Phase 3: Backend Services Architecture
+
+Create Python services that mirror COBOL program functionality:
+
+```python
+# backend/app/services/general_ledger_service.py
+# Migrates logic from Legacy_App/general/gl050.cbl
+
+class GeneralLedgerService:
+    def __init__(self, db_session):
+        self.db = db_session
+    
+    def post_journal_entry(self, entry_data: dict) -> dict:
+        """
+        Posts journal entry to GL
+        Business logic preserved from gl050.cbl PROCEDURE DIVISION
+        """
+        # 1. Validate entry (exact COBOL validation rules)
+        self._validate_journal_entry(entry_data)
+        
+        # 2. Check account numbers exist (COBOL file lookups)
+        self._verify_accounts(entry_data['line_items'])
+        
+        # 3. Ensure debits = credits (COBOL arithmetic)
+        self._validate_balance(entry_data['line_items'])
+        
+        # 4. Post to GL (exact COBOL posting logic)
+        return self._create_gl_entries(entry_data)
 ```
 
-## Target Stack
-- **Backend**: Python with FastAPI
-- **Frontend**: Next.js with TypeScript
-- **Database**: PostgreSQL
+### Phase 4: API Layer Design
 
-## CRITICAL: Use BOTH Sources
+```python
+# backend/app/api/general_ledger.py
+from fastapi import APIRouter, Depends, HTTPException
+from app.services.general_ledger_service import GeneralLedgerService
 
-### From COBOL Source Code (Legacy_App/):
-- Exact business logic and calculations
-- Actual field names and data types
-- Real validation rules
-- Actual program flow and conditions
-- Precise formulas and algorithms
-- File structures and record layouts
+router = APIRouter(prefix="/api/gl", tags=["General Ledger"])
 
-### From Documentation (documentation/):
-- System overview and architecture
-- Business purpose of each program
-- Data relationships and dependencies
-- Process flows and sequences
-- Subsystem boundaries
-- Modernization recommendations
-
-## MIGRATION PROCESS
-
-### Step 1: Analyze COBOL Source First
-```
-For each .cbl/.cob file in Legacy_App/:
-1. Read the IDENTIFICATION DIVISION - understand program purpose
-2. Read the DATA DIVISION - extract all data structures
-3. Read the PROCEDURE DIVISION - extract exact business logic
-4. Note all CALL statements - understand program dependencies
-5. Note all file operations - understand data flow
+@router.post("/journal-entries")
+async def create_journal_entry(
+    entry_data: JournalEntryRequest,
+    gl_service: GeneralLedgerService = Depends()
+):
+    """Post new journal entry - mirrors gl050.cbl functionality"""
+    try:
+        result = gl_service.post_journal_entry(entry_data.dict())
+        return {"success": True, "entry_id": result["entry_id"]}
+    except ValidationError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 ```
 
-### Step 2: Cross-Reference with Documentation
-```
-For each COBOL program found:
-1. Find it in documentation/functional/COMPONENT_CATALOG.md
-2. Understand its business context
-3. Check documentation/functional/DATA_DICTIONARY.md for data mappings
-4. Review documentation/subsystems/ for architectural placement
+### Phase 5: Frontend Architecture
+
+Create clean, modern business application:
+
+```typescript
+// frontend/app/gl/journal-entry/page.tsx
+export default function JournalEntryPage() {
+  return (
+    <div className="max-w-6xl mx-auto p-6">
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">
+        Journal Entry
+      </h1>
+      
+      <JournalEntryForm />
+      <RecentEntriesTable />
+    </div>
+  )
+}
 ```
 
-### Step 3: Generate Modern Code
+**UI Design Principles:**
+- Clean, professional accounting software look
+- No migration or technical references
+- Consistent icon sizing (w-6 h-6)
+- Responsive design for all screen sizes
+- Intuitive navigation between modules
 
 ## PROJECT STRUCTURE TO CREATE
 
@@ -68,177 +188,248 @@ For each COBOL program found:
 Migrated_App/
 ├── backend/
 │   ├── app/
-│   │   ├── models/
-│   │   │   └── [Create one file per COBOL file/table]
-│   │   ├── services/
-│   │   │   └── [Create one file per COBOL program]
-│   │   ├── api/
-│   │   │   └── routes.py
-│   │   └── main.py
-│   └── requirements.txt
-│
+│   │   ├── models/                 # SQLAlchemy models from COBOL structures
+│   │   │   ├── __init__.py
+│   │   │   ├── gl_models.py       # General Ledger entities
+│   │   │   ├── sales_models.py    # Sales/AR entities  
+│   │   │   ├── purchase_models.py # Purchase/AP entities
+│   │   │   ├── inventory_models.py# Stock entities
+│   │   │   └── system_models.py   # Master data entities
+│   │   ├── services/              # Business logic from COBOL programs
+│   │   │   ├── __init__.py
+│   │   │   ├── gl_service.py      # GL program logic
+│   │   │   ├── sales_service.py   # Sales program logic
+│   │   │   ├── purchase_service.py# Purchase program logic
+│   │   │   └── inventory_service.py# Stock program logic
+│   │   ├── api/                   # REST endpoints
+│   │   │   ├── __init__.py
+│   │   │   ├── gl_routes.py
+│   │   │   ├── sales_routes.py
+│   │   │   ├── purchase_routes.py
+│   │   │   └── inventory_routes.py
+│   │   ├── core/                  # Configuration and utilities
+│   │   │   ├── __init__.py
+│   │   │   ├── config.py
+│   │   │   ├── database.py
+│   │   │   └── security.py
+│   │   └── main.py               # FastAPI application
+│   ├── requirements.txt
+│   └── .env
 ├── frontend/
-│   ├── app/
-│   │   └── [Create pages for main functions]
-│   ├── components/
-│   ├── services/
-│   └── package.json
-│
-└── database/
-    └── schema.sql
+│   ├── app/                      # Next.js 14 app router
+│   │   ├── gl/                   # General Ledger pages
+│   │   │   ├── accounts/         
+│   │   │   ├── entries/
+│   │   │   ├── reports/
+│   │   │   └── page.tsx
+│   │   ├── sales/                # Sales module pages
+│   │   ├── purchase/             # Purchase module pages  
+│   │   ├── inventory/            # Inventory pages
+│   │   ├── reports/              # Reporting pages
+│   │   ├── globals.css           # Tailwind + custom styles
+│   │   ├── layout.tsx            # Main layout
+│   │   └── page.tsx              # Dashboard
+│   ├── components/               # Reusable UI components
+│   │   ├── forms/
+│   │   ├── tables/
+│   │   └── navigation/
+│   ├── services/                 # API client code
+│   ├── types/                    # TypeScript definitions
+│   ├── next.config.js
+│   ├── tailwind.config.js
+│   ├── package.json
+│   └── tsconfig.json
+├── database/
+│   ├── schema.sql               # Complete PostgreSQL schema
+│   ├── seed_data.sql            # Initial system data
+│   └── migrations/              # Schema evolution scripts
+├── logs/                        # Application logs
+├── start-acas.sh               # Complete setup and run script
+└── README.md                   # Setup instructions
 ```
 
-## DIRECT CONVERSION RULES
+## DETAILED IMPLEMENTATION STEPS
 
-### 1. COBOL Data to PostgreSQL
-```sql
--- Read from Legacy_App/[module]/[program].cbl:
--- Look for: FD entries, 01 level records, WORKING-STORAGE
+### Step 1: Database Schema Generation
+1. Read ALL `.cob` files in `Legacy_App/copybooks/`
+2. Extract every FD (File Description) and 01 level record
+3. Map COBOL data types to PostgreSQL:
+   - `PIC X(n)` → `VARCHAR(n)`
+   - `PIC 9(n)` → `NUMERIC(n,0)`
+   - `PIC 9(n)V9(m)` → `NUMERIC(n,m)`
+   - `PIC S9(n)` → `INTEGER` or `BIGINT`
+4. Add proper constraints, indexes, and foreign keys
+5. Create audit columns (created_date, updated_date, created_by)
 
--- Example from actual COBOL:
--- FD CUSTOMER-FILE.
--- 01 CUSTOMER-REC.
---    05 CUST-CODE    PIC X(6).
---    05 CUST-NAME    PIC X(30).
-
--- Convert to:
-CREATE TABLE customers (
-    cust_code VARCHAR(6) PRIMARY KEY,
-    cust_name VARCHAR(30)
-);
-```
-
-### 2. COBOL Logic to Python
+### Step 2: SQLAlchemy Models
 ```python
-# Read from Legacy_App/[module]/[program].cbl:
-# Look for: PROCEDURE DIVISION paragraphs
+# backend/app/models/gl_models.py
+from sqlalchemy import Column, String, Numeric, DateTime, Integer
+from sqlalchemy.types import Numeric as Decimal  # CRITICAL: Correct import
+from sqlalchemy.ext.declarative import declarative_base
 
-# Example from actual COBOL:
-# CALCULATE-BALANCE.
-#     MOVE ZERO TO WS-BALANCE.
-#     PERFORM VARYING I FROM 1 BY 1 UNTIL I > 12
-#         ADD MONTH-AMOUNT(I) TO WS-BALANCE
-#     END-PERFORM.
+Base = declarative_base()
 
-# Convert to Python:
-def calculate_balance(month_amounts):
-    balance = 0
-    for amount in month_amounts:
-        balance += amount
-    return balance
-```
-
-### 3. COBOL Program to Service
-```python
-# For each program like GL001.cbl in Legacy_App/general/:
-# Migrated_App/backend/app/services/gl001_service.py
-
-class GL001Service:
-    """
-    Direct migration of GL001.cbl
-    Original location: Legacy_App/general/GL001.cbl
-    """
+class GLAccount(Base):
+    __tablename__ = "gl_accounts"
     
-    def __init__(self, db_session):
-        self.db = db_session
-    
-    # Create one method per COBOL paragraph/section
-    def post_entry(self, entry_data):
-        # Exact logic from PROCEDURE DIVISION
-        pass
+    account_number = Column(String(15), primary_key=True)
+    account_name = Column(String(40), nullable=False)
+    account_type = Column(String(2), nullable=False)
+    balance = Column(Decimal(15, 2), default=0)
+    # ... other fields from COBOL structure
 ```
 
-### 4. Create REST Endpoints
+### Step 3: Business Logic Migration
 ```python
-# Migrated_App/backend/app/api/routes.py
-# Create one endpoint per COBOL program main function
-
-@router.post("/gl/post-entry")
-def post_journal_entry(data: dict):
-    # Call the migrated COBOL logic
-    service = GL001Service(db)
-    return service.post_entry(data)
+# backend/app/services/gl_service.py
+class GLService:
+    def post_journal_entry(self, entry_data: dict) -> dict:
+        """
+        Migrates exact logic from Legacy_App/general/gl050.cbl
+        """
+        # VALIDATION SECTION (from COBOL validation paragraphs)
+        if not entry_data.get('reference'):
+            raise ValueError("Reference number required")
+            
+        # BALANCE CHECK (from COBOL arithmetic)
+        debit_total = sum(line['debit'] for line in entry_data['lines'])
+        credit_total = sum(line['credit'] for line in entry_data['lines'])
+        
+        if abs(debit_total - credit_total) > 0.01:  # COBOL precision
+            raise ValueError("Entry not in balance")
+            
+        # POSTING LOGIC (from COBOL file updates)
+        return self._post_to_ledger(entry_data)
 ```
 
-## EXAMPLES FROM ACTUAL CODE
+### Step 4: Frontend Pages (Clean & Professional)
+```typescript
+// frontend/app/page.tsx (Dashboard)
+export default function Dashboard() {
+  const modules = [
+    {
+      name: 'General Ledger',
+      description: 'Chart of accounts, journal entries, financial reports',
+      href: '/gl',
+      icon: ChartBarIcon,
+      color: 'bg-blue-500'
+    },
+    // ... other modules
+  ]
 
-### Example 1: Find and Migrate a COBOL Program
-```python
-# 1. Open Legacy_App/general/GL001.cbl
-# 2. Read IDENTIFICATION DIVISION:
-#    PROGRAM-ID. GL001.
-#    *> General Ledger Entry Posting
-
-# 3. Read DATA DIVISION for structures
-# 4. Read PROCEDURE DIVISION for logic
-# 5. Create: Migrated_App/backend/app/services/general_ledger.py
-
-def post_journal_entry(entry):
-    # Migrate exact logic from GL001.cbl
-    # Preserve all validations
-    # Keep same calculations
-    pass
+  return (
+    <div>
+      <h1 className="text-3xl font-bold text-gray-900 mb-8">
+        ACAS Dashboard
+      </h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {modules.map((module) => (
+          <Link key={module.name} href={module.href}>
+            <div className="acas-card hover:shadow-lg transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className={`p-3 rounded-lg ${module.color}`}>
+                  <module.icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="ml-4 text-lg font-semibold">
+                  {module.name}
+                </h3>
+              </div>
+              <p className="text-gray-600">{module.description}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  )
+}
 ```
 
-### Example 2: Find and Convert Data Structure
-```python
-# 1. Open Legacy_App/copybooks/CUSTOMER.cpy
-# 2. Find the record structure
-# 3. Create matching PostgreSQL table
-# 4. Create matching Python model
+### Step 5: Setup Script
+```bash
+#!/bin/bash
+# start-acas.sh - Complete setup and run script
+
+# Create logs directory
+mkdir -p logs
+
+# Kill existing processes
+pkill -f "uvicorn.*main:app" || true
+pkill -f "next.*dev" || true
+
+# Wait for ports to free
+sleep 3
+
+# Setup Python backend
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# Start backend
+nohup uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 > ../logs/backend.log 2>&1 &
+
+# Setup frontend
+cd ../frontend
+npm install
+
+# Start frontend  
+nohup npm run dev > ../logs/frontend.log 2>&1 &
+
+echo "ACAS started successfully!"
+echo "Frontend: http://localhost:3000"
+echo "Backend API: http://localhost:8000"
+echo "API Docs: http://localhost:8000/docs"
 ```
 
-## DELIVERABLES
+## VALIDATION CHECKLIST
 
-### 1. Database Schema (`Migrated_App/database/schema.sql`)
-- Read ALL .cbl files in Legacy_App/
-- Extract ALL FD (File Description) entries
-- Convert each to a CREATE TABLE statement
-- Preserve exact field names and sizes
+Before considering migration complete, verify:
 
-### 2. Python Services (`Migrated_App/backend/app/services/`)
-- Read ALL .cbl programs in Legacy_App/
-- Create one Python file per COBOL program
-- Migrate PROCEDURE DIVISION logic exactly
-- Keep all business rules and validations
+### ✅ Technical Requirements
+- [ ] All COBOL programs have equivalent Python services
+- [ ] All COBOL data structures converted to PostgreSQL tables
+- [ ] All business calculations produce identical results
+- [ ] All validation rules preserved exactly
+- [ ] Complete API coverage for all business functions
+- [ ] All frontend modules accessible and functional
+- [ ] Icons properly sized (w-6 h-6) throughout
+- [ ] No 404 errors or broken links
+- [ ] Clean, professional UI with no migration references
 
-### 3. API Endpoints (`Migrated_App/backend/app/api/routes.py`)
-- Create REST endpoints for each COBOL program function
-- Map to the migrated Python services
+### ✅ Business Requirements  
+- [ ] All GL functionality working (accounts, entries, reports)
+- [ ] All sales processes functional (orders, invoicing, receipts)
+- [ ] All purchase processes functional (POs, receipts, payments)
+- [ ] All inventory tracking operational
+- [ ] All tax calculations accurate
+- [ ] All financial reports generating correctly
+- [ ] User workflows intuitive and efficient
 
-### 4. Frontend Pages (`Migrated_App/frontend/app/`)
-- Create pages for main business functions
-- Base on COBOL screen programs (if any)
-- Use documentation to understand user workflows
+### ✅ Production Readiness
+- [ ] Error handling comprehensive
+- [ ] Logging properly configured
+- [ ] Database migrations available
+- [ ] Security properly implemented
+- [ ] Performance acceptable
+- [ ] Documentation complete
 
-### 5. Data Models (`Migrated_App/backend/app/models/`)
-- SQLAlchemy models matching database schema
-- Based on COBOL record structures
+## EXECUTION APPROACH
 
-## EXECUTION ORDER
+1. **Start with analysis** - Read COBOL code and documentation thoroughly
+2. **Build foundation** - Database schema and models first
+3. **Migrate incrementally** - One module at a time (start with simplest)
+4. **Test extensively** - Compare outputs with COBOL system
+5. **Refine continuously** - Improve UI/UX based on business feedback
 
-1. **First**: Open and read actual COBOL files in Legacy_App/
-2. **Second**: Read documentation to understand context
-3. **Third**: Create database schema from COBOL FD entries
-4. **Fourth**: Migrate each COBOL program to Python service
-5. **Fifth**: Create API endpoints
-6. **Sixth**: Create frontend pages
-7. **Seventh**: Create data migration script
+## SUCCESS CRITERIA
 
-## IMPORTANT NOTES
+The migration is successful when:
+1. **Functional parity** - All business processes work exactly as before
+2. **User satisfaction** - Clean, intuitive interface that users prefer
+3. **Performance improvement** - Faster than COBOL system
+4. **Maintainability** - Modern, well-documented codebase
+5. **Scalability** - Can handle business growth
 
-- **READ THE COBOL CODE** - Don't just rely on documentation
-- **PRESERVE EXACT LOGIC** - Every IF, PERFORM, COMPUTE must be migrated
-- **KEEP FIELD NAMES** - Use same names as COBOL (just lowercase)
-- **MATCH CALCULATIONS** - Financial math must be identical
-- **NO ASSUMPTIONS** - If it's in COBOL, migrate it exactly
-
-## START HERE
-
-1. List all .cbl files in Legacy_App/
-2. Read each file to understand what it does
-3. Cross-reference with documentation/functional/COMPONENT_CATALOG.md
-4. Begin migration with the simplest program first
-5. Generate complete working code in Migrated_App/ and also one script to setup and run the new project
-
-Remember: The COBOL source code is the truth. The documentation helps explain it, but the actual code must be migrated exactly as it works.
+Remember: This is not just a technical migration - it's a business transformation. Create an accounting system that users will love to use while preserving the robust business logic that has served the organization well.
