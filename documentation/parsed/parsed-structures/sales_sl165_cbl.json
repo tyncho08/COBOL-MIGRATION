@@ -1,0 +1,119 @@
+{
+  "filePath": "../../Legacy_App/sales/sl165.cbl",
+  "fileName": "sl165.cbl",
+  "programId": "sl165",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 12
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 80
+    },
+    {
+      "name": "DATA",
+      "line": 98
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 165
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "blk",
+      "line": 126,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 177
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 187
+    },
+    {
+      "target": "Sales-Read-Next",
+      "thru": null,
+      "line": 194
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "sales-sort",
+      "line": 110,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "fn-sales",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 87
+    },
+    {
+      "name": "file-defs",
+      "line": 168
+    },
+    {
+      "name": "end-if",
+      "line": 175
+    },
+    {
+      "name": "Input-To-Sort-Main",
+      "line": 193
+    },
+    {
+      "name": "its-exit",
+      "line": 203
+    },
+    {
+      "name": "Output-From-Sort-Main",
+      "line": 207
+    },
+    {
+      "name": "ofs-exit",
+      "line": 214
+    }
+  ],
+  "metadata": {
+    "lines": 219,
+    "parseDate": "2025-09-17T19:45:42.887Z",
+    "hasMainProgram": false
+  }
+}

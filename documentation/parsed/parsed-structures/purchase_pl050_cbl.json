@@ -1,0 +1,307 @@
+{
+  "filePath": "../../Legacy_App/purchase/pl050.cbl",
+  "fileName": "pl050.cbl",
+  "programId": "pl050",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 11
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 93
+    },
+    {
+      "name": "DATA",
+      "line": 108
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 328
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 490,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 672,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 131,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 337
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 342
+    },
+    {
+      "target": "Purch-Open-Input",
+      "thru": null,
+      "line": 361
+    },
+    {
+      "target": "PInvoice-Open-Input",
+      "thru": null,
+      "line": 362
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 366
+    },
+    {
+      "target": "PInvoice-Read-Next",
+      "thru": null,
+      "line": 369
+    },
+    {
+      "target": "Purch-Read-Indexed",
+      "thru": null,
+      "line": 386
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 397
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 456
+    },
+    {
+      "target": "analysis-print",
+      "thru": null,
+      "line": 463
+    },
+    {
+      "target": "extra-analysis",
+      "thru": null,
+      "line": 464
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 469
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 470
+    },
+    {
+      "target": "main12",
+      "thru": null,
+      "line": 472
+    },
+    {
+      "target": "total-report",
+      "thru": null,
+      "line": 477
+    },
+    {
+      "target": "compute-vatcodes",
+      "thru": null,
+      "line": 487
+    },
+    {
+      "target": "PInvoice-Read-Next",
+      "thru": null,
+      "line": 524
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 552
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 561
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 613
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-group-lits",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-8",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-a",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-b",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-d",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 101
+    },
+    {
+      "name": "file-defs",
+      "line": 331
+    },
+    {
+      "name": "Menu-Return",
+      "line": 346
+    },
+    {
+      "name": "loop",
+      "line": 368
+    },
+    {
+      "name": "main-end",
+      "line": 467
+    },
+    {
+      "name": "menu-call",
+      "line": 492
+    },
+    {
+      "name": "main12",
+      "line": 498
+    },
+    {
+      "name": "end-if",
+      "line": 512
+    },
+    {
+      "name": "cont-hds",
+      "line": 514
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 636
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 666
+    },
+    {
+      "name": "maps04-exit",
+      "line": 674
+    }
+  ],
+  "metadata": {
+    "lines": 679,
+    "parseDate": "2025-09-17T19:45:42.755Z",
+    "hasMainProgram": false
+  }
+}

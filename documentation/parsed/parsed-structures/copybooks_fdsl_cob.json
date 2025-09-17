@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/fdsl.cob",
+  "fileName": "fdsl.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Sales-File",
+      "line": 11,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 70,
+    "parseDate": "2025-09-17T19:45:42.560Z",
+    "hasMainProgram": true
+  }
+}

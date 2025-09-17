@@ -1,0 +1,616 @@
+{
+  "filePath": "../../Legacy_App/sales/sl060.cbl",
+  "fileName": "sl060.cbl",
+  "programId": "sl060",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 12
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 161
+    },
+    {
+      "name": "DATA",
+      "line": 179
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 400
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 715,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 1289,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 290,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 416
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 425
+    },
+    {
+      "target": "OTM3-Open-Output",
+      "thru": null,
+      "line": 446
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 447
+    },
+    {
+      "target": "ca000-BL-Open",
+      "thru": null,
+      "line": 472
+    },
+    {
+      "target": "Sales-Open",
+      "thru": null,
+      "line": 474
+    },
+    {
+      "target": "ba000-Headings",
+      "thru": null,
+      "line": 480
+    },
+    {
+      "target": "OTM3-Open",
+      "thru": null,
+      "line": 486
+    },
+    {
+      "target": "Sales-Read-Indexed",
+      "thru": null,
+      "line": 496
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 511
+    },
+    {
+      "target": "ca000-BL-Write",
+      "thru": null,
+      "line": 541
+    },
+    {
+      "target": "ba000-Sales-Comp",
+      "thru": null,
+      "line": 545
+    },
+    {
+      "target": "ba000-CR-Notes",
+      "thru": null,
+      "line": 566
+    },
+    {
+      "target": "ba000-Credit-Comp",
+      "thru": null,
+      "line": 567
+    },
+    {
+      "target": "Sales-Write",
+      "thru": null,
+      "line": 586
+    },
+    {
+      "target": "Sales-Rewrite",
+      "thru": null,
+      "line": 588
+    },
+    {
+      "target": "OTM3-Write",
+      "thru": null,
+      "line": 591
+    },
+    {
+      "target": "zz040-Evaluate-Message",
+      "thru": null,
+      "line": 602
+    },
+    {
+      "target": "OTM3-Rewrite",
+      "thru": null,
+      "line": 608
+    },
+    {
+      "target": "ba000-Headings",
+      "thru": null,
+      "line": 614
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 619
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 620
+    },
+    {
+      "target": "ba000-Headings",
+      "thru": null,
+      "line": 627
+    },
+    {
+      "target": "Value-Open",
+      "thru": null,
+      "line": 649
+    },
+    {
+      "target": "ba000-Analise-Deductions",
+      "thru": null,
+      "line": 650
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 651
+    },
+    {
+      "target": "ca000-BL-Close",
+      "thru": null,
+      "line": 655
+    },
+    {
+      "target": "OTM3-Open",
+      "thru": null,
+      "line": 661
+    },
+    {
+      "target": "OTM3-Read-Next",
+      "thru": null,
+      "line": 667
+    },
+    {
+      "target": "ba000-Cr-Swop",
+      "thru": null,
+      "line": 677
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 684
+    },
+    {
+      "target": "ba000-New-Heading",
+      "thru": null,
+      "line": 698
+    },
+    {
+      "target": "ba000-New-Heading",
+      "thru": null,
+      "line": 746
+    },
+    {
+      "target": "ba000-New-Heading",
+      "thru": null,
+      "line": 760
+    },
+    {
+      "target": "OTM3-Rewrite",
+      "thru": null,
+      "line": 766
+    },
+    {
+      "target": "OTM3-Start",
+      "thru": null,
+      "line": 861
+    },
+    {
+      "target": "OTM3-Read-Next",
+      "thru": null,
+      "line": 872
+    },
+    {
+      "target": "ba000-Apportion",
+      "thru": null,
+      "line": 895
+    },
+    {
+      "target": "OTM3-Start",
+      "thru": null,
+      "line": 910
+    },
+    {
+      "target": "ba000-Clear-Invoice-Deduct",
+      "thru": null,
+      "line": 945
+    },
+    {
+      "target": "ba000-Clear-Invoice-Deduct",
+      "thru": null,
+      "line": 959
+    },
+    {
+      "target": "OTM3-Rewrite",
+      "thru": null,
+      "line": 967
+    },
+    {
+      "target": "Value-Read-Indexed",
+      "thru": null,
+      "line": 986
+    },
+    {
+      "target": "Value-Rewrite",
+      "thru": null,
+      "line": 995
+    },
+    {
+      "target": "Value-Read-Indexed",
+      "thru": null,
+      "line": 999
+    },
+    {
+      "target": "Value-Rewrite",
+      "thru": null,
+      "line": 1007
+    },
+    {
+      "target": "GL-Batch-Open",
+      "thru": null,
+      "line": 1015
+    },
+    {
+      "target": "GL-Batch-Close",
+      "thru": null,
+      "line": 1017
+    },
+    {
+      "target": "GL-Batch-Open-Output",
+      "thru": null,
+      "line": 1018
+    },
+    {
+      "target": "SPL-Posting-Open-Extend",
+      "thru": null,
+      "line": 1042
+    },
+    {
+      "target": "SPL-Posting-Close",
+      "thru": null,
+      "line": 1044
+    },
+    {
+      "target": "SPL-Posting-Open-Output",
+      "thru": null,
+      "line": 1045
+    },
+    {
+      "target": "GL-Posting-Open",
+      "thru": null,
+      "line": 1048
+    },
+    {
+      "target": "GL-Posting-Close",
+      "thru": null,
+      "line": 1050
+    },
+    {
+      "target": "GL-Posting-Open-Output",
+      "thru": null,
+      "line": 1051
+    },
+    {
+      "target": "SPL-Posting-Write",
+      "thru": null,
+      "line": 1136
+    },
+    {
+      "target": "GL-Posting-Write",
+      "thru": null,
+      "line": 1139
+    },
+    {
+      "target": "ca000-BL-Close",
+      "thru": null,
+      "line": 1145
+    },
+    {
+      "target": "ca000-BL-Open",
+      "thru": null,
+      "line": 1146
+    },
+    {
+      "target": "GL-Batch-Write",
+      "thru": null,
+      "line": 1154
+    },
+    {
+      "target": "zz040-Evaluate-Message",
+      "thru": null,
+      "line": 1158
+    },
+    {
+      "target": "GL-Batch-Close",
+      "thru": null,
+      "line": 1167
+    },
+    {
+      "target": "SPL-Posting-Close",
+      "thru": null,
+      "line": 1169
+    },
+    {
+      "target": "GL-Posting-Close",
+      "thru": null,
+      "line": 1171
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 1216
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 1230
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "total-lits",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1a",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4a",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-8",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 168
+    },
+    {
+      "name": "file-defs",
+      "line": 404
+    },
+    {
+      "name": "end-if",
+      "line": 461
+    },
+    {
+      "name": "aa020-Read-Loop",
+      "line": 488
+    },
+    {
+      "name": "aa030-Main-End",
+      "line": 617
+    },
+    {
+      "name": "aa040-End-Loop",
+      "line": 666
+    },
+    {
+      "name": "aa050-End-Loop-End",
+      "line": 681
+    },
+    {
+      "name": "aa999-Exit-Prog",
+      "line": 727
+    },
+    {
+      "name": "main-exit",
+      "line": 768
+    },
+    {
+      "name": "main-exit",
+      "line": 794
+    },
+    {
+      "name": "main-exit",
+      "line": 818
+    },
+    {
+      "name": "main-exit",
+      "line": 834
+    },
+    {
+      "name": "main-exit",
+      "line": 850
+    },
+    {
+      "name": "ba010-read-loop",
+      "line": 869
+    },
+    {
+      "name": "ba020-end-loop",
+      "line": 900
+    },
+    {
+      "name": "ba030-main-end",
+      "line": 915
+    },
+    {
+      "name": "ba040-main-exit",
+      "line": 920
+    },
+    {
+      "name": "ba000-Main-Rewrite",
+      "line": 965
+    },
+    {
+      "name": "ba000-Clear-Invoice-Deduct",
+      "line": 970
+    },
+    {
+      "name": "ba000-cid-exit",
+      "line": 976
+    },
+    {
+      "name": "main-exit",
+      "line": 978
+    },
+    {
+      "name": "ba999-main-exit",
+      "line": 1009
+    },
+    {
+      "name": "cleared-status",
+      "line": 1026
+    },
+    {
+      "name": "ca997-main-exit",
+      "line": 1056
+    },
+    {
+      "name": "vat-amount",
+      "line": 1110
+    },
+    {
+      "name": "ca998-main-exit",
+      "line": 1148
+    },
+    {
+      "name": "end-if",
+      "line": 1172
+    },
+    {
+      "name": "ca999-main-exit",
+      "line": 1174
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 1213
+    },
+    {
+      "name": "zz050-exit",
+      "line": 1218
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 1253
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 1283
+    },
+    {
+      "name": "maps04-exit",
+      "line": 1291
+    }
+  ],
+  "metadata": {
+    "lines": 1296,
+    "parseDate": "2025-09-17T19:45:42.851Z",
+    "hasMainProgram": true
+  }
+}

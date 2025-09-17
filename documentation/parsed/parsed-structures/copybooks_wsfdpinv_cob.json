@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/wsfdpinv.cob",
+  "fileName": "wsfdpinv.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "invoice-file",
+      "line": 10,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 23,
+    "parseDate": "2025-09-17T19:45:42.616Z",
+    "hasMainProgram": true
+  }
+}

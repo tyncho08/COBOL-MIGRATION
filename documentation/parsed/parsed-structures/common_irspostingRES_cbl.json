@@ -1,0 +1,207 @@
+{
+  "filePath": "../../Legacy_App/common/irspostingRES.cbl",
+  "fileName": "irspostingRES.cbl",
+  "programId": "irspostingRES",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 9
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 90
+    },
+    {
+      "name": "DATA",
+      "line": 110
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 168
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "ACAS-Sysout",
+      "line": 246,
+      "type": "static"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 172
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 179
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 186
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 189
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 197
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 199
+    },
+    {
+      "target": "forever",
+      "thru": null,
+      "line": 205
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 214
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 221
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 237
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 239
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Posting-File",
+      "line": 116,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "irsposting-File-Seq",
+      "line": 131,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Arg-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Vals",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "SO-Print",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 97
+    },
+    {
+      "name": "aa000-Main-Start",
+      "line": 171
+    },
+    {
+      "name": "goback",
+      "line": 190
+    },
+    {
+      "name": "goback",
+      "line": 200
+    },
+    {
+      "name": "aa010-Read-Recs",
+      "line": 204
+    },
+    {
+      "name": "end-perform",
+      "line": 225
+    },
+    {
+      "name": "aa020-Finish-Off",
+      "line": 227
+    },
+    {
+      "name": "Posting-File",
+      "line": 229
+    },
+    {
+      "name": "goback",
+      "line": 241
+    },
+    {
+      "name": "Call-Sysout",
+      "line": 245
+    }
+  ],
+  "metadata": {
+    "lines": 248,
+    "parseDate": "2025-09-17T19:45:42.319Z",
+    "hasMainProgram": true
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "filePath": "../../Legacy_App/common/acasconvert3.cbl",
+  "fileName": "acasconvert3.cbl",
+  "programId": "acasconvert3",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 12
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 70
+    },
+    {
+      "name": "DATA",
+      "line": 81
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 210
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Old-Invoice-File",
+      "line": 87,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "fs-reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "rec-count",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "A",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "B",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Rrn",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-Blk",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Old-File-16",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "SInvoice-Header",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "SInvoice-Bodies",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Sinvoice-Line-Count",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 75
+    },
+    {
+      "name": "AA000-Start",
+      "line": 211
+    },
+    {
+      "name": "AA010-Read",
+      "line": 235
+    },
+    {
+      "name": "AA020-End",
+      "line": 269
+    },
+    {
+      "name": "Invoice-file",
+      "line": 271
+    }
+  ],
+  "metadata": {
+    "lines": 275,
+    "parseDate": "2025-09-17T19:45:42.199Z",
+    "hasMainProgram": true
+  }
+}

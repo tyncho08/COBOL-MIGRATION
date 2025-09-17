@@ -1,0 +1,256 @@
+{
+  "filePath": "../../Legacy_App/common/acas008.cbl",
+  "fileName": "acas008.cbl",
+  "programId": "acas008",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 13
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 230
+    },
+    {
+      "name": "DATA",
+      "line": 238
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 276
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "slpostingMT",
+      "line": 581,
+      "type": "static"
+    },
+    {
+      "program": "fhlogger",
+      "line": 596,
+      "type": "static"
+    },
+    {
+      "program": "before",
+      "line": 52,
+      "type": "dynamic"
+    },
+    {
+      "program": "the",
+      "line": 510,
+      "type": "dynamic"
+    },
+    {
+      "program": "only",
+      "line": 516,
+      "type": "dynamic"
+    },
+    {
+      "program": "to",
+      "line": 567,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "ba-Process-RDBMS",
+      "thru": null,
+      "line": 135
+    },
+    {
+      "target": "ba-Process-RDBMS",
+      "thru": null,
+      "line": 315
+    },
+    {
+      "target": "ba-Process-RDBMS",
+      "thru": null,
+      "line": 323
+    },
+    {
+      "target": "ba012-Test-WS-Rec-Size-2",
+      "thru": null,
+      "line": 338
+    },
+    {
+      "target": "aa999-main-exit",
+      "thru": null,
+      "line": 427
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 430
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 496
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 546
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "WS-Reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "A",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "B",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Display-Blk",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Cobol-File-Status",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 234
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 282
+    },
+    {
+      "name": "aa010-main",
+      "line": 287
+    },
+    {
+      "name": "end-evaluate",
+      "line": 305
+    },
+    {
+      "name": "end-if",
+      "line": 317
+    },
+    {
+      "name": "end-if",
+      "line": 325
+    },
+    {
+      "name": "end-if",
+      "line": 334
+    },
+    {
+      "name": "end-evaluate",
+      "line": 373
+    },
+    {
+      "name": "aa020-Process-Open",
+      "line": 378
+    },
+    {
+      "name": "end-if",
+      "line": 413
+    },
+    {
+      "name": "aa030-Process-Close",
+      "line": 420
+    },
+    {
+      "name": "aa040-Process-Read-Next",
+      "line": 433
+    },
+    {
+      "name": "end-if",
+      "line": 448
+    },
+    {
+      "name": "end-read",
+      "line": 457
+    },
+    {
+      "name": "aa070-Process-Write",
+      "line": 466
+    },
+    {
+      "name": "aa100-Bad-Function",
+      "line": 487
+    },
+    {
+      "name": "aa999-main-exit",
+      "line": 494
+    },
+    {
+      "name": "end-if",
+      "line": 497
+    },
+    {
+      "name": "aa-main-exit",
+      "line": 499
+    },
+    {
+      "name": "aa-Exit",
+      "line": 503
+    },
+    {
+      "name": "ba010-Test-WS-Rec-Size",
+      "line": 514
+    },
+    {
+      "name": "ba012-Test-WS-Rec-Size-2",
+      "line": 522
+    },
+    {
+      "name": "end-if",
+      "line": 562
+    },
+    {
+      "name": "ba015-Test-Ends",
+      "line": 564
+    },
+    {
+      "name": "end-if",
+      "line": 572
+    },
+    {
+      "name": "end-call",
+      "line": 585
+    },
+    {
+      "name": "ba-rdbms-exit",
+      "line": 589
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 597
+    }
+  ],
+  "metadata": {
+    "lines": 603,
+    "parseDate": "2025-09-17T19:45:42.164Z",
+    "hasMainProgram": true
+  }
+}

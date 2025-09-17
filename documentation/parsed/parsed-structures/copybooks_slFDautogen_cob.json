@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/slFDautogen.cob",
+  "fileName": "slFDautogen.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Agen-Invoice-File",
+      "line": 14,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 29,
+    "parseDate": "2025-09-17T19:45:42.605Z",
+    "hasMainProgram": true
+  }
+}

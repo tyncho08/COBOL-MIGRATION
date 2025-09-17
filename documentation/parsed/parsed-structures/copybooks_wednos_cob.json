@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/wednos.cob",
+  "fileName": "wednos.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Del-Inv-nos-file",
+      "line": 7,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 14,
+    "parseDate": "2025-09-17T19:45:42.612Z",
+    "hasMainProgram": true
+  }
+}

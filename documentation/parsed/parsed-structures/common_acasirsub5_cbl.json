@@ -1,0 +1,320 @@
+{
+  "filePath": "../../Legacy_App/common/acasirsub5.cbl",
+  "fileName": "acasirsub5.cbl",
+  "programId": "acasirsub5",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 11
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 89
+    },
+    {
+      "name": "DATA",
+      "line": 100
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 144
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "irsfinalMT",
+      "line": 514,
+      "type": "static"
+    },
+    {
+      "program": "fhlogger",
+      "line": 529,
+      "type": "static"
+    },
+    {
+      "program": "the",
+      "line": 355,
+      "type": "dynamic"
+    },
+    {
+      "program": "only",
+      "line": 361,
+      "type": "dynamic"
+    },
+    {
+      "program": "action",
+      "line": 507,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "ba-Process-RDBMS",
+      "thru": null,
+      "line": 175
+    },
+    {
+      "target": "ba012-Test-WS-Rec-Size-2",
+      "thru": null,
+      "line": 181
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 337
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 391
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 429
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 436
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 437
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 443
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 446
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 452
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 453
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 457
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 463
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 469
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 473
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 479
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 489
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 495
+    },
+    {
+      "target": "ba020-Call-DAL",
+      "thru": null,
+      "line": 499
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 503
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Final-File",
+      "line": 103,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "WS-Reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "WS-Save-FS-Reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "WS-Save-WE-Error",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "A",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "B",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Display-Blk",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Cobol-File-Status",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 93
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 150
+    },
+    {
+      "name": "aa010-main",
+      "line": 155
+    },
+    {
+      "name": "end-if",
+      "line": 177
+    },
+    {
+      "name": "end-evaluate",
+      "line": 208
+    },
+    {
+      "name": "aa040-Process-Read-Next",
+      "line": 249
+    },
+    {
+      "name": "end-if",
+      "line": 276
+    },
+    {
+      "name": "end-read",
+      "line": 286
+    },
+    {
+      "name": "aa070-Process-Write",
+      "line": 302
+    },
+    {
+      "name": "end-if",
+      "line": 323
+    },
+    {
+      "name": "aa100-Bad-Function",
+      "line": 328
+    },
+    {
+      "name": "aa999-main-exit",
+      "line": 335
+    },
+    {
+      "name": "end-if",
+      "line": 338
+    },
+    {
+      "name": "aa-main-exit",
+      "line": 340
+    },
+    {
+      "name": "aa-Exit",
+      "line": 348
+    },
+    {
+      "name": "ba010-Test-WS-Rec-Size",
+      "line": 359
+    },
+    {
+      "name": "ba012-Test-WS-Rec-Size-2",
+      "line": 367
+    },
+    {
+      "name": "end-if",
+      "line": 407
+    },
+    {
+      "name": "ba015-Test-Ends",
+      "line": 409
+    },
+    {
+      "name": "end-if",
+      "line": 459
+    },
+    {
+      "name": "end-if",
+      "line": 484
+    },
+    {
+      "name": "end-if",
+      "line": 505
+    },
+    {
+      "name": "ba020-Call-DAL",
+      "line": 513
+    },
+    {
+      "name": "end-call",
+      "line": 518
+    },
+    {
+      "name": "ba-rdbms-exit",
+      "line": 522
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 530
+    }
+  ],
+  "metadata": {
+    "lines": 536,
+    "parseDate": "2025-09-17T19:45:42.210Z",
+    "hasMainProgram": true
+  }
+}

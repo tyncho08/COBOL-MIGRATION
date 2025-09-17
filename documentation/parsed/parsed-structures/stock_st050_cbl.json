@@ -1,0 +1,251 @@
+{
+  "filePath": "../../Legacy_App/stock/st050.cbl",
+  "fileName": "st050.cbl",
+  "programId": "st050",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 42
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 136
+    },
+    {
+      "name": "DATA",
+      "line": 151
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 255
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "blk",
+      "line": 207,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 278
+    },
+    {
+      "target": "ba010-Build-Stock",
+      "thru": "ba999-exit",
+      "line": 337
+    },
+    {
+      "target": "Stock-Open-Input",
+      "thru": null,
+      "line": 340
+    },
+    {
+      "target": "ba030-Eval-Status",
+      "thru": null,
+      "line": 344
+    },
+    {
+      "target": "ba030-Eval-Status",
+      "thru": null,
+      "line": 354
+    },
+    {
+      "target": "ba000-Process-Stock-Comp",
+      "thru": null,
+      "line": 362
+    },
+    {
+      "target": "Stock-Read-Next",
+      "thru": null,
+      "line": 379
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 381
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 402
+    },
+    {
+      "target": "ba030-Eval-Status",
+      "thru": null,
+      "line": 414
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 418
+    },
+    {
+      "target": "ba030-Eval-Status",
+      "thru": null,
+      "line": 429
+    },
+    {
+      "target": "Stock-Open-Output",
+      "thru": null,
+      "line": 435
+    },
+    {
+      "target": "ba030-Eval-Status",
+      "thru": null,
+      "line": 439
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 449
+    },
+    {
+      "target": "Stock-Write",
+      "thru": null,
+      "line": 462
+    },
+    {
+      "target": "ba030-Eval-Status",
+      "thru": null,
+      "line": 466
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 474
+    },
+    {
+      "target": "ba030-Eval-Status",
+      "thru": null,
+      "line": 481
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 489
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Temp-Stock-File",
+      "line": 158,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "Prog-Name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Eval-Msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "To-Day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 143
+    },
+    {
+      "name": "file-defs",
+      "line": 258
+    },
+    {
+      "name": "aa010-Questions",
+      "line": 304
+    },
+    {
+      "name": "aa020-Recovery",
+      "line": 313
+    },
+    {
+      "name": "aa030-U-Sure",
+      "line": 320
+    },
+    {
+      "name": "aa999-Exit",
+      "line": 365
+    },
+    {
+      "name": "goback",
+      "line": 369
+    },
+    {
+      "name": "ba000-Process-Stock-Comp-Main",
+      "line": 378
+    },
+    {
+      "name": "Stock-Last-Actual-Cost",
+      "line": 401
+    },
+    {
+      "name": "end-perform",
+      "line": 407
+    },
+    {
+      "name": "ba010-Build-Stock",
+      "line": 424
+    },
+    {
+      "name": "ba020-Read-Temp",
+      "line": 446
+    },
+    {
+      "name": "ba030-Eval-Status",
+      "line": 495
+    },
+    {
+      "name": "ba999-Exit",
+      "line": 499
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 529
+    }
+  ],
+  "metadata": {
+    "lines": 534,
+    "parseDate": "2025-09-17T19:45:43.025Z",
+    "hasMainProgram": false
+  }
+}

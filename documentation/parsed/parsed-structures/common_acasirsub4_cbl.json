@@ -1,0 +1,300 @@
+{
+  "filePath": "../../Legacy_App/common/acasirsub4.cbl",
+  "fileName": "acasirsub4.cbl",
+  "programId": "acasirsub4",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 11
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 84
+    },
+    {
+      "name": "DATA",
+      "line": 96
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 146
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "irspostingMT",
+      "line": 533,
+      "type": "static"
+    },
+    {
+      "program": "fhlogger",
+      "line": 548,
+      "type": "static"
+    },
+    {
+      "program": "the",
+      "line": 460,
+      "type": "dynamic"
+    },
+    {
+      "program": "only",
+      "line": 466,
+      "type": "dynamic"
+    },
+    {
+      "program": "to",
+      "line": 517,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "ba-Process-RDBMS",
+      "thru": null,
+      "line": 47
+    },
+    {
+      "target": "ba-Process-RDBMS",
+      "thru": null,
+      "line": 191
+    },
+    {
+      "target": "ba-Process-RDBMS",
+      "thru": null,
+      "line": 199
+    },
+    {
+      "target": "ba012-Test-WS-Rec-Size-2",
+      "thru": null,
+      "line": 205
+    },
+    {
+      "target": "aa999-main-exit",
+      "thru": null,
+      "line": 290
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 293
+    },
+    {
+      "target": "aa999-main-exit",
+      "thru": null,
+      "line": 401
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 447
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 496
+    },
+    {
+      "target": "ba020-Process-Dal",
+      "thru": null,
+      "line": 521
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Posting-File",
+      "line": 100,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "WS-Reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "A",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "B",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Display-Blk",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Cobol-File-Status",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 88
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 152
+    },
+    {
+      "name": "aa010-main",
+      "line": 157
+    },
+    {
+      "name": "end-evaluate",
+      "line": 180
+    },
+    {
+      "name": "end-if",
+      "line": 193
+    },
+    {
+      "name": "end-if",
+      "line": 201
+    },
+    {
+      "name": "end-evaluate",
+      "line": 238
+    },
+    {
+      "name": "aa020-Process-Open",
+      "line": 243
+    },
+    {
+      "name": "end-if",
+      "line": 277
+    },
+    {
+      "name": "aa030-Process-Close",
+      "line": 283
+    },
+    {
+      "name": "aa040-Process-Read-Next",
+      "line": 296
+    },
+    {
+      "name": "end-if",
+      "line": 311
+    },
+    {
+      "name": "aa041-Reread",
+      "line": 313
+    },
+    {
+      "name": "end-read",
+      "line": 322
+    },
+    {
+      "name": "aa050-Process-Read-Indexed",
+      "line": 329
+    },
+    {
+      "name": "aa051-Reread",
+      "line": 339
+    },
+    {
+      "name": "aa060-Process-Start",
+      "line": 351
+    },
+    {
+      "name": "WE-Error",
+      "line": 357
+    },
+    {
+      "name": "Key-Number",
+      "line": 360
+    },
+    {
+      "name": "aa070-Process-Write",
+      "line": 404
+    },
+    {
+      "name": "aa080-Process-Delete",
+      "line": 416
+    },
+    {
+      "name": "aa090-Process-Rewrite",
+      "line": 428
+    },
+    {
+      "name": "aa100-Bad-Function",
+      "line": 438
+    },
+    {
+      "name": "aa999-main-exit",
+      "line": 445
+    },
+    {
+      "name": "end-if",
+      "line": 448
+    },
+    {
+      "name": "aa-main-exit",
+      "line": 450
+    },
+    {
+      "name": "aa-Exit",
+      "line": 453
+    },
+    {
+      "name": "ba010-Test-WS-Rec-Size",
+      "line": 464
+    },
+    {
+      "name": "ba012-Test-WS-Rec-Size-2",
+      "line": 472
+    },
+    {
+      "name": "end-if",
+      "line": 512
+    },
+    {
+      "name": "ba015-Test-Ends",
+      "line": 514
+    },
+    {
+      "name": "end-if",
+      "line": 523
+    },
+    {
+      "name": "ba020-Process-DAL",
+      "line": 532
+    },
+    {
+      "name": "end-call",
+      "line": 537
+    },
+    {
+      "name": "ba-rdbms-exit",
+      "line": 541
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 549
+    }
+  ],
+  "metadata": {
+    "lines": 555,
+    "parseDate": "2025-09-17T19:45:42.207Z",
+    "hasMainProgram": true
+  }
+}

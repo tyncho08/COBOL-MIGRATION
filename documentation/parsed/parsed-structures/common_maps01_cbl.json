@@ -1,0 +1,102 @@
+{
+  "filePath": "../../Legacy_App/common/maps01.cbl",
+  "fileName": "maps01.cbl",
+  "programId": "maps01",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 67
+    },
+    {
+      "name": "DATA",
+      "line": 74
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 107
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "q",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "y",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "base",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "encode-pass",
+      "line": 113
+    },
+    {
+      "name": "loop",
+      "line": 119
+    },
+    {
+      "name": "test-lower",
+      "line": 128
+    },
+    {
+      "name": "set-base",
+      "line": 135
+    },
+    {
+      "name": "return-to-loop",
+      "line": 153
+    },
+    {
+      "name": "encode-name",
+      "line": 161
+    },
+    {
+      "name": "loop-n",
+      "line": 166
+    },
+    {
+      "name": "test-lower-n",
+      "line": 175
+    },
+    {
+      "name": "set-base-n",
+      "line": 182
+    },
+    {
+      "name": "return-to-loop-n",
+      "line": 203
+    }
+  ],
+  "metadata": {
+    "lines": 212,
+    "parseDate": "2025-09-17T19:45:42.323Z",
+    "hasMainProgram": true
+  }
+}

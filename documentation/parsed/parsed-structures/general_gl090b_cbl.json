@@ -1,0 +1,155 @@
+{
+  "filePath": "../../Legacy_App/general/gl090b.cbl",
+  "fileName": "gl090b.cbl",
+  "programId": "gl090b",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 89
+    },
+    {
+      "name": "DATA",
+      "line": 101
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 242
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 394,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 120,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "GL-Nominal-Open-Input",
+      "thru": null,
+      "line": 251
+    },
+    {
+      "target": "zz070-convert-date",
+      "thru": null,
+      "line": 261
+    },
+    {
+      "target": "page-heading",
+      "thru": null,
+      "line": 281
+    },
+    {
+      "target": "GL-Nominal-Read-Next",
+      "thru": null,
+      "line": 286
+    },
+    {
+      "target": "page-heading",
+      "thru": null,
+      "line": 334
+    },
+    {
+      "target": "GL-Nominal-Close",
+      "thru": null,
+      "line": 399
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "print-lines",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 96
+    },
+    {
+      "name": "file-defs",
+      "line": 245
+    },
+    {
+      "name": "p-loop",
+      "line": 283
+    },
+    {
+      "name": "page-heading",
+      "line": 338
+    },
+    {
+      "name": "end-report",
+      "line": 378
+    },
+    {
+      "name": "main-end",
+      "line": 396
+    },
+    {
+      "name": "main-exit",
+      "line": 401
+    },
+    {
+      "name": "goback",
+      "line": 402
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 431
+    }
+  ],
+  "metadata": {
+    "lines": 436,
+    "parseDate": "2025-09-17T19:45:42.668Z",
+    "hasMainProgram": false
+  }
+}

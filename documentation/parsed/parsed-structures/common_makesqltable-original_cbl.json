@@ -1,0 +1,279 @@
+{
+  "filePath": "../../Legacy_App/common/makesqltable-original.cbl",
+  "fileName": "makesqltable-original.cbl",
+  "programId": "MAKESQLTABLE",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 1
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 14
+    },
+    {
+      "name": "DATA",
+      "line": 26
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 64
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 66
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [
+    {
+      "target": "1000-INITIALIZATION",
+      "thru": "1990-EXIT",
+      "line": 68
+    },
+    {
+      "target": "2000-PROCESS",
+      "thru": "7990-EXIT",
+      "line": 69
+    },
+    {
+      "target": "9000-END-OF-PROGRAM",
+      "thru": "9990-EXIT",
+      "line": 70
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "SELECT",
+      "fileName": "INPUT-FILE",
+      "assignTo": "WS-NAME-INPUT-FILE",
+      "line": 18
+    },
+    {
+      "type": "SELECT",
+      "fileName": "OUTPUT-FILE",
+      "assignTo": "WS-NAME-OUTPUT-FILE",
+      "line": 22
+    },
+    {
+      "type": "FD",
+      "fileName": "INPUT-FILE",
+      "line": 29,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "OUTPUT-FILE",
+      "line": 33,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "01",
+      "name": "WS-NAME-PROGRAM",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-NO-PARAGRAPH",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-I",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-J",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-K",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-POSITION-IN-OUTPUT",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-NAME-INPUT-FILE",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-NAME-OUTPUT-FILE",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-INPUT-FILE-STATUS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-OUTPUT-FILE-STATUS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-READ-AREA",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-NAME-DATA-BASE",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-REMOVE-PREFIX",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-TRIMMED-INPUT-RECORD",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-SECOND-TRIM",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-THIRD-TRIM",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-TABLE-NAME",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-COLUMN-NAME",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-CHARACTERS-WANTED",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-ED5",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [
+    {
+      "name": "0000-MAIN",
+      "line": 67
+    }
+  ],
+  "paragraphs": [
+    {
+      "name": "FILE-CONTROL",
+      "line": 16
+    },
+    {
+      "name": "1000-INITIALIZATION",
+      "line": 75
+    },
+    {
+      "name": "1990-EXIT",
+      "line": 101
+    },
+    {
+      "name": "EXIT",
+      "line": 102
+    },
+    {
+      "name": "2000-PROCESS",
+      "line": 106
+    },
+    {
+      "name": "2010-READ",
+      "line": 111
+    },
+    {
+      "name": "2100-READ-COLUMNS",
+      "line": 161
+    },
+    {
+      "name": "2110-PREFIX-LOOP",
+      "line": 180
+    },
+    {
+      "name": "END-IF",
+      "line": 190
+    },
+    {
+      "name": "2200-CHARACTERS",
+      "line": 221
+    },
+    {
+      "name": "2210-CHARACTER-LOOP",
+      "line": 225
+    },
+    {
+      "name": "END-IF",
+      "line": 235
+    },
+    {
+      "name": "2215-BAD-PIC",
+      "line": 236
+    },
+    {
+      "name": "2220-GET-REPITITIONS",
+      "line": 240
+    },
+    {
+      "name": "2240-GOT-COUNT",
+      "line": 250
+    },
+    {
+      "name": "2250-VARCHAR",
+      "line": 264
+    },
+    {
+      "name": "2900-EOF",
+      "line": 275
+    },
+    {
+      "name": "7980-CLOSE",
+      "line": 292
+    },
+    {
+      "name": "7990-EXIT",
+      "line": 295
+    },
+    {
+      "name": "EXIT",
+      "line": 296
+    },
+    {
+      "name": "9000-END-OF-PROGRAM",
+      "line": 300
+    },
+    {
+      "name": "9990-EXIT",
+      "line": 305
+    },
+    {
+      "name": "EXIT",
+      "line": 306
+    }
+  ],
+  "metadata": {
+    "lines": 307,
+    "parseDate": "2025-09-17T19:45:42.322Z",
+    "hasMainProgram": true
+  }
+}

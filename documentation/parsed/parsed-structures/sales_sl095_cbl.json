@@ -1,0 +1,236 @@
+{
+  "filePath": "../../Legacy_App/sales/sl095.cbl",
+  "fileName": "sl095.cbl",
+  "programId": "sl095",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 93
+    },
+    {
+      "name": "DATA",
+      "line": 107
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 264
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 484,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 613,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 135,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 280
+    },
+    {
+      "target": "report1",
+      "thru": null,
+      "line": 283
+    },
+    {
+      "target": "OTM3-Open-Input",
+      "thru": null,
+      "line": 302
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 304
+    },
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 308
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 310
+    },
+    {
+      "target": "OTM3-Read-Next-Sorted-By-Batch",
+      "thru": null,
+      "line": 325
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 327
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 359
+    },
+    {
+      "target": "Sales-Read-Indexed",
+      "thru": null,
+      "line": 367
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 393
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 417
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 432
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 439
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 479
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 490
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 540
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 554
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "print-lines",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "report-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 100
+    },
+    {
+      "name": "file-defs",
+      "line": 267
+    },
+    {
+      "name": "menu-exit",
+      "line": 285
+    },
+    {
+      "name": "read-loop",
+      "line": 312
+    },
+    {
+      "name": "Read-Loop-Tests",
+      "line": 339
+    },
+    {
+      "name": "process-invoice",
+      "line": 402
+    },
+    {
+      "name": "loop-end",
+      "line": 435
+    },
+    {
+      "name": "headings",
+      "line": 487
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 537
+    },
+    {
+      "name": "zz050-exit",
+      "line": 542
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 577
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 607
+    },
+    {
+      "name": "maps04-exit",
+      "line": 615
+    }
+  ],
+  "metadata": {
+    "lines": 620,
+    "parseDate": "2025-09-17T19:45:42.866Z",
+    "hasMainProgram": true
+  }
+}

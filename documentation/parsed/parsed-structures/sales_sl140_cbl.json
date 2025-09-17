@@ -1,0 +1,264 @@
+{
+  "filePath": "../../Legacy_App/sales/sl140.cbl",
+  "fileName": "sl140.cbl",
+  "programId": "sl140",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 98
+    },
+    {
+      "name": "DATA",
+      "line": 112
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 270
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 412,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 532,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 135,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 281
+    },
+    {
+      "target": "zeroise-totals",
+      "thru": null,
+      "line": 284
+    },
+    {
+      "target": "Invoice-Open-Input",
+      "thru": null,
+      "line": 293
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 295
+    },
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 298
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 300
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 301
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 307
+    },
+    {
+      "target": "Invoice-Read-Next-Header",
+      "thru": null,
+      "line": 310
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 326
+    },
+    {
+      "target": "Sales-Read-Indexed",
+      "thru": null,
+      "line": 329
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 339
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 394
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 395
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 398
+    },
+    {
+      "target": "print-totals",
+      "thru": null,
+      "line": 404
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 473
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "print-file",
+      "line": 120,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Invoice-Record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 106
+    },
+    {
+      "name": "file-defs",
+      "line": 273
+    },
+    {
+      "name": "menu-return",
+      "line": 286
+    },
+    {
+      "name": "goback",
+      "line": 297
+    },
+    {
+      "name": "loop",
+      "line": 309
+    },
+    {
+      "name": "main-end",
+      "line": 393
+    },
+    {
+      "name": "menu-call",
+      "line": 414
+    },
+    {
+      "name": "goback",
+      "line": 415
+    },
+    {
+      "name": "sect2",
+      "line": 433
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 496
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 526
+    },
+    {
+      "name": "maps04-exit",
+      "line": 534
+    }
+  ],
+  "metadata": {
+    "lines": 539,
+    "parseDate": "2025-09-17T19:45:42.881Z",
+    "hasMainProgram": false
+  }
+}

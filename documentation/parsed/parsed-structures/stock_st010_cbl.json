@@ -1,0 +1,1306 @@
+{
+  "filePath": "../../Legacy_App/stock/st010.cbl",
+  "fileName": "st010.cbl",
+  "programId": "st010",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 190
+    },
+    {
+      "name": "DATA",
+      "line": 204
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 625
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 709,
+      "type": "static"
+    },
+    {
+      "program": "maps09",
+      "line": 712,
+      "type": "static"
+    },
+    {
+      "program": "sl070",
+      "line": 820,
+      "type": "static"
+    },
+    {
+      "program": "pl010",
+      "line": 903,
+      "type": "static"
+    },
+    {
+      "program": "pl010",
+      "line": 1195,
+      "type": "static"
+    },
+    {
+      "program": "SYSTEM",
+      "line": 1527,
+      "type": "static"
+    },
+    {
+      "program": "pl010",
+      "line": 97,
+      "type": "dynamic"
+    },
+    {
+      "program": "to",
+      "line": 103,
+      "type": "dynamic"
+    },
+    {
+      "program": "to",
+      "line": 110,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 435,
+      "type": "dynamic"
+    },
+    {
+      "program": "if",
+      "line": 663,
+      "type": "dynamic"
+    },
+    {
+      "program": "if",
+      "line": 816,
+      "type": "dynamic"
+    },
+    {
+      "program": "end-if",
+      "line": 824,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz010-Display-Heading",
+      "thru": null,
+      "line": 654
+    },
+    {
+      "target": "ba000-Setup-Stock",
+      "thru": null,
+      "line": 665
+    },
+    {
+      "target": "ba000-Setup-Stock",
+      "thru": null,
+      "line": 689
+    },
+    {
+      "target": "ca000-Amend-Stock",
+      "thru": null,
+      "line": 692
+    },
+    {
+      "target": "da000-Delete-Stock",
+      "thru": null,
+      "line": 695
+    },
+    {
+      "target": "ga000-Renumber-Stock",
+      "thru": null,
+      "line": 698
+    },
+    {
+      "target": "ea000-Report-Stock",
+      "thru": null,
+      "line": 701
+    },
+    {
+      "target": "fa000-Display-Stock",
+      "thru": null,
+      "line": 704
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 749
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 764
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 779
+    },
+    {
+      "target": "Purch-Open-Input",
+      "thru": null,
+      "line": 796
+    },
+    {
+      "target": "Stock-Open",
+      "thru": null,
+      "line": 804
+    },
+    {
+      "target": "aa100-Check-4-Errors",
+      "thru": null,
+      "line": 807
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 808
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 809
+    },
+    {
+      "target": "Analysis-Open-Input",
+      "thru": null,
+      "line": 827
+    },
+    {
+      "target": "aa102-Check-4-Errors",
+      "thru": null,
+      "line": 829
+    },
+    {
+      "target": "zz020-Display-Outline",
+      "thru": null,
+      "line": 832
+    },
+    {
+      "target": "zz070-Initialize-Stock-Record",
+      "thru": null,
+      "line": 835
+    },
+    {
+      "target": "clear-error-line",
+      "thru": null,
+      "line": 861
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 870
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 878
+    },
+    {
+      "target": "clear-error-line",
+      "thru": null,
+      "line": 886
+    },
+    {
+      "target": "zz010-Display-Heading",
+      "thru": null,
+      "line": 906
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 915
+    },
+    {
+      "target": "zz040-Check-for-Supplier",
+      "thru": null,
+      "line": 919
+    },
+    {
+      "target": "if",
+      "thru": null,
+      "line": 932
+    },
+    {
+      "target": "Clear-Error-Line",
+      "thru": null,
+      "line": 936
+    },
+    {
+      "target": "Analysis-Start",
+      "thru": null,
+      "line": 945
+    },
+    {
+      "target": "aa102-Check-4-Errors",
+      "thru": null,
+      "line": 951
+    },
+    {
+      "target": "Analysis-Start",
+      "thru": null,
+      "line": 960
+    },
+    {
+      "target": "aa102-Check-4-Errors",
+      "thru": null,
+      "line": 966
+    },
+    {
+      "target": "zz090-Copy-From-SS",
+      "thru": null,
+      "line": 972
+    },
+    {
+      "target": "zz030-accept-money7",
+      "thru": null,
+      "line": 979
+    },
+    {
+      "target": "zz030-accept-money7b",
+      "thru": null,
+      "line": 984
+    },
+    {
+      "target": "zz030-accept-money9c",
+      "thru": null,
+      "line": 990
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 1008
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 1023
+    },
+    {
+      "target": "Clear-Error-Line",
+      "thru": null,
+      "line": 1036
+    },
+    {
+      "target": "Stock-Start",
+      "thru": null,
+      "line": 1047
+    },
+    {
+      "target": "zz100-Test-Escape",
+      "thru": null,
+      "line": 1076
+    },
+    {
+      "target": "Stock-Write",
+      "thru": null,
+      "line": 1088
+    },
+    {
+      "target": "zz070-Initialize-Stock-Record",
+      "thru": null,
+      "line": 1097
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 1102
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1103
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1104
+    },
+    {
+      "target": "Purch-Open-Input",
+      "thru": null,
+      "line": 1112
+    },
+    {
+      "target": "Stock-Open",
+      "thru": null,
+      "line": 1119
+    },
+    {
+      "target": "Analysis-Open-Input",
+      "thru": null,
+      "line": 1125
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1128
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1129
+    },
+    {
+      "target": "zz020-Display-Outline",
+      "thru": null,
+      "line": 1135
+    },
+    {
+      "target": "zz070-Initialize-Stock-Record",
+      "thru": null,
+      "line": 1139
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 1153
+    },
+    {
+      "target": "Clear-Error-Line",
+      "thru": null,
+      "line": 1159
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1163
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1170
+    },
+    {
+      "target": "zz080-Copy-To-SS",
+      "thru": null,
+      "line": 1178
+    },
+    {
+      "target": "zz010-Display-Heading",
+      "thru": null,
+      "line": 1198
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 1207
+    },
+    {
+      "target": "zz040-Check-for-Supplier",
+      "thru": null,
+      "line": 1211
+    },
+    {
+      "target": "if",
+      "thru": null,
+      "line": 1224
+    },
+    {
+      "target": "Clear-Error-Line",
+      "thru": null,
+      "line": 1228
+    },
+    {
+      "target": "Analysis-Start",
+      "thru": null,
+      "line": 1237
+    },
+    {
+      "target": "aa102-Check-4-Errors",
+      "thru": null,
+      "line": 1243
+    },
+    {
+      "target": "Analysis-Start",
+      "thru": null,
+      "line": 1252
+    },
+    {
+      "target": "aa102-Check-4-Errors",
+      "thru": null,
+      "line": 1258
+    },
+    {
+      "target": "zz090-Copy-From-SS",
+      "thru": null,
+      "line": 1264
+    },
+    {
+      "target": "zz030-accept-money7",
+      "thru": null,
+      "line": 1271
+    },
+    {
+      "target": "zz030-accept-money7b",
+      "thru": null,
+      "line": 1276
+    },
+    {
+      "target": "zz030-accept-money9c",
+      "thru": null,
+      "line": 1282
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 1300
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 1312
+    },
+    {
+      "target": "Clear-Error-Line",
+      "thru": null,
+      "line": 1324
+    },
+    {
+      "target": "Stock-Start",
+      "thru": null,
+      "line": 1334
+    },
+    {
+      "target": "zz100-test-escape",
+      "thru": null,
+      "line": 1364
+    },
+    {
+      "target": "Stock-Rewrite",
+      "thru": null,
+      "line": 1376
+    },
+    {
+      "target": "zz070-Initialize-Stock-Record",
+      "thru": null,
+      "line": 1385
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1390
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 1391
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1392
+    },
+    {
+      "target": "Stock-Open",
+      "thru": null,
+      "line": 1400
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1402
+    },
+    {
+      "target": "zz020-Display-Outline",
+      "thru": null,
+      "line": 1407
+    },
+    {
+      "target": "zz070-Initialize-Stock-Record",
+      "thru": null,
+      "line": 1414
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1422
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 1431
+    },
+    {
+      "target": "Clear-Error-Line",
+      "thru": null,
+      "line": 1437
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1441
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1448
+    },
+    {
+      "target": "zz080-Copy-To-SS",
+      "thru": null,
+      "line": 1456
+    },
+    {
+      "target": "zz100-test-escape",
+      "thru": null,
+      "line": 1472
+    },
+    {
+      "target": "Stock-Delete",
+      "thru": null,
+      "line": 1499
+    },
+    {
+      "target": "Stock-Open-Input",
+      "thru": null,
+      "line": 1517
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1519
+    },
+    {
+      "target": "ea200-Produce-Report",
+      "thru": null,
+      "line": 1524
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1526
+    },
+    {
+      "target": "zz020-convert-date",
+      "thru": null,
+      "line": 1540
+    },
+    {
+      "target": "Stock-Read-Next",
+      "thru": null,
+      "line": 1548
+    },
+    {
+      "target": "ea220-Heads",
+      "thru": null,
+      "line": 1552
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1574
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1581
+    },
+    {
+      "target": "ea220-Heads",
+      "thru": null,
+      "line": 1674
+    },
+    {
+      "target": "Stock-Open-Input",
+      "thru": null,
+      "line": 1687
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1689
+    },
+    {
+      "target": "zz020-Display-Outline",
+      "thru": null,
+      "line": 1696
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1713
+    },
+    {
+      "target": "Stock-Start",
+      "thru": null,
+      "line": 1719
+    },
+    {
+      "target": "Stock-Read-Next",
+      "thru": null,
+      "line": 1729
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 1737
+    },
+    {
+      "target": "Clear-Error-Line",
+      "thru": null,
+      "line": 1746
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1750
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1757
+    },
+    {
+      "target": "zz080-Copy-To-SS",
+      "thru": null,
+      "line": 1765
+    },
+    {
+      "target": "zz100-test-escape",
+      "thru": null,
+      "line": 1778
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1784
+    },
+    {
+      "target": "Stock-Open",
+      "thru": null,
+      "line": 1795
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1797
+    },
+    {
+      "target": "zz020-Display-Outline",
+      "thru": null,
+      "line": 1802
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1816
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 1825
+    },
+    {
+      "target": "Clear-Error-Line",
+      "thru": null,
+      "line": 1831
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1835
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1842
+    },
+    {
+      "target": "clear-error-line",
+      "thru": null,
+      "line": 1894
+    },
+    {
+      "target": "zz100-test-escape",
+      "thru": null,
+      "line": 1900
+    },
+    {
+      "target": "Stock-Write",
+      "thru": null,
+      "line": 1926
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1936
+    },
+    {
+      "target": "Stock-Delete",
+      "thru": null,
+      "line": 1943
+    },
+    {
+      "target": "zz020-convert-date",
+      "thru": null,
+      "line": 1965
+    },
+    {
+      "target": "zz010-Display-Heading",
+      "thru": null,
+      "line": 2014
+    },
+    {
+      "target": "zz070-Initialize-Stock-Record",
+      "thru": null,
+      "line": 2016
+    },
+    {
+      "target": "maps09",
+      "thru": null,
+      "line": 2073
+    },
+    {
+      "target": "Purch-Read-Indexed",
+      "thru": null,
+      "line": 2084
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 2123
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 2137
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 2200
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "is",
+      "line": 109,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-saved-stock-record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-display7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-accept7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-work7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-ok7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-display7b",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-accept7b",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-work7b",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-ok7b",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-display9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-accept9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-work9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-ok9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "SS-Stock-Variables",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "accept-terminator-array",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "wScreenName",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "wInt",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "hdtime",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-3",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "display-01",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-01B",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-01C",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "display-02",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-F1-Display",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 197
+    },
+    {
+      "name": "file-defs",
+      "line": 628
+    },
+    {
+      "name": "aa010-Menu-Return",
+      "line": 652
+    },
+    {
+      "name": "aa020-Menu-Input",
+      "line": 656
+    },
+    {
+      "name": "maps04",
+      "line": 708
+    },
+    {
+      "name": "maps09",
+      "line": 711
+    },
+    {
+      "name": "end-if",
+      "line": 754
+    },
+    {
+      "name": "end-if",
+      "line": 769
+    },
+    {
+      "name": "end-if",
+      "line": 784
+    },
+    {
+      "name": "Clear-Error-Line",
+      "line": 787
+    },
+    {
+      "name": "aa999-Exit",
+      "line": 790
+    },
+    {
+      "name": "end-if",
+      "line": 811
+    },
+    {
+      "name": "ba010-Display-Stock-Headings",
+      "line": 831
+    },
+    {
+      "name": "ba020-Stock-Item-Accept",
+      "line": 841
+    },
+    {
+      "name": "ba030-Stock-Abrev-Item-Accept",
+      "line": 850
+    },
+    {
+      "name": "ba040-Accept-Block",
+      "line": 891
+    },
+    {
+      "name": "ba042-Get-Stock-Retail",
+      "line": 975
+    },
+    {
+      "name": "ba044-Get-Stock-Cost",
+      "line": 981
+    },
+    {
+      "name": "ba046-Get-Stock-Value",
+      "line": 986
+    },
+    {
+      "name": "ba050-Main-Output",
+      "line": 1078
+    },
+    {
+      "name": "ba998-Main-End",
+      "line": 1101
+    },
+    {
+      "name": "ba999-Exit",
+      "line": 1106
+    },
+    {
+      "name": "ca010-Display-Stock-Headings",
+      "line": 1134
+    },
+    {
+      "name": "ca020-Stock-Item-Accept",
+      "line": 1137
+    },
+    {
+      "name": "WS-Temp-Stock-Key",
+      "line": 1149
+    },
+    {
+      "name": "ca030-Get-Record",
+      "line": 1151
+    },
+    {
+      "name": "ca040-Accept-Block",
+      "line": 1183
+    },
+    {
+      "name": "ca042-Get-Stock-Retail",
+      "line": 1267
+    },
+    {
+      "name": "ca044-Get-Stock-Cost",
+      "line": 1273
+    },
+    {
+      "name": "ca046-Get-Stock-Value",
+      "line": 1278
+    },
+    {
+      "name": "ca050-Main-Output",
+      "line": 1366
+    },
+    {
+      "name": "ca998-Main-End",
+      "line": 1389
+    },
+    {
+      "name": "ca999-Exit",
+      "line": 1394
+    },
+    {
+      "name": "da010-Display-Stock-Headings",
+      "line": 1406
+    },
+    {
+      "name": "da020-Stock-Item-Accept",
+      "line": 1409
+    },
+    {
+      "name": "Customer-Code",
+      "line": 1412
+    },
+    {
+      "name": "WS-Temp-Stock-Key",
+      "line": 1425
+    },
+    {
+      "name": "da030-Get-Record",
+      "line": 1428
+    },
+    {
+      "name": "da040-Accept-Delete",
+      "line": 1485
+    },
+    {
+      "name": "da999-Exit",
+      "line": 1509
+    },
+    {
+      "name": "ea999-exit",
+      "line": 1529
+    },
+    {
+      "name": "ea210-Read-Stock",
+      "line": 1547
+    },
+    {
+      "name": "ea220-Heads",
+      "line": 1653
+    },
+    {
+      "name": "end-if",
+      "line": 1669
+    },
+    {
+      "name": "ea230-Totals",
+      "line": 1671
+    },
+    {
+      "name": "ea299-Exit",
+      "line": 1680
+    },
+    {
+      "name": "fa010-Display-Stock-Headings",
+      "line": 1695
+    },
+    {
+      "name": "fa020-Stock-Item-Accept",
+      "line": 1698
+    },
+    {
+      "name": "Customer-Code",
+      "line": 1701
+    },
+    {
+      "name": "WS-Temp-Stock-Key",
+      "line": 1722
+    },
+    {
+      "name": "fa030-Get-Record",
+      "line": 1724
+    },
+    {
+      "name": "fa999-Exit",
+      "line": 1789
+    },
+    {
+      "name": "ga010-Display-Stock-Headings",
+      "line": 1801
+    },
+    {
+      "name": "ga020-Stock-Item-Accept",
+      "line": 1804
+    },
+    {
+      "name": "Customer-Code",
+      "line": 1807
+    },
+    {
+      "name": "WS-Temp-Stock-Key",
+      "line": 1819
+    },
+    {
+      "name": "ga030-Get-Record",
+      "line": 1822
+    },
+    {
+      "name": "WS-Temp-Stock-Key",
+      "line": 1873
+    },
+    {
+      "name": "WS-Save-Abrev-Key",
+      "line": 1875
+    },
+    {
+      "name": "ga040-Accept-New-Stock-No",
+      "line": 1877
+    },
+    {
+      "name": "ga050-Accept-Renumber",
+      "line": 1913
+    },
+    {
+      "name": "ga999-Exit",
+      "line": 1952
+    },
+    {
+      "name": "zz010-Exit",
+      "line": 1984
+    },
+    {
+      "name": "end-if",
+      "line": 2006
+    },
+    {
+      "name": "zz020-exit",
+      "line": 2008
+    },
+    {
+      "name": "zz020-exit",
+      "line": 2022
+    },
+    {
+      "name": "zz030-exit",
+      "line": 2061
+    },
+    {
+      "name": "WS-File-Key",
+      "line": 2082
+    },
+    {
+      "name": "zz040-Exit",
+      "line": 2090
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 2120
+    },
+    {
+      "name": "zz050-exit",
+      "line": 2125
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 2160
+    },
+    {
+      "name": "Stock-Services-Flag",
+      "line": 2178
+    },
+    {
+      "name": "Stock-Wip-Deds",
+      "line": 2198
+    },
+    {
+      "name": "end-perform",
+      "line": 2205
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 2207
+    },
+    {
+      "name": "zz080-Exit",
+      "line": 2226
+    },
+    {
+      "name": "zz090-Exit",
+      "line": 2245
+    },
+    {
+      "name": "zz100-get-escape",
+      "line": 2253
+    },
+    {
+      "name": "zz100-exit",
+      "line": 2261
+    }
+  ],
+  "metadata": {
+    "lines": 2266,
+    "parseDate": "2025-09-17T19:45:42.999Z",
+    "hasMainProgram": true
+  }
+}

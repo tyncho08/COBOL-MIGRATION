@@ -1,0 +1,65 @@
+{
+  "filePath": "../../Legacy_App/common/xl160.cbl",
+  "fileName": "xl160.cbl",
+  "programId": "xl160",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 2
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 70
+    },
+    {
+      "name": "DATA",
+      "line": 157
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 232
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Final-File",
+      "line": 178,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "Posting-File",
+      "line": 182,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "Default-File",
+      "line": 197,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "nominal-ledger",
+      "line": 201,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 77
+    }
+  ],
+  "metadata": {
+    "lines": 237,
+    "parseDate": "2025-09-17T19:45:42.527Z",
+    "hasMainProgram": true
+  }
+}

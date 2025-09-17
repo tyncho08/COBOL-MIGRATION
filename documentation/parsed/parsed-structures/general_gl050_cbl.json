@@ -1,0 +1,932 @@
+{
+  "filePath": "../../Legacy_App/general/gl050.cbl",
+  "fileName": "gl050.cbl",
+  "programId": "gl050",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 16
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 106
+    },
+    {
+      "name": "DATA",
+      "line": 120
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 305
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 1112,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 1721,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 143,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "GL-Batch-Open-Input",
+      "thru": null,
+      "line": 321
+    },
+    {
+      "target": "GL-Batch-Open-Output",
+      "thru": null,
+      "line": 323
+    },
+    {
+      "target": "GL-Batch-Write",
+      "thru": null,
+      "line": 329
+    },
+    {
+      "target": "GL-Batch-Close",
+      "thru": null,
+      "line": 330
+    },
+    {
+      "target": "GL-Batch-Open",
+      "thru": null,
+      "line": 331
+    },
+    {
+      "target": "GL-Posting-Open-Input",
+      "thru": null,
+      "line": 333
+    },
+    {
+      "target": "GL-Posting-Open-Output",
+      "thru": null,
+      "line": 335
+    },
+    {
+      "target": "GL-Posting-Write",
+      "thru": null,
+      "line": 337
+    },
+    {
+      "target": "GL-Posting-Close",
+      "thru": null,
+      "line": 338
+    },
+    {
+      "target": "zz070-convert-date",
+      "thru": null,
+      "line": 345
+    },
+    {
+      "target": "get-next-batch",
+      "thru": null,
+      "line": 361
+    },
+    {
+      "target": "gl050a",
+      "thru": null,
+      "line": 368
+    },
+    {
+      "target": "gl050b",
+      "thru": null,
+      "line": 371
+    },
+    {
+      "target": "write-next-batch",
+      "thru": null,
+      "line": 372
+    },
+    {
+      "target": "GL-Batch-Close",
+      "thru": null,
+      "line": 378
+    },
+    {
+      "target": "GL-Batch-Write",
+      "thru": null,
+      "line": 401
+    },
+    {
+      "target": "GL-Batch-Open",
+      "thru": null,
+      "line": 406
+    },
+    {
+      "target": "GL-Batch-Read-Indexed",
+      "thru": null,
+      "line": 415
+    },
+    {
+      "target": "GL-Batch-Rewrite",
+      "thru": null,
+      "line": 425
+    },
+    {
+      "target": "input-headings",
+      "thru": null,
+      "line": 471
+    },
+    {
+      "target": "get-description",
+      "thru": null,
+      "line": 524
+    },
+    {
+      "target": "GL-Nominal-Read-Indexed",
+      "thru": null,
+      "line": 557
+    },
+    {
+      "target": "GL-Nominal-Open-Input",
+      "thru": null,
+      "line": 573
+    },
+    {
+      "target": "GL-Nominal-Read-Indexed",
+      "thru": null,
+      "line": 582
+    },
+    {
+      "target": "main-end",
+      "thru": null,
+      "line": 587
+    },
+    {
+      "target": "batch-outline",
+      "thru": null,
+      "line": 600
+    },
+    {
+      "target": "help-outline",
+      "thru": null,
+      "line": 602
+    },
+    {
+      "target": "gl020c-show",
+      "thru": null,
+      "line": 625
+    },
+    {
+      "target": "def-set-up",
+      "thru": null,
+      "line": 638
+    },
+    {
+      "target": "def-val",
+      "thru": null,
+      "line": 641
+    },
+    {
+      "target": "validate-pc",
+      "thru": null,
+      "line": 686
+    },
+    {
+      "target": "store-defaults",
+      "thru": null,
+      "line": 693
+    },
+    {
+      "target": "val-date",
+      "thru": null,
+      "line": 718
+    },
+    {
+      "target": "accept-money9",
+      "thru": null,
+      "line": 780
+    },
+    {
+      "target": "accept-money9",
+      "thru": null,
+      "line": 792
+    },
+    {
+      "target": "accept-account",
+      "thru": null,
+      "line": 884
+    },
+    {
+      "target": "get-description",
+      "thru": null,
+      "line": 891
+    },
+    {
+      "target": "batch-outline",
+      "thru": null,
+      "line": 930
+    },
+    {
+      "target": "get-description",
+      "thru": null,
+      "line": 949
+    },
+    {
+      "target": "GL-Nominal-Read-Indexed",
+      "thru": null,
+      "line": 970
+    },
+    {
+      "target": "get-description",
+      "thru": null,
+      "line": 987
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 1000
+    },
+    {
+      "target": "GL-Nominal-Close",
+      "thru": null,
+      "line": 1016
+    },
+    {
+      "target": "help-outline",
+      "thru": null,
+      "line": 1028
+    },
+    {
+      "target": "GL-Nominal-Open-Input",
+      "thru": null,
+      "line": 1030
+    },
+    {
+      "target": "test-escape",
+      "thru": null,
+      "line": 1124
+    },
+    {
+      "target": "reget-vat-rate",
+      "thru": null,
+      "line": 1129
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 1144
+    },
+    {
+      "target": "accept-account",
+      "thru": null,
+      "line": 1156
+    },
+    {
+      "target": "test-escape",
+      "thru": null,
+      "line": 1159
+    },
+    {
+      "target": "GL-Nominal-Read-Indexed",
+      "thru": null,
+      "line": 1175
+    },
+    {
+      "target": "test-escape",
+      "thru": null,
+      "line": 1203
+    },
+    {
+      "target": "accept-money8s",
+      "thru": null,
+      "line": 1224
+    },
+    {
+      "target": "test-escape",
+      "thru": null,
+      "line": 1230
+    },
+    {
+      "target": "test-escape",
+      "thru": null,
+      "line": 1267
+    },
+    {
+      "target": "net",
+      "thru": null,
+      "line": 1284
+    },
+    {
+      "target": "gross",
+      "thru": null,
+      "line": 1288
+    },
+    {
+      "target": "accept-money8s2",
+      "thru": null,
+      "line": 1308
+    },
+    {
+      "target": "test-escape",
+      "thru": null,
+      "line": 1321
+    },
+    {
+      "target": "test-escape",
+      "thru": null,
+      "line": 1348
+    },
+    {
+      "target": "write-out",
+      "thru": null,
+      "line": 1414
+    },
+    {
+      "target": "GL-Nominal-Close",
+      "thru": null,
+      "line": 1465
+    },
+    {
+      "target": "quit-batch",
+      "thru": null,
+      "line": 1468
+    },
+    {
+      "target": "open-posting",
+      "thru": null,
+      "line": 1483
+    },
+    {
+      "target": "write-loop",
+      "thru": null,
+      "line": 1488
+    },
+    {
+      "target": "close-posting",
+      "thru": null,
+      "line": 1490
+    },
+    {
+      "target": "GL-Posting-Write",
+      "thru": null,
+      "line": 1514
+    },
+    {
+      "target": "write-out",
+      "thru": null,
+      "line": 1523
+    },
+    {
+      "target": "open-posting",
+      "thru": null,
+      "line": 1536
+    },
+    {
+      "target": "GL-Posting-Read-Next",
+      "thru": null,
+      "line": 1537
+    },
+    {
+      "target": "read-loop",
+      "thru": null,
+      "line": 1539
+    },
+    {
+      "target": "close-posting",
+      "thru": null,
+      "line": 1540
+    },
+    {
+      "target": "GL-Posting-Read-Next",
+      "thru": null,
+      "line": 1546
+    },
+    {
+      "target": "GL-Posting-Delete",
+      "thru": null,
+      "line": 1560
+    },
+    {
+      "target": "GL-Posting-Open",
+      "thru": null,
+      "line": 1568
+    },
+    {
+      "target": "GL-Posting-Close",
+      "thru": null,
+      "line": 1576
+    },
+    {
+      "target": "open-posting",
+      "thru": null,
+      "line": 1584
+    },
+    {
+      "target": "GL-Posting-Read-Indexed",
+      "thru": null,
+      "line": 1586
+    },
+    {
+      "target": "GL-Posting-Delete",
+      "thru": null,
+      "line": 1594
+    },
+    {
+      "target": "GL-Posting-Read-Next",
+      "thru": null,
+      "line": 1599
+    },
+    {
+      "target": "close-posting",
+      "thru": null,
+      "line": 1608
+    },
+    {
+      "target": "maps03",
+      "thru": null,
+      "line": 1648
+    },
+    {
+      "target": "maps03",
+      "thru": null,
+      "line": 1662
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "accept-terminator-array",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-account-screen-display",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-account-screen-accept",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-account-work",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-account-ok",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-display8s",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-accept8s",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-work8s",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-ok8s",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-display9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-accept9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-work9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-ok9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "display-plus-31",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "display-star-46",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "display-spaces",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 113
+    },
+    {
+      "name": "file-defs",
+      "line": 309
+    },
+    {
+      "name": "menu-input",
+      "line": 340
+    },
+    {
+      "name": "get-default",
+      "line": 365
+    },
+    {
+      "name": "menu-exit",
+      "line": 374
+    },
+    {
+      "name": "menu-ex",
+      "line": 380
+    },
+    {
+      "name": "goback",
+      "line": 382
+    },
+    {
+      "name": "get-next-batch",
+      "line": 388
+    },
+    {
+      "name": "write-next-batch",
+      "line": 395
+    },
+    {
+      "name": "get-batch",
+      "line": 403
+    },
+    {
+      "name": "end-get-batch",
+      "line": 419
+    },
+    {
+      "name": "put-batch",
+      "line": 422
+    },
+    {
+      "name": "accept-money8s",
+      "line": 427
+    },
+    {
+      "name": "accept-money8s2",
+      "line": 436
+    },
+    {
+      "name": "accept-money9",
+      "line": 445
+    },
+    {
+      "name": "accept-account",
+      "line": 454
+    },
+    {
+      "name": "input-loop",
+      "line": 488
+    },
+    {
+      "name": "end-loop",
+      "line": 505
+    },
+    {
+      "name": "display-existing",
+      "line": 513
+    },
+    {
+      "name": "jump-1",
+      "line": 532
+    },
+    {
+      "name": "get-description",
+      "line": 550
+    },
+    {
+      "name": "display-existing-end",
+      "line": 561
+    },
+    {
+      "name": "init-done",
+      "line": 592
+    },
+    {
+      "name": "def-in",
+      "line": 614
+    },
+    {
+      "name": "end-if",
+      "line": 651
+    },
+    {
+      "name": "post-in",
+      "line": 653
+    },
+    {
+      "name": "default-pc",
+      "line": 670
+    },
+    {
+      "name": "def-date",
+      "line": 690
+    },
+    {
+      "name": "jump-1",
+      "line": 704
+    },
+    {
+      "name": "batch-in",
+      "line": 722
+    },
+    {
+      "name": "cycle-in",
+      "line": 746
+    },
+    {
+      "name": "items-in",
+      "line": 766
+    },
+    {
+      "name": "gross-in",
+      "line": 776
+    },
+    {
+      "name": "vat-in",
+      "line": 785
+    },
+    {
+      "name": "desc-in",
+      "line": 797
+    },
+    {
+      "name": "batch-outline",
+      "line": 811
+    },
+    {
+      "name": "b-o-loop2",
+      "line": 826
+    },
+    {
+      "name": "b-o-data",
+      "line": 836
+    },
+    {
+      "name": "help-outline",
+      "line": 840
+    },
+    {
+      "name": "h-o-loop2",
+      "line": 847
+    },
+    {
+      "name": "h-o-data",
+      "line": 857
+    },
+    {
+      "name": "def-set-up",
+      "line": 864
+    },
+    {
+      "name": "d-s-loop1",
+      "line": 870
+    },
+    {
+      "name": "get-ac",
+      "line": 881
+    },
+    {
+      "name": "get-vat",
+      "line": 897
+    },
+    {
+      "name": "get-code",
+      "line": 915
+    },
+    {
+      "name": "dummy-return-1",
+      "line": 934
+    },
+    {
+      "name": "exit",
+      "line": 935
+    },
+    {
+      "name": "validate-pc",
+      "line": 937
+    },
+    {
+      "name": "dummy-return-2",
+      "line": 956
+    },
+    {
+      "name": "exit",
+      "line": 957
+    },
+    {
+      "name": "get-description",
+      "line": 959
+    },
+    {
+      "name": "def-val",
+      "line": 979
+    },
+    {
+      "name": "store-defaults",
+      "line": 989
+    },
+    {
+      "name": "val-date",
+      "line": 996
+    },
+    {
+      "name": "dummy-return-x",
+      "line": 1007
+    },
+    {
+      "name": "exit",
+      "line": 1008
+    },
+    {
+      "name": "program-exit",
+      "line": 1010
+    },
+    {
+      "name": "main-end",
+      "line": 1013
+    },
+    {
+      "name": "define-vat-rate",
+      "line": 1038
+    },
+    {
+      "name": "Reget-Vat-Rate",
+      "line": 1044
+    },
+    {
+      "name": "jump-tag",
+      "line": 1065
+    },
+    {
+      "name": "main-loop",
+      "line": 1116
+    },
+    {
+      "name": "get-account",
+      "line": 1152
+    },
+    {
+      "name": "accept-p-c",
+      "line": 1191
+    },
+    {
+      "name": "accept-amount",
+      "line": 1219
+    },
+    {
+      "name": "accept-vat",
+      "line": 1251
+    },
+    {
+      "name": "vat-amount-input",
+      "line": 1298
+    },
+    {
+      "name": "accept-narative",
+      "line": 1337
+    },
+    {
+      "name": "loop-end",
+      "line": 1369
+    },
+    {
+      "name": "help-outline",
+      "line": 1419
+    },
+    {
+      "name": "h-o-loop2",
+      "line": 1427
+    },
+    {
+      "name": "h-o-data",
+      "line": 1437
+    },
+    {
+      "name": "net",
+      "line": 1446
+    },
+    {
+      "name": "gross",
+      "line": 1453
+    },
+    {
+      "name": "main-exit",
+      "line": 1462
+    },
+    {
+      "name": "write-loop",
+      "line": 1495
+    },
+    {
+      "name": "sub-loop",
+      "line": 1531
+    },
+    {
+      "name": "read-loop",
+      "line": 1543
+    },
+    {
+      "name": "loop",
+      "line": 1590
+    },
+    {
+      "name": "read-next",
+      "line": 1596
+    },
+    {
+      "name": "main-end",
+      "line": 1605
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 1645
+    },
+    {
+      "name": "zz050-exit",
+      "line": 1650
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 1685
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 1715
+    },
+    {
+      "name": "maps04-exit",
+      "line": 1723
+    }
+  ],
+  "metadata": {
+    "lines": 1728,
+    "parseDate": "2025-09-17T19:45:42.652Z",
+    "hasMainProgram": false
+  }
+}

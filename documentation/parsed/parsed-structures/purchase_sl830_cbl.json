@@ -1,0 +1,525 @@
+{
+  "filePath": "../../Legacy_App/purchase/sl830.cbl",
+  "fileName": "sl830.cbl",
+  "programId": "sl830",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 21
+    },
+    {
+      "name": "DATA",
+      "line": 105
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 267
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "sl070",
+      "line": 406,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 836,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 132,
+      "type": "dynamic"
+    },
+    {
+      "program": "zz045-Update-Analysis",
+      "line": 517,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 281
+    },
+    {
+      "target": "zz010-Open-Files",
+      "thru": null,
+      "line": 288
+    },
+    {
+      "target": "ba000-Process-Autogen",
+      "thru": null,
+      "line": 290
+    },
+    {
+      "target": "zz020-Close-All-Files",
+      "thru": null,
+      "line": 294
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 321
+    },
+    {
+      "target": "SLautogen-Read-Next",
+      "thru": null,
+      "line": 323
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 326
+    },
+    {
+      "target": "zz040-Generate-Invoice",
+      "thru": null,
+      "line": 328
+    },
+    {
+      "target": "ba020-Check-For-Write-Errors",
+      "thru": null,
+      "line": 329
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 330
+    },
+    {
+      "target": "zz040-Generate-Invoice",
+      "thru": null,
+      "line": 337
+    },
+    {
+      "target": "ba020-Check-For-Write-Errors",
+      "thru": null,
+      "line": 338
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 339
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 346
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 354
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 360
+    },
+    {
+      "target": "zz040-Generate-Invoice",
+      "thru": null,
+      "line": 365
+    },
+    {
+      "target": "ba020-Check-For-Write-Errors",
+      "thru": null,
+      "line": 366
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 367
+    },
+    {
+      "target": "Value-Open-Input",
+      "thru": null,
+      "line": 383
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 385
+    },
+    {
+      "target": "Value-Open-Output",
+      "thru": null,
+      "line": 386
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 388
+    },
+    {
+      "target": "SLautogen-Open-Output",
+      "thru": null,
+      "line": 394
+    },
+    {
+      "target": "SLautogen-Close",
+      "thru": null,
+      "line": 395
+    },
+    {
+      "target": "Invoice-Open-Output",
+      "thru": null,
+      "line": 415
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 416
+    },
+    {
+      "target": "Stock-Audit-Open-Output",
+      "thru": null,
+      "line": 423
+    },
+    {
+      "target": "Stock-Audit-Open-Extend",
+      "thru": null,
+      "line": 425
+    },
+    {
+      "target": "Stock-Audit-Close",
+      "thru": null,
+      "line": 427
+    },
+    {
+      "target": "SLAutogen-Open",
+      "thru": null,
+      "line": 430
+    },
+    {
+      "target": "Invoice-Open",
+      "thru": null,
+      "line": 431
+    },
+    {
+      "target": "Stock-Audit-Open",
+      "thru": null,
+      "line": 432
+    },
+    {
+      "target": "Analysis-Open",
+      "thru": null,
+      "line": 433
+    },
+    {
+      "target": "Value-Open",
+      "thru": null,
+      "line": 434
+    },
+    {
+      "target": "DelInvNos-Open",
+      "thru": null,
+      "line": 435
+    },
+    {
+      "target": "SLAutogen-Close",
+      "thru": null,
+      "line": 446
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 447
+    },
+    {
+      "target": "Stock-Audit-Close",
+      "thru": null,
+      "line": 448
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 449
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 450
+    },
+    {
+      "target": "DelInvNos-Close",
+      "thru": null,
+      "line": 451
+    },
+    {
+      "target": "DelInvNos-Start",
+      "thru": null,
+      "line": 467
+    },
+    {
+      "target": "DelInvNos-Read-Next",
+      "thru": null,
+      "line": 473
+    },
+    {
+      "target": "DelInvNos-Delete",
+      "thru": null,
+      "line": 479
+    },
+    {
+      "target": "DelInvNos-Close",
+      "thru": null,
+      "line": 487
+    },
+    {
+      "target": "DelInvNos-Open-Output",
+      "thru": null,
+      "line": 488
+    },
+    {
+      "target": "SLautogen-Delete",
+      "thru": null,
+      "line": 528
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 532
+    },
+    {
+      "target": "SLautogen-Delete",
+      "thru": null,
+      "line": 534
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 538
+    },
+    {
+      "target": "zz030-get-a-deleted-invoice",
+      "thru": null,
+      "line": 548
+    },
+    {
+      "target": "Invoice-Write",
+      "thru": null,
+      "line": 551
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 558
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 560
+    },
+    {
+      "target": "Invoice-Write",
+      "thru": null,
+      "line": 565
+    },
+    {
+      "target": "zz045-Update-Analysis",
+      "thru": null,
+      "line": 570
+    },
+    {
+      "target": "SLautogen-Rewrite",
+      "thru": null,
+      "line": 625
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 666
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 674
+    },
+    {
+      "target": "Stock-Rewrite",
+      "thru": null,
+      "line": 711
+    },
+    {
+      "target": "Stock-Audit-Write",
+      "thru": null,
+      "line": 716
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 755
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 769
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "Prog-Name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Exception-Msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Invoice-Record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Temp-Run-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Locale-Run-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Date-Formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "CC-Min-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "CC-Max-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "To-Day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "File-Defs",
+      "line": 270
+    },
+    {
+      "name": "goback",
+      "line": 277
+    },
+    {
+      "name": "ba000-Main",
+      "line": 301
+    },
+    {
+      "name": "ba010-Read-Autogen",
+      "line": 316
+    },
+    {
+      "name": "Autogen-Stored",
+      "line": 319
+    },
+    {
+      "name": "end-perform",
+      "line": 368
+    },
+    {
+      "name": "ba020-Check-For-Write-Errors",
+      "line": 371
+    },
+    {
+      "name": "end-if",
+      "line": 429
+    },
+    {
+      "name": "zz030-Start",
+      "line": 463
+    },
+    {
+      "name": "zz030-Read",
+      "line": 472
+    },
+    {
+      "name": "zz030-Close",
+      "line": 482
+    },
+    {
+      "name": "zz030-Terminate",
+      "line": 490
+    },
+    {
+      "name": "end-perform",
+      "line": 571
+    },
+    {
+      "name": "WS-Temp-Stock-Key",
+      "line": 654
+    },
+    {
+      "name": "end-if",
+      "line": 717
+    },
+    {
+      "name": "zz050-Test-Date",
+      "line": 752
+    },
+    {
+      "name": "zz045-Exit",
+      "line": 757
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 792
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 822
+    },
+    {
+      "name": "maps04-exit",
+      "line": 838
+    }
+  ],
+  "metadata": {
+    "lines": 845,
+    "parseDate": "2025-09-17T19:45:42.816Z",
+    "hasMainProgram": false
+  }
+}

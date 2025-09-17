@@ -1,0 +1,125 @@
+{
+  "filePath": "../../Legacy_App/irs/irs055.cbl",
+  "fileName": "irs055.cbl",
+  "programId": "irs055",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 5
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 89
+    },
+    {
+      "name": "DATA",
+      "line": 99
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 201
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "irsubn",
+      "line": 42,
+      "type": "static"
+    },
+    {
+      "program": "cpybk",
+      "line": 48,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 143,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "acasirsubn",
+      "thru": null,
+      "line": 43
+    },
+    {
+      "target": "acasirsub4-Open-Input",
+      "thru": null,
+      "line": 249
+    },
+    {
+      "target": "acasirsub4-Read-Next",
+      "thru": null,
+      "line": 255
+    },
+    {
+      "target": "acasirsub4-Close",
+      "thru": null,
+      "line": 263
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "output-file",
+      "line": 102,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "post-file",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-For-Unused-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 92
+    },
+    {
+      "name": "File-Defs",
+      "line": 203
+    },
+    {
+      "name": "main-exit",
+      "line": 243
+    },
+    {
+      "name": "process-input-record",
+      "line": 253
+    },
+    {
+      "name": "end-of-input",
+      "line": 262
+    },
+    {
+      "name": "Main-Exit",
+      "line": 265
+    }
+  ],
+  "metadata": {
+    "lines": 270,
+    "parseDate": "2025-09-17T19:45:42.706Z",
+    "hasMainProgram": true
+  }
+}

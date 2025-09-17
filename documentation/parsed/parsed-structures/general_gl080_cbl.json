@@ -1,0 +1,411 @@
+{
+  "filePath": "../../Legacy_App/general/gl080.cbl",
+  "fileName": "gl080.cbl",
+  "programId": "gl080",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 13
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 129
+    },
+    {
+      "name": "DATA",
+      "line": 151
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 270
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "blk",
+      "line": 195,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-convert-date",
+      "thru": null,
+      "line": 286
+    },
+    {
+      "target": "gl080a",
+      "thru": null,
+      "line": 308
+    },
+    {
+      "target": "gl080b",
+      "thru": null,
+      "line": 318
+    },
+    {
+      "target": "gl080c",
+      "thru": null,
+      "line": 321
+    },
+    {
+      "target": "compress-post",
+      "thru": null,
+      "line": 323
+    },
+    {
+      "target": "GL-Nominal-Open",
+      "thru": null,
+      "line": 338
+    },
+    {
+      "target": "GL-Nominal-Read-Next",
+      "thru": null,
+      "line": 343
+    },
+    {
+      "target": "GL-Nominal-Rewrite",
+      "thru": null,
+      "line": 349
+    },
+    {
+      "target": "GL-Nominal-Close",
+      "thru": null,
+      "line": 355
+    },
+    {
+      "target": "GL-Batch-Open-Input",
+      "thru": null,
+      "line": 373
+    },
+    {
+      "target": "GL-Batch-Read-Next",
+      "thru": null,
+      "line": 378
+    },
+    {
+      "target": "GL-Batch-Close",
+      "thru": null,
+      "line": 394
+    },
+    {
+      "target": "disk-change",
+      "thru": null,
+      "line": 407
+    },
+    {
+      "target": "GL-Batch-Open",
+      "thru": null,
+      "line": 416
+    },
+    {
+      "target": "GL-Batch-Read-Next",
+      "thru": null,
+      "line": 421
+    },
+    {
+      "target": "arc-process",
+      "thru": null,
+      "line": 428
+    },
+    {
+      "target": "GL-Posting-Close",
+      "thru": null,
+      "line": 429
+    },
+    {
+      "target": "GL-Batch-Rewrite",
+      "thru": null,
+      "line": 434
+    },
+    {
+      "target": "GL-Batch-Close",
+      "thru": null,
+      "line": 441
+    },
+    {
+      "target": "GL-Posting-Open",
+      "thru": null,
+      "line": 451
+    },
+    {
+      "target": "GL-Posting-Read-Next",
+      "thru": null,
+      "line": 456
+    },
+    {
+      "target": "GL-Posting-Delete",
+      "thru": null,
+      "line": 514
+    },
+    {
+      "target": "GL-Batch-Open",
+      "thru": null,
+      "line": 571
+    },
+    {
+      "target": "GL-Batch-Read-Next",
+      "thru": null,
+      "line": 576
+    },
+    {
+      "target": "del-process",
+      "thru": null,
+      "line": 583
+    },
+    {
+      "target": "GL-Posting-Close",
+      "thru": null,
+      "line": 584
+    },
+    {
+      "target": "GL-Batch-Rewrite",
+      "thru": null,
+      "line": 590
+    },
+    {
+      "target": "GL-Batch-Close",
+      "thru": null,
+      "line": 596
+    },
+    {
+      "target": "GL-Posting-Open",
+      "thru": null,
+      "line": 608
+    },
+    {
+      "target": "GL-Posting-Read-Next",
+      "thru": null,
+      "line": 613
+    },
+    {
+      "target": "GL-Posting-Delete",
+      "thru": null,
+      "line": 623
+    },
+    {
+      "target": "GL-Posting-Open-Input",
+      "thru": null,
+      "line": 652
+    },
+    {
+      "target": "GL-Posting-Read-Next",
+      "thru": null,
+      "line": 658
+    },
+    {
+      "target": "GL-Posting-Close",
+      "thru": null,
+      "line": 672
+    },
+    {
+      "target": "GL-Posting-Open-Output",
+      "thru": null,
+      "line": 674
+    },
+    {
+      "target": "GL-Posting-Write",
+      "thru": null,
+      "line": 684
+    },
+    {
+      "target": "evaluate-message",
+      "thru": null,
+      "line": 694
+    },
+    {
+      "target": "GL-Posting-Close",
+      "thru": null,
+      "line": 704
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "archive",
+      "line": 157,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "work-file",
+      "line": 171,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "y",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "a",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "keyed-reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-eval-msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "accept-terminator-array",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 136
+    },
+    {
+      "name": "file-defs",
+      "line": 273
+    },
+    {
+      "name": "goback",
+      "line": 303
+    },
+    {
+      "name": "loop",
+      "line": 340
+    },
+    {
+      "name": "loop-end",
+      "line": 352
+    },
+    {
+      "name": "main-end",
+      "line": 366
+    },
+    {
+      "name": "goback",
+      "line": 367
+    },
+    {
+      "name": "loop",
+      "line": 375
+    },
+    {
+      "name": "end-run",
+      "line": 391
+    },
+    {
+      "name": "loop",
+      "line": 418
+    },
+    {
+      "name": "end-run",
+      "line": 437
+    },
+    {
+      "name": "loop",
+      "line": 453
+    },
+    {
+      "name": "by-pass",
+      "line": 511
+    },
+    {
+      "name": "accept-option",
+      "line": 543
+    },
+    {
+      "name": "loop",
+      "line": 573
+    },
+    {
+      "name": "end-run",
+      "line": 593
+    },
+    {
+      "name": "loop",
+      "line": 610
+    },
+    {
+      "name": "end-if",
+      "line": 636
+    },
+    {
+      "name": "Test-Work-File-Size-1",
+      "line": 640
+    },
+    {
+      "name": "loop1",
+      "line": 655
+    },
+    {
+      "name": "loop1-end",
+      "line": 668
+    },
+    {
+      "name": "loop2",
+      "line": 676
+    },
+    {
+      "name": "file-error",
+      "line": 689
+    },
+    {
+      "name": "loop2-end",
+      "line": 700
+    },
+    {
+      "name": "main-exit",
+      "line": 706
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 747
+    }
+  ],
+  "metadata": {
+    "lines": 752,
+    "parseDate": "2025-09-17T19:45:42.665Z",
+    "hasMainProgram": true
+  }
+}

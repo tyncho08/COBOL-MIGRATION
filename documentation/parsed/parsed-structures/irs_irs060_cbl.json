@@ -1,0 +1,884 @@
+{
+  "filePath": "../../Legacy_App/irs/irs060.cbl",
+  "fileName": "irs060.cbl",
+  "programId": "irs060",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 226
+    },
+    {
+      "name": "DATA",
+      "line": 239
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 520
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "irsubn",
+      "line": 151,
+      "type": "static"
+    },
+    {
+      "program": "SYSTEM",
+      "line": 962,
+      "type": "static"
+    },
+    {
+      "program": "cpybk",
+      "line": 160,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 456,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "acasirsubn",
+      "thru": null,
+      "line": 152
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 560
+    },
+    {
+      "target": "acasirsub5",
+      "thru": null,
+      "line": 567
+    },
+    {
+      "target": "CR-Total",
+      "thru": null,
+      "line": 668
+    },
+    {
+      "target": "DR-Total",
+      "thru": null,
+      "line": 671
+    },
+    {
+      "target": "CR-Total",
+      "thru": null,
+      "line": 674
+    },
+    {
+      "target": "DR-Total",
+      "thru": null,
+      "line": 677
+    },
+    {
+      "target": "CR-Total",
+      "thru": null,
+      "line": 680
+    },
+    {
+      "target": "line-total",
+      "thru": null,
+      "line": 732
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 736
+    },
+    {
+      "target": "line-total",
+      "thru": null,
+      "line": 752
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 756
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 768
+    },
+    {
+      "target": "line-total",
+      "thru": null,
+      "line": 780
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 784
+    },
+    {
+      "target": "line-total",
+      "thru": null,
+      "line": 800
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 804
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 816
+    },
+    {
+      "target": "line-total",
+      "thru": null,
+      "line": 842
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 846
+    },
+    {
+      "target": "line-total",
+      "thru": null,
+      "line": 860
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 864
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 876
+    },
+    {
+      "target": "line-total",
+      "thru": null,
+      "line": 887
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 891
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 904
+    },
+    {
+      "target": "line-total",
+      "thru": null,
+      "line": 921
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 925
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 936
+    },
+    {
+      "target": "group-total",
+      "thru": null,
+      "line": 949
+    },
+    {
+      "target": "ratio",
+      "thru": null,
+      "line": 960
+    },
+    {
+      "target": "screen-heads",
+      "thru": null,
+      "line": 966
+    },
+    {
+      "target": "acasirsub3",
+      "thru": null,
+      "line": 986
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 1033
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1039
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 1045
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1051
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1060
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1069
+    },
+    {
+      "target": "acasirsub1-Open",
+      "thru": null,
+      "line": 1070
+    },
+    {
+      "target": "acasirsub1-Read-Next",
+      "thru": null,
+      "line": 1075
+    },
+    {
+      "target": "acasirsub1-Rewrite",
+      "thru": null,
+      "line": 1091
+    },
+    {
+      "target": "acasirsub1-Read-Next",
+      "thru": null,
+      "line": 1096
+    },
+    {
+      "target": "acasirsub1-Rewrite",
+      "thru": null,
+      "line": 1108
+    },
+    {
+      "target": "VAT-AC-TidyUp",
+      "thru": null,
+      "line": 1114
+    },
+    {
+      "target": "PL-Capital-AC-Tidyup",
+      "thru": null,
+      "line": 1115
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 1123
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1129
+    },
+    {
+      "target": "acasirsub1-Rewrite",
+      "thru": null,
+      "line": 1144
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1145
+    },
+    {
+      "target": "Reset-Postings",
+      "thru": null,
+      "line": 1146
+    },
+    {
+      "target": "write-out",
+      "thru": null,
+      "line": 1235
+    },
+    {
+      "target": "write-out",
+      "thru": null,
+      "line": 1249
+    },
+    {
+      "target": "cr-value",
+      "thru": null,
+      "line": 1304
+    },
+    {
+      "target": "dr-value",
+      "thru": null,
+      "line": 1306
+    },
+    {
+      "target": "cr-value",
+      "thru": null,
+      "line": 1308
+    },
+    {
+      "target": "dr-value",
+      "thru": null,
+      "line": 1310
+    },
+    {
+      "target": "cr-value",
+      "thru": null,
+      "line": 1312
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1577
+    },
+    {
+      "target": "acasirsub1-Open",
+      "thru": null,
+      "line": 1578
+    },
+    {
+      "target": "acasirsub1-Read-Next",
+      "thru": null,
+      "line": 1583
+    },
+    {
+      "target": "acasirsub1-Rewrite",
+      "thru": null,
+      "line": 1598
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1603
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 1612
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1617
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1628
+    },
+    {
+      "target": "acasirsub1-Rewrite",
+      "thru": null,
+      "line": 1633
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1638
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 1655
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1662
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1671
+    },
+    {
+      "target": "acasirsub1-Read-Next",
+      "thru": null,
+      "line": 1687
+    },
+    {
+      "target": "acasirsub1-Rewrite",
+      "thru": null,
+      "line": 1701
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1706
+    },
+    {
+      "target": "acasirsub1-Rewrite",
+      "thru": null,
+      "line": 1715
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1720
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 1733
+    },
+    {
+      "target": "acasirsub4",
+      "thru": null,
+      "line": 1739
+    },
+    {
+      "target": "date-validate",
+      "thru": null,
+      "line": 1742
+    },
+    {
+      "target": "date-validate",
+      "thru": null,
+      "line": 1745
+    },
+    {
+      "target": "acasirsub1-Read-Next",
+      "thru": null,
+      "line": 1750
+    },
+    {
+      "target": "acasirsub4",
+      "thru": null,
+      "line": 1792
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 1796
+    },
+    {
+      "target": "acasirsub4",
+      "thru": null,
+      "line": 1798
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "work-file",
+      "line": 242,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "print-file",
+      "line": 257,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "copy",
+      "line": 426,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "a",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "b",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "C",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-client",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Final-Acs-In-Use",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "WS-Y2K-slide",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "WS-Listing-CC",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "maps03-ws",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "date-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-For-Unused-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 230
+    },
+    {
+      "name": "File-Defs",
+      "line": 522
+    },
+    {
+      "name": "screen-heads",
+      "line": 546
+    },
+    {
+      "name": "sh-ends",
+      "line": 552
+    },
+    {
+      "name": "ml-b",
+      "line": 569
+    },
+    {
+      "name": "ml-1",
+      "line": 584
+    },
+    {
+      "name": "ml-2",
+      "line": 593
+    },
+    {
+      "name": "goback",
+      "line": 635
+    },
+    {
+      "name": "Read-Loop",
+      "line": 641
+    },
+    {
+      "name": "goback",
+      "line": 662
+    },
+    {
+      "name": "Read-End",
+      "line": 683
+    },
+    {
+      "name": "goback",
+      "line": 723
+    },
+    {
+      "name": "loop-1",
+      "line": 725
+    },
+    {
+      "name": "loop-1B",
+      "line": 731
+    },
+    {
+      "name": "loop-2",
+      "line": 745
+    },
+    {
+      "name": "loop-2B",
+      "line": 751
+    },
+    {
+      "name": "loop-3",
+      "line": 773
+    },
+    {
+      "name": "loop-3B",
+      "line": 779
+    },
+    {
+      "name": "loop-4",
+      "line": 793
+    },
+    {
+      "name": "loop-4B",
+      "line": 799
+    },
+    {
+      "name": "loop-5",
+      "line": 835
+    },
+    {
+      "name": "loop-5B",
+      "line": 841
+    },
+    {
+      "name": "loop-6",
+      "line": 853
+    },
+    {
+      "name": "loop-6B",
+      "line": 859
+    },
+    {
+      "name": "loop-8",
+      "line": 880
+    },
+    {
+      "name": "loop-8B",
+      "line": 886
+    },
+    {
+      "name": "loop-9",
+      "line": 914
+    },
+    {
+      "name": "loop-9B",
+      "line": 920
+    },
+    {
+      "name": "E-o-P-Option",
+      "line": 972
+    },
+    {
+      "name": "e-o-p-comp",
+      "line": 988
+    },
+    {
+      "name": "chk-defs",
+      "line": 996
+    },
+    {
+      "name": "goback",
+      "line": 1007
+    },
+    {
+      "name": "Get-PL",
+      "line": 1009
+    },
+    {
+      "name": "get-pl-rest",
+      "line": 1021
+    },
+    {
+      "name": "loop-a",
+      "line": 1072
+    },
+    {
+      "name": "by-pass",
+      "line": 1079
+    },
+    {
+      "name": "loop-b",
+      "line": 1093
+    },
+    {
+      "name": "e-o-p-fin",
+      "line": 1111
+    },
+    {
+      "name": "jump-back",
+      "line": 1120
+    },
+    {
+      "name": "goback",
+      "line": 1130
+    },
+    {
+      "name": "update-pl",
+      "line": 1137
+    },
+    {
+      "name": "E-o-P-End",
+      "line": 1148
+    },
+    {
+      "name": "loop-1",
+      "line": 1212
+    },
+    {
+      "name": "by-pass",
+      "line": 1217
+    },
+    {
+      "name": "loop-2",
+      "line": 1229
+    },
+    {
+      "name": "main-end",
+      "line": 1246
+    },
+    {
+      "name": "cr-value",
+      "line": 1315
+    },
+    {
+      "name": "dr-value",
+      "line": 1326
+    },
+    {
+      "name": "main-print",
+      "line": 1337
+    },
+    {
+      "name": "main-end",
+      "line": 1364
+    },
+    {
+      "name": "pack-loop-1",
+      "line": 1472
+    },
+    {
+      "name": "pack-loop-2",
+      "line": 1482
+    },
+    {
+      "name": "pack-end",
+      "line": 1501
+    },
+    {
+      "name": "ws-unpack",
+      "line": 1515
+    },
+    {
+      "name": "unpack-loop-1",
+      "line": 1527
+    },
+    {
+      "name": "unpack-loop-2",
+      "line": 1549
+    },
+    {
+      "name": "unpack-loop-3",
+      "line": 1556
+    },
+    {
+      "name": "unpack-end",
+      "line": 1567
+    },
+    {
+      "name": "pl-start",
+      "line": 1574
+    },
+    {
+      "name": "pl-a",
+      "line": 1580
+    },
+    {
+      "name": "goback",
+      "line": 1604
+    },
+    {
+      "name": "pl-a-end",
+      "line": 1607
+    },
+    {
+      "name": "goback",
+      "line": 1618
+    },
+    {
+      "name": "goback",
+      "line": 1629
+    },
+    {
+      "name": "goback",
+      "line": 1639
+    },
+    {
+      "name": "vat-a",
+      "line": 1647
+    },
+    {
+      "name": "vat-b",
+      "line": 1652
+    },
+    {
+      "name": "goback",
+      "line": 1663
+    },
+    {
+      "name": "goback",
+      "line": 1672
+    },
+    {
+      "name": "vat-c",
+      "line": 1684
+    },
+    {
+      "name": "goback",
+      "line": 1707
+    },
+    {
+      "name": "vat-finalize",
+      "line": 1711
+    },
+    {
+      "name": "goback",
+      "line": 1721
+    },
+    {
+      "name": "vat-exit",
+      "line": 1724
+    },
+    {
+      "name": "exit",
+      "line": 1725
+    },
+    {
+      "name": "read-n",
+      "line": 1748
+    },
+    {
+      "name": "main-end",
+      "line": 1795
+    },
+    {
+      "name": "main-exit",
+      "line": 1801
+    },
+    {
+      "name": "exit",
+      "line": 1802
+    }
+  ],
+  "metadata": {
+    "lines": 1806,
+    "parseDate": "2025-09-17T19:45:42.715Z",
+    "hasMainProgram": false
+  }
+}

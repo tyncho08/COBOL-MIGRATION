@@ -1,0 +1,377 @@
+{
+  "filePath": "../../Legacy_App/sales/sl940.cbl",
+  "fileName": "sl940.cbl",
+  "programId": "sl940",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 12
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 115
+    },
+    {
+      "name": "DATA",
+      "line": 129
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 262
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 753,
+      "type": "static"
+    },
+    {
+      "program": "for",
+      "line": 73,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 159,
+      "type": "dynamic"
+    },
+    {
+      "program": "if",
+      "line": 538,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "program-start",
+      "thru": null,
+      "line": 281
+    },
+    {
+      "target": "Invoice-Open",
+      "thru": null,
+      "line": 282
+    },
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 283
+    },
+    {
+      "target": "Delivery-Open-Input",
+      "thru": null,
+      "line": 284
+    },
+    {
+      "target": "DelInvNos-Open",
+      "thru": null,
+      "line": 285
+    },
+    {
+      "target": "Stock-Open",
+      "thru": null,
+      "line": 287
+    },
+    {
+      "target": "Stock-Audit-Open",
+      "thru": null,
+      "line": 288
+    },
+    {
+      "target": "Analysis-Open",
+      "thru": null,
+      "line": 289
+    },
+    {
+      "target": "invoice-details",
+      "thru": null,
+      "line": 294
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 317
+    },
+    {
+      "target": "Delivery-Close",
+      "thru": null,
+      "line": 318
+    },
+    {
+      "target": "DelInvNos-Close",
+      "thru": null,
+      "line": 319
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 320
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 322
+    },
+    {
+      "target": "Stock-Audit-Close",
+      "thru": null,
+      "line": 323
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 324
+    },
+    {
+      "target": "sih-lines",
+      "thru": null,
+      "line": 337
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 341
+    },
+    {
+      "target": "sih-lines",
+      "thru": null,
+      "line": 354
+    },
+    {
+      "target": "Invoice-Read-Next",
+      "thru": null,
+      "line": 358
+    },
+    {
+      "target": "Update-Stock-n-Audit",
+      "thru": null,
+      "line": 360
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 412
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 420
+    },
+    {
+      "target": "Eval-Status",
+      "thru": null,
+      "line": 431
+    },
+    {
+      "target": "Stock-Rewrite",
+      "thru": null,
+      "line": 487
+    },
+    {
+      "target": "Eval-Status",
+      "thru": null,
+      "line": 495
+    },
+    {
+      "target": "Stock-Audit-Write",
+      "thru": null,
+      "line": 508
+    },
+    {
+      "target": "Eval-Status",
+      "thru": null,
+      "line": 510
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 553
+    },
+    {
+      "target": "Invoice-Read-Indexed",
+      "thru": null,
+      "line": 586
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 597
+    },
+    {
+      "target": "Sales-Read-Indexed",
+      "thru": null,
+      "line": 603
+    },
+    {
+      "target": "Delivery-Read-Indexed",
+      "thru": null,
+      "line": 612
+    },
+    {
+      "target": "Read-Details",
+      "thru": null,
+      "line": 663
+    },
+    {
+      "target": "Invoice-Delete-All",
+      "thru": null,
+      "line": 665
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 667
+    },
+    {
+      "target": "Delete-Details",
+      "thru": null,
+      "line": 668
+    },
+    {
+      "target": "DelInvNos-Write",
+      "thru": null,
+      "line": 676
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 690
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Exception-Msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Invoice-Record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 122
+    },
+    {
+      "name": "file-defs",
+      "line": 265
+    },
+    {
+      "name": "done-open",
+      "line": 291
+    },
+    {
+      "name": "data-input",
+      "line": 302
+    },
+    {
+      "name": "main-exit",
+      "line": 314
+    },
+    {
+      "name": "end-perform",
+      "line": 342
+    },
+    {
+      "name": "end-perform",
+      "line": 361
+    },
+    {
+      "name": "WS-Temp-Stock-Key",
+      "line": 394
+    },
+    {
+      "name": "end-if",
+      "line": 517
+    },
+    {
+      "name": "Update-Stock-Exit",
+      "line": 519
+    },
+    {
+      "name": "menu-return",
+      "line": 548
+    },
+    {
+      "name": "invoice-enter",
+      "line": 572
+    },
+    {
+      "name": "customer-setup",
+      "line": 620
+    },
+    {
+      "name": "customer-display",
+      "line": 625
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 717
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 747
+    },
+    {
+      "name": "maps04-exit",
+      "line": 755
+    }
+  ],
+  "metadata": {
+    "lines": 760,
+    "parseDate": "2025-09-17T19:45:42.976Z",
+    "hasMainProgram": true
+  }
+}

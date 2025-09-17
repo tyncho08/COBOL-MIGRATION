@@ -1,0 +1,332 @@
+{
+  "filePath": "../../Legacy_App/sales/sl820.cbl",
+  "fileName": "sl820.cbl",
+  "programId": "sl820",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 17
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 86
+    },
+    {
+      "name": "DATA",
+      "line": 99
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 360
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 568,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 728,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 115,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "4",
+      "thru": null,
+      "line": 368
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 374
+    },
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 393
+    },
+    {
+      "target": "headings-1",
+      "thru": null,
+      "line": 404
+    },
+    {
+      "target": "SLautogen-Open-Input",
+      "thru": null,
+      "line": 405
+    },
+    {
+      "target": "SLautogen-Read-Next",
+      "thru": null,
+      "line": 408
+    },
+    {
+      "target": "Sales-Read-Indexed",
+      "thru": null,
+      "line": 416
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 427
+    },
+    {
+      "target": "headings-1",
+      "thru": null,
+      "line": 497
+    },
+    {
+      "target": "Analysis-Print",
+      "thru": null,
+      "line": 504
+    },
+    {
+      "target": "Extra-Analysis",
+      "thru": null,
+      "line": 505
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 509
+    },
+    {
+      "target": "SLautogen-Close",
+      "thru": null,
+      "line": 510
+    },
+    {
+      "target": "main12",
+      "thru": null,
+      "line": 516
+    },
+    {
+      "target": "4",
+      "thru": null,
+      "line": 522
+    },
+    {
+      "target": "above",
+      "thru": null,
+      "line": 543
+    },
+    {
+      "target": "3",
+      "thru": null,
+      "line": 544
+    },
+    {
+      "target": "if",
+      "thru": null,
+      "line": 553
+    },
+    {
+      "target": "2",
+      "thru": null,
+      "line": 556
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 565
+    },
+    {
+      "target": "SLautogen-Read-Next",
+      "thru": null,
+      "line": 597
+    },
+    {
+      "target": "headings-1",
+      "thru": null,
+      "line": 609
+    },
+    {
+      "target": "headings-1",
+      "thru": null,
+      "line": 637
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 671
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-Name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Invoice-Record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-group-lits",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-4B",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-5B",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-8",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-a",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-b",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-c",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-d",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-e",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 94
+    },
+    {
+      "name": "file-defs",
+      "line": 363
+    },
+    {
+      "name": "Menu-Return",
+      "line": 378
+    },
+    {
+      "name": "Get-Invoice-Record",
+      "line": 407
+    },
+    {
+      "name": "Main-End",
+      "line": 508
+    },
+    {
+      "name": "Main12",
+      "line": 575
+    },
+    {
+      "name": "Cont-HDs",
+      "line": 586
+    }
+  ],
+  "metadata": {
+    "lines": 734,
+    "parseDate": "2025-09-17T19:45:42.920Z",
+    "hasMainProgram": false
+  }
+}

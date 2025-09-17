@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/fdoi2.cob",
+  "fileName": "fdoi2.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "open-item-file-2",
+      "line": 9,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 13,
+    "parseDate": "2025-09-17T19:45:42.556Z",
+    "hasMainProgram": true
+  }
+}

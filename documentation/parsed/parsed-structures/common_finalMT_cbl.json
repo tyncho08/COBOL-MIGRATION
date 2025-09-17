@@ -1,0 +1,369 @@
+{
+  "filePath": "../../Legacy_App/common/finalMT.cbl",
+  "fileName": "finalMT.cbl",
+  "programId": "finalMT",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 9
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 231
+    },
+    {
+      "name": "DATA",
+      "line": 235
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 345
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "fhlogger",
+      "line": 824,
+      "type": "static"
+    },
+    {
+      "program": "for",
+      "line": 96,
+      "type": "dynamic"
+    },
+    {
+      "program": "move",
+      "line": 517,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "MYSQL-1000-OPEN",
+      "thru": "MYSQL-1090-EXIT",
+      "line": 398
+    },
+    {
+      "target": "MYSQL-1000-OPEN",
+      "thru": "MYSQL-1090-EXIT",
+      "line": 425
+    },
+    {
+      "target": "ba998-Free",
+      "thru": null,
+      "line": 441
+    },
+    {
+      "target": "MYSQL-1980-CLOSE",
+      "thru": "MYSQL-1999-EXIT",
+      "line": 449
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 500
+    },
+    {
+      "target": "MYSQL-1220-STORE-RESULT",
+      "thru": "MYSQL-1239-EXIT",
+      "line": 501
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 531
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 555
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 557
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 565
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 567
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 583
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 585
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 589
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 607
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 609
+    },
+    {
+      "target": "bb200-Insert",
+      "thru": null,
+      "line": 614
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 629
+    },
+    {
+      "target": "go",
+      "thru": null,
+      "line": 633
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 641
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 643
+    },
+    {
+      "target": "bb300-Update",
+      "thru": null,
+      "line": 668
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 685
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 723
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 766
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 814
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Where",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-MYSQL-I",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-MYSQL-EDIT",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Table-Of-Keynames",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "DAL-Data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "subscripts",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Old-File-Function",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Temp-work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "TP-SYSFINAL-REC",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "TD-SYSFINAL-REC",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-Message-1",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-Message-2",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "ba010-Initialise",
+      "line": 360
+    },
+    {
+      "name": "SQL-Err",
+      "line": 366
+    },
+    {
+      "name": "end-evaluate",
+      "line": 389
+    },
+    {
+      "name": "ba020-Process-Open",
+      "line": 391
+    },
+    {
+      "name": "end-string",
+      "line": 403
+    },
+    {
+      "name": "end-string",
+      "line": 407
+    },
+    {
+      "name": "end-string",
+      "line": 411
+    },
+    {
+      "name": "end-string",
+      "line": 415
+    },
+    {
+      "name": "end-string",
+      "line": 419
+    },
+    {
+      "name": "end-string",
+      "line": 423
+    },
+    {
+      "name": "ba030-Process-Close",
+      "line": 439
+    },
+    {
+      "name": "end-if",
+      "line": 524
+    },
+    {
+      "name": "ba070-Process-Write",
+      "line": 599
+    },
+    {
+      "name": "WS-SQL-Retry",
+      "line": 601
+    },
+    {
+      "name": "ba090-Process-Rewrite",
+      "line": 636
+    },
+    {
+      "name": "WS-SQL-Retry",
+      "line": 639
+    },
+    {
+      "name": "ba100-Bad-Function",
+      "line": 696
+    },
+    {
+      "name": "ba998-Free",
+      "line": 708
+    },
+    {
+      "name": "ba999-end",
+      "line": 720
+    },
+    {
+      "name": "end-if",
+      "line": 724
+    },
+    {
+      "name": "ba999-exit",
+      "line": 726
+    },
+    {
+      "name": "bb200-Exit",
+      "line": 770
+    },
+    {
+      "name": "bb300-Exit",
+      "line": 818
+    },
+    {
+      "name": "Ca-Process-Logs",
+      "line": 821
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 825
+    }
+  ],
+  "metadata": {
+    "lines": 830,
+    "parseDate": "2025-09-17T19:45:42.271Z",
+    "hasMainProgram": true
+  }
+}

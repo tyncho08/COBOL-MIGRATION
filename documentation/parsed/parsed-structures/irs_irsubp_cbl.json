@@ -1,0 +1,69 @@
+{
+  "filePath": "../../Legacy_App/irs/irsubp.cbl",
+  "fileName": "irsubp.cbl",
+  "programId": "irsubp",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 83
+    },
+    {
+      "name": "DATA",
+      "line": 92
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 119
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "list",
+      "line": 26,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Sorted-Posting-File",
+      "line": 95,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 85
+    },
+    {
+      "name": "File-Defs",
+      "line": 120
+    },
+    {
+      "name": "Main",
+      "line": 123
+    },
+    {
+      "name": "Close-1",
+      "line": 145
+    },
+    {
+      "name": "Read-1",
+      "line": 156
+    }
+  ],
+  "metadata": {
+    "lines": 167,
+    "parseDate": "2025-09-17T19:45:42.723Z",
+    "hasMainProgram": true
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "filePath": "../../Legacy_App/common/auditLD2.cbl",
+  "fileName": "auditLD2.cbl",
+  "programId": "auditLD",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 19
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 104
+    },
+    {
+      "name": "DATA",
+      "line": 116
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 188
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "acas010",
+      "line": 253,
+      "type": "static"
+    },
+    {
+      "program": "fhlogger",
+      "line": 388,
+      "type": "static"
+    },
+    {
+      "program": "to",
+      "line": 56,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 192
+    },
+    {
+      "target": "acas010-Open-Input",
+      "thru": null,
+      "line": 233
+    },
+    {
+      "target": "acas010-Open",
+      "thru": null,
+      "line": 243
+    },
+    {
+      "target": "acas010",
+      "thru": null,
+      "line": 262
+    },
+    {
+      "target": "aa100-Check-4-Errors",
+      "thru": null,
+      "line": 263
+    },
+    {
+      "target": "acas010",
+      "thru": null,
+      "line": 268
+    },
+    {
+      "target": "aa100-Check-4-Errors",
+      "thru": null,
+      "line": 269
+    },
+    {
+      "target": "acas010",
+      "thru": null,
+      "line": 273
+    },
+    {
+      "target": "acas010",
+      "thru": null,
+      "line": 277
+    },
+    {
+      "target": "acas010",
+      "thru": null,
+      "line": 281
+    },
+    {
+      "target": "acas010-Read-Next",
+      "thru": null,
+      "line": 289
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 299
+    },
+    {
+      "target": "acas010-Write",
+      "thru": null,
+      "line": 312
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 326
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 363
+    },
+    {
+      "target": "acas010-Close",
+      "thru": null,
+      "line": 380
+    },
+    {
+      "target": "acas010-close",
+      "thru": null,
+      "line": 384
+    },
+    {
+      "target": "aa030-Commit",
+      "thru": null,
+      "line": 402
+    },
+    {
+      "target": "zz010-Get-Env-Set-Files",
+      "thru": null,
+      "line": 436
+    },
+    {
+      "target": "File-Defs-Count",
+      "thru": null,
+      "line": 440
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 449
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ACAS-DAL-Common-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 111
+    },
+    {
+      "name": "aa000-main-start",
+      "line": 191
+    },
+    {
+      "name": "goback",
+      "line": 239
+    },
+    {
+      "name": "end-if",
+      "line": 248
+    },
+    {
+      "name": "acas010",
+      "line": 252
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 257
+    },
+    {
+      "name": "acas010-Open",
+      "line": 259
+    },
+    {
+      "name": "acas010-Open-Input",
+      "line": 265
+    },
+    {
+      "name": "acas010-Close",
+      "line": 271
+    },
+    {
+      "name": "acas010-Read-Next",
+      "line": 275
+    },
+    {
+      "name": "acas010-Write",
+      "line": 279
+    },
+    {
+      "name": "aa010-Read",
+      "line": 286
+    },
+    {
+      "name": "FA-File-System-Used",
+      "line": 311
+    },
+    {
+      "name": "aa020-Rollback",
+      "line": 334
+    },
+    {
+      "name": "aa030-Commit",
+      "line": 346
+    },
+    {
+      "name": "aa100-Check-4-Errors",
+      "line": 356
+    },
+    {
+      "name": "end-if",
+      "line": 367
+    },
+    {
+      "name": "aa999-Finish",
+      "line": 369
+    },
+    {
+      "name": "FA-File-System-Used",
+      "line": 377
+    },
+    {
+      "name": "FA-File-System-Used",
+      "line": 383
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 389
+    },
+    {
+      "name": "goback",
+      "line": 406
+    },
+    {
+      "name": "end-if",
+      "line": 428
+    },
+    {
+      "name": "zz010-GESF-Exit",
+      "line": 430
+    },
+    {
+      "name": "zz020-Set-the-Paths",
+      "line": 438
+    },
+    {
+      "name": "zz020-Exit",
+      "line": 452
+    }
+  ],
+  "metadata": {
+    "lines": 455,
+    "parseDate": "2025-09-17T19:45:42.223Z",
+    "hasMainProgram": true
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "filePath": "../../Legacy_App/common/send-mail-test-example.cbl",
+  "fileName": "send-mail-test-example.cbl",
+  "programId": "UNKNOWN",
+  "divisions": [
+    {
+      "name": "PROCEDURE",
+      "line": 48
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "tmpnam",
+      "line": 94,
+      "type": "static"
+    },
+    {
+      "program": "fopen",
+      "line": 97,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 113,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 128,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 142,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 166,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 185,
+      "type": "static"
+    },
+    {
+      "program": "fclose",
+      "line": 194,
+      "type": "static"
+    },
+    {
+      "program": "SYSTEM",
+      "line": 214,
+      "type": "static"
+    },
+    {
+      "program": "remove",
+      "line": 224,
+      "type": "static"
+    },
+    {
+      "program": "tmpnam",
+      "line": 279,
+      "type": "static"
+    },
+    {
+      "program": "fopen",
+      "line": 282,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 298,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 313,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 327,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 351,
+      "type": "static"
+    },
+    {
+      "program": "fputs",
+      "line": 370,
+      "type": "static"
+    },
+    {
+      "program": "fclose",
+      "line": 379,
+      "type": "static"
+    },
+    {
+      "program": "SYSTEM",
+      "line": 399,
+      "type": "static"
+    },
+    {
+      "program": "remove",
+      "line": 409,
+      "type": "static"
+    }
+  ],
+  "performStatements": [],
+  "fileDescriptions": [],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "MAIL-INIT",
+      "line": 80
+    },
+    {
+      "name": "MAIL-WRITE-HEADERS",
+      "line": 106
+    },
+    {
+      "name": "MAIL-ERROR-TEXT",
+      "line": 147
+    },
+    {
+      "name": "MAIL-INIT-EXIT",
+      "line": 148
+    },
+    {
+      "name": "EXIT",
+      "line": 149
+    },
+    {
+      "name": "MAIL-WRITE-BODY-LINE",
+      "line": 156
+    },
+    {
+      "name": "MAIL-ERROR-TEXT",
+      "line": 171
+    },
+    {
+      "name": "MAIL-WRITE-BODY-LINE-EXIT",
+      "line": 172
+    },
+    {
+      "name": "EXIT",
+      "line": 173
+    },
+    {
+      "name": "MAIL-SEND",
+      "line": 179
+    },
+    {
+      "name": "MAIL-SEND-COMMAND",
+      "line": 203
+    },
+    {
+      "name": "MAIL-SEND-CLEANUP",
+      "line": 221
+    },
+    {
+      "name": "MAIL-SEND-EXIT",
+      "line": 228
+    },
+    {
+      "name": "EXIT",
+      "line": 229
+    },
+    {
+      "name": "MAIL-INIT",
+      "line": 265
+    },
+    {
+      "name": "MAIL-WRITE-HEADERS",
+      "line": 291
+    },
+    {
+      "name": "MAIL-ERROR-TEXT",
+      "line": 332
+    },
+    {
+      "name": "MAIL-INIT-EXIT",
+      "line": 333
+    },
+    {
+      "name": "EXIT",
+      "line": 334
+    },
+    {
+      "name": "MAIL-WRITE-BODY-LINE",
+      "line": 341
+    },
+    {
+      "name": "MAIL-ERROR-TEXT",
+      "line": 356
+    },
+    {
+      "name": "MAIL-WRITE-BODY-LINE-EXIT",
+      "line": 357
+    },
+    {
+      "name": "EXIT",
+      "line": 358
+    },
+    {
+      "name": "MAIL-SEND",
+      "line": 364
+    },
+    {
+      "name": "MAIL-SEND-COMMAND",
+      "line": 388
+    },
+    {
+      "name": "MAIL-SEND-CLEANUP",
+      "line": 406
+    },
+    {
+      "name": "MAIL-SEND-EXIT",
+      "line": 413
+    },
+    {
+      "name": "EXIT",
+      "line": 414
+    }
+  ],
+  "metadata": {
+    "lines": 415,
+    "parseDate": "2025-09-17T19:45:42.410Z",
+    "hasMainProgram": true
+  }
+}

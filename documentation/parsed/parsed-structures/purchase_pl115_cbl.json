@@ -1,0 +1,118 @@
+{
+  "filePath": "../../Legacy_App/purchase/pl115.cbl",
+  "fileName": "pl115.cbl",
+  "programId": "pl115",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 86
+    },
+    {
+      "name": "DATA",
+      "line": 99
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 177
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "blk",
+      "line": 129,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "sorting-1",
+      "thru": null,
+      "line": 204
+    },
+    {
+      "target": "OTM5-Open-Input",
+      "thru": null,
+      "line": 224
+    },
+    {
+      "target": "OTM5-Read-Next",
+      "thru": null,
+      "line": 227
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 235
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 93
+    },
+    {
+      "name": "file-defs",
+      "line": 180
+    },
+    {
+      "name": "end-if",
+      "line": 189
+    },
+    {
+      "name": "menu-exit",
+      "line": 207
+    },
+    {
+      "name": "process-input",
+      "line": 226
+    },
+    {
+      "name": "end-of-input",
+      "line": 234
+    }
+  ],
+  "metadata": {
+    "lines": 239,
+    "parseDate": "2025-09-17T19:45:42.771Z",
+    "hasMainProgram": false
+  }
+}

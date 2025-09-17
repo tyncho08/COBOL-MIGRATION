@@ -1,0 +1,471 @@
+{
+  "filePath": "../../Legacy_App/irs/irs020.cbl",
+  "fileName": "irs020.cbl",
+  "programId": "irs020",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 129
+    },
+    {
+      "name": "DATA",
+      "line": 138
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 600
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "irsubn",
+      "line": 74,
+      "type": "static"
+    },
+    {
+      "program": "SYSTEM",
+      "line": 1031,
+      "type": "static"
+    },
+    {
+      "program": "cpybk",
+      "line": 80,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 247,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "acasirsubn",
+      "thru": null,
+      "line": 75
+    },
+    {
+      "target": "Set-Up",
+      "thru": null,
+      "line": 624
+    },
+    {
+      "target": "Amend",
+      "thru": null,
+      "line": 627
+    },
+    {
+      "target": "Show",
+      "thru": null,
+      "line": 630
+    },
+    {
+      "target": "Listing",
+      "thru": null,
+      "line": 633
+    },
+    {
+      "target": "Set-Up-Finished",
+      "thru": null,
+      "line": 636
+    },
+    {
+      "target": "file-init",
+      "thru": null,
+      "line": 657
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 663
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 670
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 692
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 750
+    },
+    {
+      "target": "acasirsub3-Write",
+      "thru": null,
+      "line": 752
+    },
+    {
+      "target": "amend",
+      "thru": null,
+      "line": 764
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 774
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 781
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 817
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 856
+    },
+    {
+      "target": "acasirsub3-Write",
+      "thru": null,
+      "line": 858
+    },
+    {
+      "target": "acasirsub5-Read-Next",
+      "thru": null,
+      "line": 871
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 881
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 893
+    },
+    {
+      "target": "acasirsub5-Write",
+      "thru": null,
+      "line": 905
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 907
+    },
+    {
+      "target": "Input-Headings",
+      "thru": null,
+      "line": 917
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 926
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 951
+    },
+    {
+      "target": "acasirsub3-Read-Next",
+      "thru": null,
+      "line": 964
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 968
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 979
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 990
+    },
+    {
+      "target": "acasirsub5-Read-Next",
+      "thru": null,
+      "line": 995
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 1018
+    },
+    {
+      "target": "acasirsub3-Write",
+      "thru": null,
+      "line": 1048
+    },
+    {
+      "target": "acasirsub3-Read-Next",
+      "thru": null,
+      "line": 1059
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 1081
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 1107
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "print-file",
+      "line": 141,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "01",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "All-My-Constants",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-For-Unused-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "menu-screen-1",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Setup-Screen-1",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Setup-Screen-2Q",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Amend-Screen-1",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Setup-Amend-Screen-3",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-Screen-1",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Finished-Account-Setup-Screen-1",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 133
+    },
+    {
+      "name": "reverse-video",
+      "line": 318
+    },
+    {
+      "name": "reverse-video",
+      "line": 350
+    },
+    {
+      "name": "reverse-video",
+      "line": 382
+    },
+    {
+      "name": "reverse-video",
+      "line": 455
+    },
+    {
+      "name": "reverse-video",
+      "line": 464
+    },
+    {
+      "name": "File-Defs",
+      "line": 602
+    },
+    {
+      "name": "main-loop",
+      "line": 617
+    },
+    {
+      "name": "main01-exit",
+      "line": 642
+    },
+    {
+      "name": "goback",
+      "line": 643
+    },
+    {
+      "name": "Set-Up-Main",
+      "line": 648
+    },
+    {
+      "name": "main-loop",
+      "line": 652
+    },
+    {
+      "name": "get-input",
+      "line": 673
+    },
+    {
+      "name": "vat-check",
+      "line": 719
+    },
+    {
+      "name": "End-Input",
+      "line": 744
+    },
+    {
+      "name": "end-if",
+      "line": 762
+    },
+    {
+      "name": "main-exit",
+      "line": 766
+    },
+    {
+      "name": "exit",
+      "line": 767
+    },
+    {
+      "name": "get-input",
+      "line": 784
+    },
+    {
+      "name": "vat-check",
+      "line": 836
+    },
+    {
+      "name": "end-input",
+      "line": 850
+    },
+    {
+      "name": "main-exit",
+      "line": 860
+    },
+    {
+      "name": "exit",
+      "line": 861
+    },
+    {
+      "name": "Setup-Fin-Retry",
+      "line": 883
+    },
+    {
+      "name": "Set-Up-Finished-Exit",
+      "line": 909
+    },
+    {
+      "name": "main-exit",
+      "line": 928
+    },
+    {
+      "name": "exit",
+      "line": 929
+    },
+    {
+      "name": "p-Client-2",
+      "line": 939
+    },
+    {
+      "name": "end-perform",
+      "line": 1027
+    },
+    {
+      "name": "Print-Fini",
+      "line": 1029
+    },
+    {
+      "name": "list-exit",
+      "line": 1033
+    },
+    {
+      "name": "exit",
+      "line": 1034
+    },
+    {
+      "name": "main-exit",
+      "line": 1050
+    },
+    {
+      "name": "exit",
+      "line": 1051
+    },
+    {
+      "name": "end-if",
+      "line": 1069
+    },
+    {
+      "name": "end-if",
+      "line": 1076
+    },
+    {
+      "name": "display-existing",
+      "line": 1096
+    },
+    {
+      "name": "display-existing-end",
+      "line": 1131
+    },
+    {
+      "name": "main-exit",
+      "line": 1137
+    },
+    {
+      "name": "exit",
+      "line": 1138
+    }
+  ],
+  "metadata": {
+    "lines": 1142,
+    "parseDate": "2025-09-17T19:45:42.690Z",
+    "hasMainProgram": false
+  }
+}

@@ -1,0 +1,685 @@
+{
+  "filePath": "../../Legacy_App/sales/sl070.cbl",
+  "fileName": "sl070.cbl",
+  "programId": "sl070",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 107
+    },
+    {
+      "name": "DATA",
+      "line": 121
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 275
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 621,
+      "type": "static"
+    },
+    {
+      "program": "from",
+      "line": 53,
+      "type": "dynamic"
+    },
+    {
+      "program": "by",
+      "line": 63,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 189,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "P-A-Setup",
+      "thru": null,
+      "line": 309
+    },
+    {
+      "target": "display-heading",
+      "thru": null,
+      "line": 317
+    },
+    {
+      "target": "display-heading",
+      "thru": null,
+      "line": 334
+    },
+    {
+      "target": "Create",
+      "thru": null,
+      "line": 336
+    },
+    {
+      "target": "Amend",
+      "thru": null,
+      "line": 338
+    },
+    {
+      "target": "Report1",
+      "thru": null,
+      "line": 341
+    },
+    {
+      "target": "Report1",
+      "thru": null,
+      "line": 345
+    },
+    {
+      "target": "Show",
+      "thru": null,
+      "line": 347
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 362
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 381
+    },
+    {
+      "target": "Analysis-Open",
+      "thru": null,
+      "line": 398
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 400
+    },
+    {
+      "target": "display-outline",
+      "thru": null,
+      "line": 403
+    },
+    {
+      "target": "Analysis-Read-Indexed",
+      "thru": null,
+      "line": 415
+    },
+    {
+      "target": "product-display",
+      "thru": null,
+      "line": 417
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 421
+    },
+    {
+      "target": "Analysis-Read-Indexed",
+      "thru": null,
+      "line": 429
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 434
+    },
+    {
+      "target": "analysis-data",
+      "thru": null,
+      "line": 446
+    },
+    {
+      "target": "get-pa-desc",
+      "thru": null,
+      "line": 454
+    },
+    {
+      "target": "Analysis-Write",
+      "thru": null,
+      "line": 459
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 461
+    },
+    {
+      "target": "display-outline",
+      "thru": null,
+      "line": 465
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 470
+    },
+    {
+      "target": "Analysis-Open",
+      "thru": null,
+      "line": 477
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 479
+    },
+    {
+      "target": "display-outline",
+      "thru": null,
+      "line": 482
+    },
+    {
+      "target": "Analysis-Read-Indexed",
+      "thru": null,
+      "line": 494
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 499
+    },
+    {
+      "target": "product-display",
+      "thru": null,
+      "line": 502
+    },
+    {
+      "target": "analysis-data",
+      "thru": null,
+      "line": 505
+    },
+    {
+      "target": "get-pa-desc",
+      "thru": null,
+      "line": 513
+    },
+    {
+      "target": "Analysis-Delete",
+      "thru": null,
+      "line": 520
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 522
+    },
+    {
+      "target": "Analysis-Rewrite",
+      "thru": null,
+      "line": 525
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 527
+    },
+    {
+      "target": "display-outline",
+      "thru": null,
+      "line": 533
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 538
+    },
+    {
+      "target": "Analysis-Open-Input",
+      "thru": null,
+      "line": 545
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 548
+    },
+    {
+      "target": "Analysis-Read-Next",
+      "thru": null,
+      "line": 551
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 555
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 578
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 591
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 598
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 620
+    },
+    {
+      "target": "Analysis-Open-Input",
+      "thru": null,
+      "line": 628
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 630
+    },
+    {
+      "target": "display-outline",
+      "thru": null,
+      "line": 632
+    },
+    {
+      "target": "Analysis-Read-Next",
+      "thru": null,
+      "line": 641
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 646
+    },
+    {
+      "target": "display-outline",
+      "thru": null,
+      "line": 684
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 689
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 701
+    },
+    {
+      "target": "Value-Open",
+      "thru": null,
+      "line": 787
+    },
+    {
+      "target": "Analysis-Open-Output",
+      "thru": null,
+      "line": 788
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 790
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 797
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 800
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 803
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 806
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 810
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 814
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 818
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 821
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 824
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 827
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 835
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 839
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 843
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 846
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 849
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 852
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 855
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 858
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 861
+    },
+    {
+      "target": "create-value",
+      "thru": null,
+      "line": 864
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 866
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 867
+    },
+    {
+      "target": "Value-Read-Indexed",
+      "thru": null,
+      "line": 878
+    },
+    {
+      "target": "Value-Write",
+      "thru": null,
+      "line": 883
+    },
+    {
+      "target": "aa102-Check-4-Errors",
+      "thru": null,
+      "line": 885
+    },
+    {
+      "target": "Analysis-Write",
+      "thru": null,
+      "line": 889
+    },
+    {
+      "target": "aa101-Check-4-Errors",
+      "thru": null,
+      "line": 891
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "from",
+      "line": 66,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "print-file",
+      "line": 130,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 114
+    },
+    {
+      "name": "file-defs",
+      "line": 278
+    },
+    {
+      "name": "menu-return",
+      "line": 315
+    },
+    {
+      "name": "menu-input",
+      "line": 319
+    },
+    {
+      "name": "end-if",
+      "line": 367
+    },
+    {
+      "name": "end-if",
+      "line": 386
+    },
+    {
+      "name": "Menu-Exit",
+      "line": 388
+    },
+    {
+      "name": "goback",
+      "line": 389
+    },
+    {
+      "name": "product-input",
+      "line": 402
+    },
+    {
+      "name": "product-loop",
+      "line": 406
+    },
+    {
+      "name": "get-details",
+      "line": 441
+    },
+    {
+      "name": "main-output",
+      "line": 452
+    },
+    {
+      "name": "main-end",
+      "line": 469
+    },
+    {
+      "name": "product-input",
+      "line": 481
+    },
+    {
+      "name": "product-loop",
+      "line": 485
+    },
+    {
+      "name": "get-details",
+      "line": 504
+    },
+    {
+      "name": "main-output",
+      "line": 511
+    },
+    {
+      "name": "main-end",
+      "line": 537
+    },
+    {
+      "name": "read-loop",
+      "line": 550
+    },
+    {
+      "name": "headings",
+      "line": 595
+    },
+    {
+      "name": "end-report",
+      "line": 612
+    },
+    {
+      "name": "main-end",
+      "line": 618
+    },
+    {
+      "name": "Show-read",
+      "line": 636
+    },
+    {
+      "name": "sread",
+      "line": 640
+    },
+    {
+      "name": "product-display",
+      "line": 656
+    },
+    {
+      "name": "accept-of-show",
+      "line": 674
+    },
+    {
+      "name": "main-end",
+      "line": 688
+    },
+    {
+      "name": "main-loop",
+      "line": 734
+    },
+    {
+      "name": "get-pa-desc",
+      "line": 770
+    },
+    {
+      "name": "get-pa-print",
+      "line": 774
+    },
+    {
+      "name": "Create-Value",
+      "line": 873
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 922
+    }
+  ],
+  "metadata": {
+    "lines": 927,
+    "parseDate": "2025-09-17T19:45:42.857Z",
+    "hasMainProgram": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "filePath": "../../Legacy_App/copybooks/irsprint-spool-command.cob",
+  "fileName": "irsprint-spool-command.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 10,
+    "parseDate": "2025-09-17T19:45:42.577Z",
+    "hasMainProgram": true
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "filePath": "../../Legacy_App/stock/st060.cbl",
+  "fileName": "st060.cbl",
+  "programId": "st060",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 17
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 103
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 179
+    },
+    {
+      "name": "DATA",
+      "line": 193
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 360
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "acas011",
+      "line": 381,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 443,
+      "type": "static"
+    },
+    {
+      "program": "sl070",
+      "line": 459,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 318,
+      "type": "dynamic"
+    },
+    {
+      "program": "end-if",
+      "line": 386,
+      "type": "dynamic"
+    },
+    {
+      "program": "as",
+      "line": 387,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "Eval-Status",
+      "thru": null,
+      "line": 373
+    },
+    {
+      "target": "zz010-Display-Heading",
+      "thru": null,
+      "line": 416
+    },
+    {
+      "target": "ba000-Import-Stock",
+      "thru": null,
+      "line": 419
+    },
+    {
+      "target": "Eval-Status-2",
+      "thru": null,
+      "line": 424
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 431
+    },
+    {
+      "target": "Stock-Open",
+      "thru": null,
+      "line": 466
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 504
+    },
+    {
+      "target": "Stock-Write",
+      "thru": null,
+      "line": 529
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 561
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 564
+    },
+    {
+      "target": "zz025-Format-Number",
+      "thru": null,
+      "line": 575
+    },
+    {
+      "target": "zz025-Format-Number",
+      "thru": null,
+      "line": 580
+    },
+    {
+      "target": "zz025-Format-Number",
+      "thru": null,
+      "line": 585
+    },
+    {
+      "target": "zz025-Format-Number",
+      "thru": null,
+      "line": 590
+    },
+    {
+      "target": "zz025-Format-Number",
+      "thru": null,
+      "line": 595
+    },
+    {
+      "target": "zz025-Format-Number",
+      "thru": null,
+      "line": 600
+    },
+    {
+      "target": "zz030-Format-Amount",
+      "thru": null,
+      "line": 610
+    },
+    {
+      "target": "zz030-Format-Amount",
+      "thru": null,
+      "line": 615
+    },
+    {
+      "target": "zz030-Format-Amount",
+      "thru": null,
+      "line": 622
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 630
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 640
+    },
+    {
+      "target": "Stock-Write",
+      "thru": null,
+      "line": 646
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 651
+    },
+    {
+      "target": "zz010-convert-date",
+      "thru": null,
+      "line": 674
+    },
+    {
+      "target": "zz027-Clean-Number",
+      "thru": null,
+      "line": 708
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 713
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 732
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 735
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 757
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 760
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 771
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 781
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 784
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 814
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 852
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Import-file",
+      "line": 199,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Default-PA",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Default-SA",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Default-Supplier",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Abrev-Value",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Import-Mode",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Hist-Reset-Flag",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Evaluation-Msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "File-101",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Import-Date-Format",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Test-Desc",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Delimiter-Found",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Record-Count",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Write-Count",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Disp-Count",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Number-X-8",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Number-X",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Amount-X-14",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Amount-X",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Chk-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Chk-Amount",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Chk-Amount-V",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Amount-Length",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Pence-Length",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Pounds-Length",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 186
+    },
+    {
+      "name": "file-defs",
+      "line": 363
+    },
+    {
+      "name": "Declaratives",
+      "line": 366
+    },
+    {
+      "name": "a00-IF-Error-1",
+      "line": 371
+    },
+    {
+      "name": "Eval-Status",
+      "line": 390
+    },
+    {
+      "name": "main-exit",
+      "line": 397
+    },
+    {
+      "name": "exit",
+      "line": 398
+    },
+    {
+      "name": "GOBACK",
+      "line": 413
+    },
+    {
+      "name": "aa010-Get-File-for-Import",
+      "line": 415
+    },
+    {
+      "name": "a10-Stock-Error-1",
+      "line": 422
+    },
+    {
+      "name": "goback",
+      "line": 433
+    },
+    {
+      "name": "Eval-Status-2",
+      "line": 435
+    },
+    {
+      "name": "maps04",
+      "line": 442
+    },
+    {
+      "name": "aa999-Exit",
+      "line": 445
+    },
+    {
+      "name": "goback",
+      "line": 446
+    },
+    {
+      "name": "ba010-Get-A-Record",
+      "line": 468
+    },
+    {
+      "name": "ba020-Process-Regular",
+      "line": 483
+    },
+    {
+      "name": "ba030-Process-Comma",
+      "line": 533
+    },
+    {
+      "name": "end-if",
+      "line": 643
+    },
+    {
+      "name": "ba040-Write-Stock",
+      "line": 645
+    },
+    {
+      "name": "ba998-Main-End",
+      "line": 650
+    },
+    {
+      "name": "ba999-Exit",
+      "line": 662
+    },
+    {
+      "name": "zz010-convert-date",
+      "line": 680
+    },
+    {
+      "name": "end-if",
+      "line": 698
+    },
+    {
+      "name": "zz010-exit",
+      "line": 700
+    },
+    {
+      "name": "end-perform",
+      "line": 716
+    },
+    {
+      "name": "zz025-Exit",
+      "line": 720
+    },
+    {
+      "name": "end-if",
+      "line": 742
+    },
+    {
+      "name": "zz027-Exit",
+      "line": 744
+    },
+    {
+      "name": "end-if",
+      "line": 816
+    },
+    {
+      "name": "zz030-Exit",
+      "line": 817
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 849
+    },
+    {
+      "name": "zz050-exit",
+      "line": 854
+    }
+  ],
+  "metadata": {
+    "lines": 859,
+    "parseDate": "2025-09-17T19:45:43.028Z",
+    "hasMainProgram": true
+  }
+}

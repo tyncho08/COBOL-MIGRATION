@@ -1,0 +1,106 @@
+{
+  "filePath": "../../Legacy_App/sales/sl800.cbl",
+  "fileName": "sl800.cbl",
+  "programId": "sl800",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 9
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 71
+    },
+    {
+      "name": "DATA",
+      "line": 76
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 125
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "ws-called",
+      "line": 182,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 140
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-defs",
+      "line": 128
+    },
+    {
+      "name": "Menu-Return",
+      "line": 144
+    },
+    {
+      "name": "Menu-Input",
+      "line": 158
+    },
+    {
+      "name": "Loadit",
+      "line": 181
+    },
+    {
+      "name": "file-defs",
+      "line": 185
+    },
+    {
+      "name": "Menu-Exit",
+      "line": 190
+    },
+    {
+      "name": "menu-ex",
+      "line": 195
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 229
+    }
+  ],
+  "metadata": {
+    "lines": 232,
+    "parseDate": "2025-09-17T19:45:42.900Z",
+    "hasMainProgram": true
+  }
+}

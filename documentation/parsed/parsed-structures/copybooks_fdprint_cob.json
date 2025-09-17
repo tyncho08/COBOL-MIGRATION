@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/fdprint.cob",
+  "fileName": "fdprint.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "print-file",
+      "line": 2,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 5,
+    "parseDate": "2025-09-17T19:45:42.559Z",
+    "hasMainProgram": true
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "filePath": "../../Legacy_App/irs/irs065.cbl",
+  "fileName": "irs065.cbl",
+  "programId": "irs065",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 7
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 106
+    },
+    {
+      "name": "DATA",
+      "line": 115
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 210
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "irsubn",
+      "line": 53,
+      "type": "static"
+    },
+    {
+      "program": "cpybk",
+      "line": 64,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 152,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "acasirsubn",
+      "thru": null,
+      "line": 54
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 226
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 234
+    },
+    {
+      "target": "acasirsub1-Read-Next",
+      "thru": null,
+      "line": 239
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 250
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "output-file",
+      "line": 118,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "nl-file",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-For-Unused-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 109
+    },
+    {
+      "name": "File-Defs",
+      "line": 212
+    },
+    {
+      "name": "goback",
+      "line": 235
+    },
+    {
+      "name": "process-input-record",
+      "line": 237
+    },
+    {
+      "name": "end-of-input",
+      "line": 249
+    },
+    {
+      "name": "Main-Exit",
+      "line": 252
+    }
+  ],
+  "metadata": {
+    "lines": 257,
+    "parseDate": "2025-09-17T19:45:42.716Z",
+    "hasMainProgram": false
+  }
+}

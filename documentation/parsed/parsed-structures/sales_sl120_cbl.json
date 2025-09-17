@@ -1,0 +1,449 @@
+{
+  "filePath": "../../Legacy_App/sales/sl120.cbl",
+  "fileName": "sl120.cbl",
+  "programId": "sl120",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 11
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 111
+    },
+    {
+      "name": "DATA",
+      "line": 125
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 393
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 432,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 1154,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 147,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "bypass-ageing",
+      "thru": null,
+      "line": 50
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 426
+    },
+    {
+      "target": "Trail-Balance",
+      "thru": null,
+      "line": 429
+    },
+    {
+      "target": "Report-Analysis",
+      "thru": null,
+      "line": 430
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 465
+    },
+    {
+      "target": "accept-money",
+      "thru": null,
+      "line": 478
+    },
+    {
+      "target": "headings-1",
+      "thru": null,
+      "line": 483
+    },
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 484
+    },
+    {
+      "target": "OTM3-Open-Input",
+      "thru": null,
+      "line": 494
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 496
+    },
+    {
+      "target": "Sales-Start",
+      "thru": null,
+      "line": 514
+    },
+    {
+      "target": "read-sales",
+      "thru": null,
+      "line": 520
+    },
+    {
+      "target": "OTM3-Read-Next-Sorted-By-Cust",
+      "thru": null,
+      "line": 536
+    },
+    {
+      "target": "bypass-ageing",
+      "thru": null,
+      "line": 559
+    },
+    {
+      "target": "headings-1",
+      "thru": null,
+      "line": 571
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 578
+    },
+    {
+      "target": "check-zero",
+      "thru": null,
+      "line": 596
+    },
+    {
+      "target": "check-zero",
+      "thru": null,
+      "line": 604
+    },
+    {
+      "target": "check-zero",
+      "thru": null,
+      "line": 623
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 735
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 737
+    },
+    {
+      "target": "headings-1",
+      "thru": null,
+      "line": 774
+    },
+    {
+      "target": "Sales-Read-Next",
+      "thru": null,
+      "line": 918
+    },
+    {
+      "target": "read-sales-test",
+      "thru": null,
+      "line": 948
+    },
+    {
+      "target": "headings-1",
+      "thru": null,
+      "line": 967
+    },
+    {
+      "target": "end-statement",
+      "thru": null,
+      "line": 977
+    },
+    {
+      "target": "test-for-inv",
+      "thru": null,
+      "line": 1000
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 1081
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 1095
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Exception-Msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "All-My-Constants",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-display",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-accept",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-work",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-ok",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "analysis",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "balances",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-3",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-8",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-10",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-11",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 118
+    },
+    {
+      "name": "file-defs",
+      "line": 397
+    },
+    {
+      "name": "menu-ent",
+      "line": 434
+    },
+    {
+      "name": "main-display-end",
+      "line": 450
+    },
+    {
+      "name": "date-input",
+      "line": 458
+    },
+    {
+      "name": "customer-input",
+      "line": 472
+    },
+    {
+      "name": "value-input",
+      "line": 476
+    },
+    {
+      "name": "read-perform",
+      "line": 519
+    },
+    {
+      "name": "read-open-item",
+      "line": 528
+    },
+    {
+      "name": "Read-Loop-Tests",
+      "line": 552
+    },
+    {
+      "name": "roi-1",
+      "line": 561
+    },
+    {
+      "name": "bypass-ageing",
+      "line": 646
+    },
+    {
+      "name": "bypass-age-go",
+      "line": 658
+    },
+    {
+      "name": "end-statement",
+      "line": 687
+    },
+    {
+      "name": "end-statement-end",
+      "line": 712
+    },
+    {
+      "name": "item-end",
+      "line": 714
+    },
+    {
+      "name": "accept-money",
+      "line": 720
+    },
+    {
+      "name": "main-end",
+      "line": 729
+    },
+    {
+      "name": "main-exit",
+      "line": 911
+    },
+    {
+      "name": "Read-Sales-Main",
+      "line": 917
+    },
+    {
+      "name": "read-sales-test",
+      "line": 980
+    },
+    {
+      "name": "main-end",
+      "line": 1006
+    },
+    {
+      "name": "test-for-inv",
+      "line": 1011
+    },
+    {
+      "name": "test2",
+      "line": 1034
+    },
+    {
+      "name": "test3",
+      "line": 1041
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 1078
+    },
+    {
+      "name": "zz050-exit",
+      "line": 1083
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 1118
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 1148
+    },
+    {
+      "name": "maps04-exit",
+      "line": 1156
+    }
+  ],
+  "metadata": {
+    "lines": 1163,
+    "parseDate": "2025-09-17T19:45:42.877Z",
+    "hasMainProgram": true
+  }
+}

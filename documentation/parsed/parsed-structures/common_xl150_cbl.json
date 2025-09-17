@@ -1,0 +1,2059 @@
+{
+  "filePath": "../../Legacy_App/common/xl150.cbl",
+  "fileName": "xl150.cbl",
+  "programId": "xl150",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 136
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 329
+    },
+    {
+      "name": "DATA",
+      "line": 353
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 599
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 644,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 470,
+      "type": "dynamic"
+    },
+    {
+      "program": "WS-caller",
+      "line": 694,
+      "type": "dynamic"
+    },
+    {
+      "program": "WS-caller",
+      "line": 704,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 624
+    },
+    {
+      "target": "aa030-Display-Heads",
+      "thru": null,
+      "line": 638
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 801
+    },
+    {
+      "target": "BD00-Check-End-of-Cycle",
+      "thru": null,
+      "line": 806
+    },
+    {
+      "target": "AB00-SL-Processing",
+      "thru": null,
+      "line": 808
+    },
+    {
+      "target": "AC00-PL-Processing",
+      "thru": null,
+      "line": 811
+    },
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 838
+    },
+    {
+      "target": "aa812-Error-on-Open-Sales",
+      "thru": null,
+      "line": 840
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 841
+    },
+    {
+      "target": "aa813-Error-on-Open-Temp-Sales",
+      "thru": null,
+      "line": 846
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 848
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 852
+    },
+    {
+      "target": "Sales-Read-Next",
+      "thru": null,
+      "line": 853
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 855
+    },
+    {
+      "target": "aa801-Error-on-Read-Sales",
+      "thru": null,
+      "line": 858
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 860
+    },
+    {
+      "target": "aa802-Error-on-Write-Temp-Sales",
+      "thru": null,
+      "line": 865
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 867
+    },
+    {
+      "target": "close",
+      "thru": null,
+      "line": 870
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 872
+    },
+    {
+      "target": "aa813-Error-on-Open-Temp-Sales",
+      "thru": null,
+      "line": 877
+    },
+    {
+      "target": "Sales-Open-Output",
+      "thru": null,
+      "line": 881
+    },
+    {
+      "target": "aa812-Error-on-Open-Sales",
+      "thru": null,
+      "line": 883
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 885
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 888
+    },
+    {
+      "target": "end-read",
+      "thru": null,
+      "line": 890
+    },
+    {
+      "target": "aa803-Error-on-Read-Temp-Sales",
+      "thru": null,
+      "line": 893
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 895
+    },
+    {
+      "target": "Sales-Write",
+      "thru": null,
+      "line": 898
+    },
+    {
+      "target": "aa804-Error-on-Write-Sales",
+      "thru": null,
+      "line": 900
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 902
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 905
+    },
+    {
+      "target": "aa815-Error-on-Open-Temp-OTM3",
+      "thru": null,
+      "line": 915
+    },
+    {
+      "target": "OTM3-Open-Input",
+      "thru": null,
+      "line": 919
+    },
+    {
+      "target": "aa814-Error-on-Open-OTM3",
+      "thru": null,
+      "line": 921
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 922
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 926
+    },
+    {
+      "target": "OTM3-Read-Next",
+      "thru": null,
+      "line": 927
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 929
+    },
+    {
+      "target": "aa800-Error-on-Read-OTM3",
+      "thru": null,
+      "line": 932
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 933
+    },
+    {
+      "target": "aa806-Error-on-Write-Temp-OTM3",
+      "thru": null,
+      "line": 939
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 940
+    },
+    {
+      "target": "close",
+      "thru": null,
+      "line": 944
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 946
+    },
+    {
+      "target": "aa815-Error-on-Open-Temp-OTM3",
+      "thru": null,
+      "line": 950
+    },
+    {
+      "target": "OTM3-Open-Output",
+      "thru": null,
+      "line": 954
+    },
+    {
+      "target": "aa814-Error-on-Open-OTM3",
+      "thru": null,
+      "line": 956
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 958
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 962
+    },
+    {
+      "target": "end-read",
+      "thru": null,
+      "line": 964
+    },
+    {
+      "target": "aa807-Error-on-Read-Temp-OTM3",
+      "thru": null,
+      "line": 967
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 969
+    },
+    {
+      "target": "OTM3-Write",
+      "thru": null,
+      "line": 972
+    },
+    {
+      "target": "aa805-Error-on-Write-OTM3",
+      "thru": null,
+      "line": 974
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 976
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 979
+    },
+    {
+      "target": "Invoice-Open-Input",
+      "thru": null,
+      "line": 987
+    },
+    {
+      "target": "aa816-Error-on-Open-SInvoices",
+      "thru": null,
+      "line": 989
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 990
+    },
+    {
+      "target": "aa817-Error-on-Open-Temp-SInvoices",
+      "thru": null,
+      "line": 995
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 997
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 1001
+    },
+    {
+      "target": "Invoice-Read-Next",
+      "thru": null,
+      "line": 1002
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 1004
+    },
+    {
+      "target": "aa808-Error-on-Read-SInvoices",
+      "thru": null,
+      "line": 1007
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1009
+    },
+    {
+      "target": "aa809-Error-on-Write-Temp-SInvoices",
+      "thru": null,
+      "line": 1014
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1016
+    },
+    {
+      "target": "close",
+      "thru": null,
+      "line": 1019
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1021
+    },
+    {
+      "target": "aa817-Error-on-Open-Temp-SInvoices",
+      "thru": null,
+      "line": 1026
+    },
+    {
+      "target": "Invoice-Open-Output",
+      "thru": null,
+      "line": 1030
+    },
+    {
+      "target": "aa816-Error-on-Open-SInvoices",
+      "thru": null,
+      "line": 1032
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1034
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 1037
+    },
+    {
+      "target": "end-read",
+      "thru": null,
+      "line": 1039
+    },
+    {
+      "target": "aa810-Error-on-Read-Temp-SInvoices",
+      "thru": null,
+      "line": 1042
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1044
+    },
+    {
+      "target": "Invoice-Write",
+      "thru": null,
+      "line": 1047
+    },
+    {
+      "target": "aa811-Error-on-Write-SInvoices",
+      "thru": null,
+      "line": 1049
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1051
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 1054
+    },
+    {
+      "target": "Purch-Open-Input",
+      "thru": null,
+      "line": 1068
+    },
+    {
+      "target": "aa912-Error-on-Open-Purchase",
+      "thru": null,
+      "line": 1070
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1071
+    },
+    {
+      "target": "aa913-Error-on-Open-Temp-Purchase",
+      "thru": null,
+      "line": 1076
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1078
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 1082
+    },
+    {
+      "target": "Purch-Read-Next",
+      "thru": null,
+      "line": 1083
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 1085
+    },
+    {
+      "target": "aa901-Error-on-Read-Purchase",
+      "thru": null,
+      "line": 1088
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1090
+    },
+    {
+      "target": "aa902-Error-on-Write-Temp-Purchase",
+      "thru": null,
+      "line": 1095
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1097
+    },
+    {
+      "target": "close",
+      "thru": null,
+      "line": 1100
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1102
+    },
+    {
+      "target": "aa913-Error-on-Open-Temp-Purchase",
+      "thru": null,
+      "line": 1107
+    },
+    {
+      "target": "Purch-Open-Output",
+      "thru": null,
+      "line": 1111
+    },
+    {
+      "target": "aa912-Error-on-Open-Purchase",
+      "thru": null,
+      "line": 1113
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1115
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 1118
+    },
+    {
+      "target": "end-read",
+      "thru": null,
+      "line": 1120
+    },
+    {
+      "target": "aa903-Error-on-Read-Temp-Purchase",
+      "thru": null,
+      "line": 1123
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1125
+    },
+    {
+      "target": "Purch-Write",
+      "thru": null,
+      "line": 1128
+    },
+    {
+      "target": "aa904-Error-on-Write-Purchase",
+      "thru": null,
+      "line": 1130
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1132
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 1135
+    },
+    {
+      "target": "aa915-Error-on-Open-Temp-OTM5",
+      "thru": null,
+      "line": 1145
+    },
+    {
+      "target": "OTM5-Open-Input",
+      "thru": null,
+      "line": 1149
+    },
+    {
+      "target": "aa914-Error-on-Open-OTM5",
+      "thru": null,
+      "line": 1151
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 1152
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 1156
+    },
+    {
+      "target": "OTM5-Read-Next",
+      "thru": null,
+      "line": 1157
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 1159
+    },
+    {
+      "target": "aa900-Error-on-Read-OTM5",
+      "thru": null,
+      "line": 1162
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 1163
+    },
+    {
+      "target": "aa906-Error-on-Write-Temp-OTM5",
+      "thru": null,
+      "line": 1169
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 1170
+    },
+    {
+      "target": "close",
+      "thru": null,
+      "line": 1174
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 1176
+    },
+    {
+      "target": "aa915-Error-on-Open-Temp-OTM5",
+      "thru": null,
+      "line": 1180
+    },
+    {
+      "target": "OTM5-Open-Output",
+      "thru": null,
+      "line": 1184
+    },
+    {
+      "target": "aa914-Error-on-Open-OTM5",
+      "thru": null,
+      "line": 1186
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 1188
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 1192
+    },
+    {
+      "target": "end-read",
+      "thru": null,
+      "line": 1194
+    },
+    {
+      "target": "aa907-Error-on-Read-Temp-OTM5",
+      "thru": null,
+      "line": 1197
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 1199
+    },
+    {
+      "target": "OTM5-Write",
+      "thru": null,
+      "line": 1202
+    },
+    {
+      "target": "aa905-Error-on-Write-OTM5",
+      "thru": null,
+      "line": 1204
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 1206
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 1209
+    },
+    {
+      "target": "PInvoice-Open-Input",
+      "thru": null,
+      "line": 1217
+    },
+    {
+      "target": "aa916-Error-on-Open-PInvoices",
+      "thru": null,
+      "line": 1219
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1220
+    },
+    {
+      "target": "aa917-Error-on-Open-Temp-PInvoices",
+      "thru": null,
+      "line": 1225
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1227
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 1231
+    },
+    {
+      "target": "PInvoice-Read-Next",
+      "thru": null,
+      "line": 1232
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 1234
+    },
+    {
+      "target": "aa908-Error-on-Read-PInvoices",
+      "thru": null,
+      "line": 1237
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1239
+    },
+    {
+      "target": "aa909-Error-on-Write-Temp-PInvoices",
+      "thru": null,
+      "line": 1244
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1246
+    },
+    {
+      "target": "close",
+      "thru": null,
+      "line": 1249
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1251
+    },
+    {
+      "target": "aa917-Error-on-Open-Temp-PInvoices",
+      "thru": null,
+      "line": 1256
+    },
+    {
+      "target": "PInvoice-Open-Output",
+      "thru": null,
+      "line": 1260
+    },
+    {
+      "target": "aa916-Error-on-Open-PInvoices",
+      "thru": null,
+      "line": 1262
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1264
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 1267
+    },
+    {
+      "target": "end-read",
+      "thru": null,
+      "line": 1269
+    },
+    {
+      "target": "aa910-Error-on-Read-Temp-PInvoices",
+      "thru": null,
+      "line": 1272
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1274
+    },
+    {
+      "target": "PInvoice-Write",
+      "thru": null,
+      "line": 1277
+    },
+    {
+      "target": "aa911-Error-on-Write-PInvoices",
+      "thru": null,
+      "line": 1279
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1281
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 1284
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1299
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1304
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1309
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1314
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1319
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1324
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1329
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1334
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1339
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1344
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1349
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1354
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1359
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1364
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1369
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1374
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1379
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1384
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1391
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1396
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1401
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1406
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1411
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1416
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1421
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1426
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1431
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1436
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1441
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1446
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1451
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1456
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1461
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1466
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1471
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1476
+    },
+    {
+      "target": "AB995-Eval-Status",
+      "thru": null,
+      "line": 1482
+    },
+    {
+      "target": "Sales-Open",
+      "thru": null,
+      "line": 1549
+    },
+    {
+      "target": "Sales-Read-Next",
+      "thru": null,
+      "line": 1552
+    },
+    {
+      "target": "Sales-Rewrite",
+      "thru": null,
+      "line": 1575
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 1581
+    },
+    {
+      "target": "OTM3-Open",
+      "thru": null,
+      "line": 1587
+    },
+    {
+      "target": "Invoice-Open",
+      "thru": null,
+      "line": 1588
+    },
+    {
+      "target": "OTM3-Read-Next",
+      "thru": null,
+      "line": 1591
+    },
+    {
+      "target": "AE00-Kill-Invoices",
+      "thru": null,
+      "line": 1597
+    },
+    {
+      "target": "OTM3-Delete",
+      "thru": null,
+      "line": 1598
+    },
+    {
+      "target": "OTM3-Delete",
+      "thru": null,
+      "line": 1606
+    },
+    {
+      "target": "OTM3-Rewrite",
+      "thru": null,
+      "line": 1618
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 1625
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1626
+    },
+    {
+      "target": "BA00-Value-Reset",
+      "thru": null,
+      "line": 1634
+    },
+    {
+      "target": "Invoice-Open",
+      "thru": null,
+      "line": 1640
+    },
+    {
+      "target": "Invoice-Read-Next",
+      "thru": null,
+      "line": 1644
+    },
+    {
+      "target": "AB130-Skip-Reader",
+      "thru": null,
+      "line": 1656
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 1658
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 1660
+    },
+    {
+      "target": "else",
+      "thru": null,
+      "line": 1661
+    },
+    {
+      "target": "Invoice-Delete-All",
+      "thru": null,
+      "line": 1663
+    },
+    {
+      "target": "AB130-Skip-Reader",
+      "thru": null,
+      "line": 1672
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 1673
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 1675
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 1676
+    },
+    {
+      "target": "Invoice-Rewrite",
+      "thru": null,
+      "line": 1679
+    },
+    {
+      "target": "AB130-Skip-Reader",
+      "thru": null,
+      "line": 1683
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 1685
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 1687
+    },
+    {
+      "target": "else",
+      "thru": null,
+      "line": 1688
+    },
+    {
+      "target": "Invoice-Delete-All",
+      "thru": null,
+      "line": 1690
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 1701
+    },
+    {
+      "target": "Invoice-Rewrite",
+      "thru": null,
+      "line": 1708
+    },
+    {
+      "target": "Invoice-Read-Next",
+      "thru": null,
+      "line": 1712
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1718
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1768
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 1769
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1770
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1776
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 1777
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 1778
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 1784
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 1785
+    },
+    {
+      "target": "Invoice-Read-Indexed",
+      "thru": null,
+      "line": 1805
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 1811
+    },
+    {
+      "target": "Invoice-Delete-All",
+      "thru": null,
+      "line": 1813
+    },
+    {
+      "target": "AE020-Actual-Delete",
+      "thru": null,
+      "line": 1821
+    },
+    {
+      "target": "Invoice-Read-Indexed",
+      "thru": null,
+      "line": 1826
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 1831
+    },
+    {
+      "target": "Invoice-Delete",
+      "thru": null,
+      "line": 1838
+    },
+    {
+      "target": "Purch-Open",
+      "thru": null,
+      "line": 1855
+    },
+    {
+      "target": "Purch-Read-Next",
+      "thru": null,
+      "line": 1858
+    },
+    {
+      "target": "Purch-Rewrite",
+      "thru": null,
+      "line": 1881
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 1887
+    },
+    {
+      "target": "OTM5-Open",
+      "thru": null,
+      "line": 1893
+    },
+    {
+      "target": "Purch-Open",
+      "thru": null,
+      "line": 1894
+    },
+    {
+      "target": "OTM5-Read-Next",
+      "thru": null,
+      "line": 1897
+    },
+    {
+      "target": "AD00-kill-invoicep",
+      "thru": null,
+      "line": 1904
+    },
+    {
+      "target": "OTM5-Delete",
+      "thru": null,
+      "line": 1905
+    },
+    {
+      "target": "OTM5-Delete",
+      "thru": null,
+      "line": 1912
+    },
+    {
+      "target": "OTM5-Rewrite",
+      "thru": null,
+      "line": 1923
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 1930
+    },
+    {
+      "target": "Pinvoice-Close",
+      "thru": null,
+      "line": 1931
+    },
+    {
+      "target": "BA00-Value-Reset",
+      "thru": null,
+      "line": 1936
+    },
+    {
+      "target": "Pinvoice-Open",
+      "thru": null,
+      "line": 1939
+    },
+    {
+      "target": "Pinvoice-Read-Next",
+      "thru": null,
+      "line": 1943
+    },
+    {
+      "target": "AC130-Skip-Reader",
+      "thru": null,
+      "line": 1955
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 1957
+    },
+    {
+      "target": "PInvoice-Delete",
+      "thru": null,
+      "line": 1959
+    },
+    {
+      "target": "else",
+      "thru": null,
+      "line": 1960
+    },
+    {
+      "target": "PInvoice-Delete-All",
+      "thru": null,
+      "line": 1962
+    },
+    {
+      "target": "AC130-Skip-Reader",
+      "thru": null,
+      "line": 1973
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 1974
+    },
+    {
+      "target": "PInvoice-Delete",
+      "thru": null,
+      "line": 1976
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 1977
+    },
+    {
+      "target": "PInvoice-Rewrite",
+      "thru": null,
+      "line": 1984
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 1992
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 2006
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 2007
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 2008
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 2014
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 2015
+    },
+    {
+      "target": "PInvoice-Close",
+      "thru": null,
+      "line": 2016
+    },
+    {
+      "target": "aa950-Display-File-Error",
+      "thru": null,
+      "line": 2022
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 2023
+    },
+    {
+      "target": "PInvoice-Read-Indexed",
+      "thru": null,
+      "line": 2043
+    },
+    {
+      "target": "PInvoice-Delete",
+      "thru": null,
+      "line": 2049
+    },
+    {
+      "target": "PInvoice-Delete-All",
+      "thru": null,
+      "line": 2051
+    },
+    {
+      "target": "AD020-Actual-Delete",
+      "thru": null,
+      "line": 2059
+    },
+    {
+      "target": "PInvoice-Read-Indexed",
+      "thru": null,
+      "line": 2064
+    },
+    {
+      "target": "PInvoice-Delete",
+      "thru": null,
+      "line": 2069
+    },
+    {
+      "target": "PInvoice-Delete",
+      "thru": null,
+      "line": 2076
+    },
+    {
+      "target": "BD010-Monthly-Check",
+      "thru": null,
+      "line": 2086
+    },
+    {
+      "target": "BD020-Weekly-Check",
+      "thru": null,
+      "line": 2089
+    },
+    {
+      "target": "BD030-Query-Check",
+      "thru": null,
+      "line": 2091
+    },
+    {
+      "target": "Value-Open-Output",
+      "thru": null,
+      "line": 2169
+    },
+    {
+      "target": "Value-Delete-All",
+      "thru": null,
+      "line": 2172
+    },
+    {
+      "target": "Value-Open",
+      "thru": null,
+      "line": 2189
+    },
+    {
+      "target": "Value-Read-Next",
+      "thru": null,
+      "line": 2192
+    },
+    {
+      "target": "Value-ReWrite",
+      "thru": null,
+      "line": 2204
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 2211
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 2217
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "temp-invoice-file",
+      "line": 372,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Arg-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Vals",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Saved-CD-Args",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Invoice-Record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "To-Day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 336
+    },
+    {
+      "name": "File-Defs",
+      "line": 603
+    },
+    {
+      "name": "aa010-Acpt-Reply",
+      "line": 646
+    },
+    {
+      "name": "aa012-Display-Warnings",
+      "line": 662
+    },
+    {
+      "name": "aa015-Recheck-for-Issues",
+      "line": 679
+    },
+    {
+      "name": "aa024-Test-EoC",
+      "line": 771
+    },
+    {
+      "name": "aa025-OTM-Checks",
+      "line": 776
+    },
+    {
+      "name": "aa030-Display-Heads",
+      "line": 798
+    },
+    {
+      "name": "aa040-Display-End",
+      "line": 805
+    },
+    {
+      "name": "aa050-EOY-Processing",
+      "line": 814
+    },
+    {
+      "name": "aa100-Phase-6",
+      "line": 829
+    },
+    {
+      "name": "aa110-Phase-7",
+      "line": 911
+    },
+    {
+      "name": "aa120-Phase-8",
+      "line": 985
+    },
+    {
+      "name": "aa130-Phase-9",
+      "line": 1062
+    },
+    {
+      "name": "aa140-Phase-10",
+      "line": 1141
+    },
+    {
+      "name": "aa150-Phase-11",
+      "line": 1215
+    },
+    {
+      "name": "aa800-Error-on-Read-OTM3",
+      "line": 1296
+    },
+    {
+      "name": "aa801-Error-on-Read-Sales",
+      "line": 1300
+    },
+    {
+      "name": "aa802-Error-on-Write-Temp-Sales",
+      "line": 1305
+    },
+    {
+      "name": "aa803-Error-on-Read-Temp-Sales",
+      "line": 1310
+    },
+    {
+      "name": "aa804-Error-on-Write-Sales",
+      "line": 1315
+    },
+    {
+      "name": "aa805-Error-On-Write-OTM3",
+      "line": 1320
+    },
+    {
+      "name": "aa806-Error-on-Write-Temp-OTM3",
+      "line": 1325
+    },
+    {
+      "name": "aa807-Error-on-Read-Temp-OTM3",
+      "line": 1330
+    },
+    {
+      "name": "aa808-Error-on-Read-SInvoices",
+      "line": 1335
+    },
+    {
+      "name": "aa809-Error-on-Write-Temp-SInvoices",
+      "line": 1340
+    },
+    {
+      "name": "aa810-Error-on-Read-Temp-SInvoices",
+      "line": 1345
+    },
+    {
+      "name": "aa811-Error-on-Write-SInvoices",
+      "line": 1350
+    },
+    {
+      "name": "aa812-Error-on-Open-Sales",
+      "line": 1355
+    },
+    {
+      "name": "aa813-Error-on-Open-Temp-Sales",
+      "line": 1360
+    },
+    {
+      "name": "aa814-Error-on-Open-OTM3",
+      "line": 1365
+    },
+    {
+      "name": "aa815-Error-on-Open-Temp-OTM3",
+      "line": 1370
+    },
+    {
+      "name": "aa816-Error-on-Open-SInvoices",
+      "line": 1375
+    },
+    {
+      "name": "aa817-Error-on-Open-Temp-SInvoices",
+      "line": 1380
+    },
+    {
+      "name": "aa900-Error-on-Read-OTM5",
+      "line": 1388
+    },
+    {
+      "name": "aa901-Error-on-Read-Purchase",
+      "line": 1392
+    },
+    {
+      "name": "aa902-Error-on-Write-Temp-Purchase",
+      "line": 1397
+    },
+    {
+      "name": "aa903-Error-on-Read-Temp-Purchase",
+      "line": 1402
+    },
+    {
+      "name": "aa904-Error-on-Write-Purchase",
+      "line": 1407
+    },
+    {
+      "name": "aa905-Error-On-Write-OTM5",
+      "line": 1412
+    },
+    {
+      "name": "aa906-Error-on-Write-Temp-OTM5",
+      "line": 1417
+    },
+    {
+      "name": "aa907-Error-on-Read-Temp-OTM5",
+      "line": 1422
+    },
+    {
+      "name": "aa908-Error-on-Read-PInvoices",
+      "line": 1427
+    },
+    {
+      "name": "aa909-Error-on-Write-Temp-PInvoices",
+      "line": 1432
+    },
+    {
+      "name": "aa910-Error-on-Read-Temp-PInvoices",
+      "line": 1437
+    },
+    {
+      "name": "aa911-Error-on-Write-PInvoices",
+      "line": 1442
+    },
+    {
+      "name": "aa912-Error-on-Open-Purchase",
+      "line": 1447
+    },
+    {
+      "name": "aa913-Error-on-Open-Temp-Purchase",
+      "line": 1452
+    },
+    {
+      "name": "aa914-Error-on-Open-OTM5",
+      "line": 1457
+    },
+    {
+      "name": "aa915-Error-on-Open-Temp-OTM5",
+      "line": 1462
+    },
+    {
+      "name": "aa916-Error-on-Open-PInvoices",
+      "line": 1467
+    },
+    {
+      "name": "aa917-Error-on-Open-Temp-PInvoices",
+      "line": 1472
+    },
+    {
+      "name": "aa950-Display-File-Error",
+      "line": 1478
+    },
+    {
+      "name": "aa970-Menu-Exit",
+      "line": 1490
+    },
+    {
+      "name": "aa980-Menu-Exit",
+      "line": 1501
+    },
+    {
+      "name": "goback",
+      "line": 1502
+    },
+    {
+      "name": "aa990-Menu-Error",
+      "line": 1504
+    },
+    {
+      "name": "goback",
+      "line": 1506
+    },
+    {
+      "name": "aa991-File-Error-Exit",
+      "line": 1509
+    },
+    {
+      "name": "goback",
+      "line": 1511
+    },
+    {
+      "name": "Sales-Activety",
+      "line": 1573
+    },
+    {
+      "name": "AB020-Phase-1-End",
+      "line": 1580
+    },
+    {
+      "name": "AB060-Phase-2-Read",
+      "line": 1590
+    },
+    {
+      "name": "AB070-Phase-2-End",
+      "line": 1624
+    },
+    {
+      "name": "AB100-Phase-3-Begin",
+      "line": 1628
+    },
+    {
+      "name": "AB140-Phase-4-End",
+      "line": 1716
+    },
+    {
+      "name": "AB170-Phase-6-Sys4-Reset",
+      "line": 1720
+    },
+    {
+      "name": "SL-credit-notes-This-month",
+      "line": 1729
+    },
+    {
+      "name": "AB995-Eval-Status",
+      "line": 1732
+    },
+    {
+      "name": "end-if",
+      "line": 1763
+    },
+    {
+      "name": "AB996-Error-on-OTM3-Rewrite",
+      "line": 1765
+    },
+    {
+      "name": "AB997-Error-on-OTM3-Delete",
+      "line": 1773
+    },
+    {
+      "name": "AB998-Error-On-Sales-Rewrite",
+      "line": 1781
+    },
+    {
+      "name": "AB999-main-exit",
+      "line": 1788
+    },
+    {
+      "name": "AE020-Actual-Delete",
+      "line": 1836
+    },
+    {
+      "name": "AE999-Kill-Exit",
+      "line": 1840
+    },
+    {
+      "name": "Purch-Activety",
+      "line": 1879
+    },
+    {
+      "name": "AC020-Phase-1-End",
+      "line": 1886
+    },
+    {
+      "name": "AC060-Phase-2-Read",
+      "line": 1896
+    },
+    {
+      "name": "AC070-Phase-2-End",
+      "line": 1929
+    },
+    {
+      "name": "AC140-Phase-4-End",
+      "line": 1991
+    },
+    {
+      "name": "AC170-Phase-6-Sys4-Reset",
+      "line": 1994
+    },
+    {
+      "name": "PL-credit-notes-This-month",
+      "line": 2000
+    },
+    {
+      "name": "AC996-Error-on-OTM5-Rewrite",
+      "line": 2003
+    },
+    {
+      "name": "AC997-Error-on-OTM5-Delete",
+      "line": 2011
+    },
+    {
+      "name": "AC998-Error-On-Purch-Rewrite",
+      "line": 2019
+    },
+    {
+      "name": "AC999-main-exit",
+      "line": 2026
+    },
+    {
+      "name": "AD010-Test-for-Subs",
+      "line": 2062
+    },
+    {
+      "name": "AD020-Actual-Delete",
+      "line": 2074
+    },
+    {
+      "name": "AD999-Kill-Exit",
+      "line": 2078
+    },
+    {
+      "name": "BD010-Monthly-Check",
+      "line": 2095
+    },
+    {
+      "name": "new-quarter",
+      "line": 2104
+    },
+    {
+      "name": "BD020-Weekly-Check",
+      "line": 2106
+    },
+    {
+      "name": "new-quarter",
+      "line": 2115
+    },
+    {
+      "name": "BD030-Query-Check",
+      "line": 2117
+    },
+    {
+      "name": "BD032-Skip-Question",
+      "line": 2136
+    },
+    {
+      "name": "new-quarter",
+      "line": 2150
+    },
+    {
+      "name": "BD999-main-exit",
+      "line": 2152
+    },
+    {
+      "name": "BA000-Start",
+      "line": 2166
+    },
+    {
+      "name": "BA020-End",
+      "line": 2216
+    },
+    {
+      "name": "BA00-Exit",
+      "line": 2219
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 2249
+    }
+  ],
+  "metadata": {
+    "lines": 2256,
+    "parseDate": "2025-09-17T19:45:42.526Z",
+    "hasMainProgram": false
+  }
+}

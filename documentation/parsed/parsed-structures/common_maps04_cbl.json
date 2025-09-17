@@ -1,0 +1,59 @@
+{
+  "filePath": "../../Legacy_App/common/maps04.cbl",
+  "fileName": "maps04.cbl",
+  "programId": "maps04",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 80
+    },
+    {
+      "name": "DATA",
+      "line": 87
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 122
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "01",
+      "name": "date-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "mapa03-ws",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "main",
+      "line": 125
+    },
+    {
+      "name": "ws-unpack",
+      "line": 184
+    },
+    {
+      "name": "main-exit",
+      "line": 193
+    }
+  ],
+  "metadata": {
+    "lines": 195,
+    "parseDate": "2025-09-17T19:45:42.324Z",
+    "hasMainProgram": true
+  }
+}

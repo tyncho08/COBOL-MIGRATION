@@ -1,0 +1,187 @@
+{
+  "filePath": "../../Legacy_App/common/otm3UNL.cbl",
+  "fileName": "otm3UNL.cbl",
+  "programId": "otm3UNL",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 9
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 90
+    },
+    {
+      "name": "DATA",
+      "line": 105
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 151
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "ACAS-Sysout",
+      "line": 220,
+      "type": "static"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 155
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 162
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 169
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 172
+    },
+    {
+      "target": "forever",
+      "thru": null,
+      "line": 179
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 188
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 195
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 211
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 213
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "otm3-File-Seq",
+      "line": 112,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Arg-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Vals",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "SO-Print",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 97
+    },
+    {
+      "name": "aa000-Main-Start",
+      "line": 154
+    },
+    {
+      "name": "end-if",
+      "line": 174
+    },
+    {
+      "name": "aa010-Read-Recs",
+      "line": 178
+    },
+    {
+      "name": "end-perform",
+      "line": 199
+    },
+    {
+      "name": "aa020-Finish-Off",
+      "line": 201
+    },
+    {
+      "name": "Open-Item-File-3",
+      "line": 203
+    },
+    {
+      "name": "goback",
+      "line": 215
+    },
+    {
+      "name": "Call-Sysout",
+      "line": 219
+    }
+  ],
+  "metadata": {
+    "lines": 222,
+    "parseDate": "2025-09-17T19:45:42.341Z",
+    "hasMainProgram": true
+  }
+}

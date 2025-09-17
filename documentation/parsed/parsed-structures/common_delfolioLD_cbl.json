@@ -1,0 +1,504 @@
+{
+  "filePath": "../../Legacy_App/common/delfolioLD.cbl",
+  "fileName": "delfolioLD.cbl",
+  "programId": "DelFolioLD",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 16
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 122
+    },
+    {
+      "name": "DATA",
+      "line": 133
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 206
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "acas-get-params",
+      "line": 246,
+      "type": "static"
+    },
+    {
+      "program": "acas023",
+      "line": 357,
+      "type": "static"
+    },
+    {
+      "program": "ACAS-Sysout",
+      "line": 530,
+      "type": "static"
+    },
+    {
+      "program": "to",
+      "line": 77,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 210
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 212
+    },
+    {
+      "target": "acas023-Open-Input",
+      "thru": null,
+      "line": 307
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 310
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 315
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 317
+    },
+    {
+      "target": "acas023-Close",
+      "thru": null,
+      "line": 319
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 323
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 328
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 330
+    },
+    {
+      "target": "acas023-Close",
+      "thru": null,
+      "line": 332
+    },
+    {
+      "target": "acas023-Open",
+      "thru": null,
+      "line": 339
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 342
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 344
+    },
+    {
+      "target": "acas023-Close",
+      "thru": null,
+      "line": 346
+    },
+    {
+      "target": "acas023-Close",
+      "thru": null,
+      "line": 349
+    },
+    {
+      "target": "acas023",
+      "thru": null,
+      "line": 366
+    },
+    {
+      "target": "aa100-Check-4-Errors",
+      "thru": null,
+      "line": 367
+    },
+    {
+      "target": "acas023",
+      "thru": null,
+      "line": 372
+    },
+    {
+      "target": "aa100-Check-4-Errors",
+      "thru": null,
+      "line": 373
+    },
+    {
+      "target": "acas023",
+      "thru": null,
+      "line": 377
+    },
+    {
+      "target": "acas023",
+      "thru": null,
+      "line": 381
+    },
+    {
+      "target": "acas023",
+      "thru": null,
+      "line": 385
+    },
+    {
+      "target": "acas023",
+      "thru": null,
+      "line": 389
+    },
+    {
+      "target": "acas023-Read-Next",
+      "thru": null,
+      "line": 397
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 405
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 407
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 408
+    },
+    {
+      "target": "acas023-Write",
+      "thru": null,
+      "line": 415
+    },
+    {
+      "target": "acas023-Rewrite",
+      "thru": null,
+      "line": 422
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 427
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 429
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 439
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 442
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 445
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 447
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 449
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 450
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 482
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 485
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 488
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 490
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 492
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 494
+    },
+    {
+      "target": "aa020-Rollback",
+      "thru": null,
+      "line": 495
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 504
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 507
+    },
+    {
+      "target": "call-Sysout",
+      "thru": null,
+      "line": 511
+    },
+    {
+      "target": "acas023-Close",
+      "thru": null,
+      "line": 516
+    },
+    {
+      "target": "acas023-close",
+      "thru": null,
+      "line": 520
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 522
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 524
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Arg-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Vals",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "SO-Print",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-RDB-Return",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-RDB-Vars",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 129
+    },
+    {
+      "name": "aa000-main-start",
+      "line": 209
+    },
+    {
+      "name": "goback",
+      "line": 227
+    },
+    {
+      "name": "goback",
+      "line": 237
+    },
+    {
+      "name": "goback",
+      "line": 294
+    },
+    {
+      "name": "aa010-Proc-Override",
+      "line": 296
+    },
+    {
+      "name": "goback",
+      "line": 320
+    },
+    {
+      "name": "goback",
+      "line": 334
+    },
+    {
+      "name": "end-if",
+      "line": 352
+    },
+    {
+      "name": "acas023",
+      "line": 356
+    },
+    {
+      "name": "ACAS-DAL-Common-Data",
+      "line": 361
+    },
+    {
+      "name": "acas023-Open",
+      "line": 363
+    },
+    {
+      "name": "acas023-Open-Input",
+      "line": 369
+    },
+    {
+      "name": "acas023-Close",
+      "line": 375
+    },
+    {
+      "name": "acas023-Read-Next",
+      "line": 379
+    },
+    {
+      "name": "acas023-Write",
+      "line": 383
+    },
+    {
+      "name": "acas023-Rewrite",
+      "line": 387
+    },
+    {
+      "name": "aa010-Read",
+      "line": 394
+    },
+    {
+      "name": "FA-File-System-Used",
+      "line": 414
+    },
+    {
+      "name": "end-if",
+      "line": 434
+    },
+    {
+      "name": "end-if",
+      "line": 453
+    },
+    {
+      "name": "aa020-Rollback",
+      "line": 457
+    },
+    {
+      "name": "aa030-Commit",
+      "line": 469
+    },
+    {
+      "name": "aa100-Check-4-Errors",
+      "line": 479
+    },
+    {
+      "name": "end-if",
+      "line": 497
+    },
+    {
+      "name": "aa999-Finish",
+      "line": 499
+    },
+    {
+      "name": "FA-File-System-Used",
+      "line": 513
+    },
+    {
+      "name": "FA-File-System-Used",
+      "line": 519
+    },
+    {
+      "name": "goback",
+      "line": 525
+    },
+    {
+      "name": "Call-Sysout",
+      "line": 529
+    }
+  ],
+  "metadata": {
+    "lines": 532,
+    "parseDate": "2025-09-17T19:45:42.236Z",
+    "hasMainProgram": true
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "filePath": "../../Legacy_App/general/gl071.cbl",
+  "fileName": "gl071.cbl",
+  "programId": "gl071",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 83
+    },
+    {
+      "name": "DATA",
+      "line": 105
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 162
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "pre-trans",
+      "line": 111,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "post-trans",
+      "line": 123,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "fs-reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 90
+    },
+    {
+      "name": "file-defs",
+      "line": 165
+    },
+    {
+      "name": "main",
+      "line": 168
+    },
+    {
+      "name": "main-exit",
+      "line": 181
+    },
+    {
+      "name": "goback",
+      "line": 182
+    }
+  ],
+  "metadata": {
+    "lines": 184,
+    "parseDate": "2025-09-17T19:45:42.661Z",
+    "hasMainProgram": false
+  }
+}

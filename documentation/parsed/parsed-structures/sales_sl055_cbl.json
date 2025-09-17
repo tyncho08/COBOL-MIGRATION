@@ -1,0 +1,404 @@
+{
+  "filePath": "../../Legacy_App/sales/sl055.cbl",
+  "fileName": "sl055.cbl",
+  "programId": "sl055",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 13
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 127
+    },
+    {
+      "name": "DATA",
+      "line": 140
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 272
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "sl070",
+      "line": 333,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 165,
+      "type": "dynamic"
+    },
+    {
+      "program": "failed",
+      "line": 339,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "a01-Eval-Status",
+      "thru": null,
+      "line": 286
+    },
+    {
+      "target": "Value-Open-Input",
+      "thru": null,
+      "line": 320
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 322
+    },
+    {
+      "target": "Value-Open-Output",
+      "thru": null,
+      "line": 323
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 325
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 354
+    },
+    {
+      "target": "Invoice-Open",
+      "thru": null,
+      "line": 357
+    },
+    {
+      "target": "Value-Open",
+      "thru": null,
+      "line": 358
+    },
+    {
+      "target": "Analysis-Open",
+      "thru": null,
+      "line": 359
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 366
+    },
+    {
+      "target": "perform",
+      "thru": null,
+      "line": 366
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 375
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 378
+    },
+    {
+      "target": "Value-Read-Indexed",
+      "thru": null,
+      "line": 384
+    },
+    {
+      "target": "db000-Create",
+      "thru": null,
+      "line": 386
+    },
+    {
+      "target": "Value-Write",
+      "thru": null,
+      "line": 399
+    },
+    {
+      "target": "Value-Rewrite",
+      "thru": null,
+      "line": 401
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 404
+    },
+    {
+      "target": "Value-Read-Indexed",
+      "thru": null,
+      "line": 408
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 410
+    },
+    {
+      "target": "Value-Rewrite",
+      "thru": null,
+      "line": 421
+    },
+    {
+      "target": "Invoice-Rewrite",
+      "thru": null,
+      "line": 423
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 424
+    },
+    {
+      "target": "dd000-Extract",
+      "thru": null,
+      "line": 439
+    },
+    {
+      "target": "Invoice-Rewrite",
+      "thru": null,
+      "line": 442
+    },
+    {
+      "target": "Invoice-Rewrite",
+      "thru": null,
+      "line": 470
+    },
+    {
+      "target": "Invoice-Start",
+      "thru": null,
+      "line": 477
+    },
+    {
+      "target": "dc000-Store-Specials",
+      "thru": null,
+      "line": 486
+    },
+    {
+      "target": "dc000-Store-Specials",
+      "thru": null,
+      "line": 490
+    },
+    {
+      "target": "dc000-Store-Specials",
+      "thru": null,
+      "line": 494
+    },
+    {
+      "target": "dc000-Store-Specials",
+      "thru": null,
+      "line": 498
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 499
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 500
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 501
+    },
+    {
+      "target": "Analysis-Read-Indexed",
+      "thru": null,
+      "line": 535
+    },
+    {
+      "target": "Analysis-Read-Indexed",
+      "thru": null,
+      "line": 552
+    },
+    {
+      "target": "Value-Write",
+      "thru": null,
+      "line": 561
+    },
+    {
+      "target": "Analysis-Read-Indexed",
+      "thru": null,
+      "line": 565
+    },
+    {
+      "target": "Analysis-Write",
+      "thru": null,
+      "line": 581
+    },
+    {
+      "target": "Analysis-Write",
+      "thru": null,
+      "line": 584
+    },
+    {
+      "target": "Value-Read-Indexed",
+      "thru": null,
+      "line": 597
+    },
+    {
+      "target": "db000-Create",
+      "thru": null,
+      "line": 599
+    },
+    {
+      "target": "Value-Write",
+      "thru": null,
+      "line": 608
+    },
+    {
+      "target": "Value-Rewrite",
+      "thru": null,
+      "line": 610
+    },
+    {
+      "target": "Value-Read-Indexed",
+      "thru": null,
+      "line": 614
+    },
+    {
+      "target": "Value-Rewrite",
+      "thru": null,
+      "line": 622
+    },
+    {
+      "target": "a01-Eval-Status",
+      "thru": null,
+      "line": 684
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Exception-Msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Invoice-Record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 133
+    },
+    {
+      "name": "file-defs",
+      "line": 276
+    },
+    {
+      "name": "da010-Read-Loop",
+      "line": 365
+    },
+    {
+      "name": "end-perform",
+      "line": 425
+    },
+    {
+      "name": "da030-Skip-Invoice",
+      "line": 473
+    },
+    {
+      "name": "da040-Close-Files",
+      "line": 482
+    },
+    {
+      "name": "da999-Menu-Exit",
+      "line": 521
+    },
+    {
+      "name": "goback",
+      "line": 522
+    },
+    {
+      "name": "DB000-Create-Main",
+      "line": 531
+    },
+    {
+      "name": "db010-Create-Anal",
+      "line": 575
+    },
+    {
+      "name": "db999-Main-Exit",
+      "line": 588
+    },
+    {
+      "name": "dc999-Main-Exit",
+      "line": 624
+    },
+    {
+      "name": "end-if",
+      "line": 690
+    },
+    {
+      "name": "dd999-Main-Ex",
+      "line": 692
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 722
+    }
+  ],
+  "metadata": {
+    "lines": 734,
+    "parseDate": "2025-09-17T19:45:42.846Z",
+    "hasMainProgram": false
+  }
+}

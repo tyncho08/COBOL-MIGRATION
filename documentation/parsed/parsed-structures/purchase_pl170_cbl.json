@@ -1,0 +1,308 @@
+{
+  "filePath": "../../Legacy_App/purchase/pl170.cbl",
+  "fileName": "pl170.cbl",
+  "programId": "pl170",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 84
+    },
+    {
+      "name": "DATA",
+      "line": 96
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 301
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 326,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 662,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 114,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "for",
+      "thru": null,
+      "line": 47
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 310
+    },
+    {
+      "target": "Purch-Open-Input",
+      "thru": null,
+      "line": 318
+    },
+    {
+      "target": "report-selection",
+      "thru": null,
+      "line": 321
+    },
+    {
+      "target": "produce-report",
+      "thru": null,
+      "line": 322
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 325
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 335
+    },
+    {
+      "target": "Purch-Start",
+      "thru": null,
+      "line": 340
+    },
+    {
+      "target": "Purch-Read-Next",
+      "thru": null,
+      "line": 348
+    },
+    {
+      "target": "test-num",
+      "thru": null,
+      "line": 369
+    },
+    {
+      "target": "test-num",
+      "thru": null,
+      "line": 377
+    },
+    {
+      "target": "test-num",
+      "thru": null,
+      "line": 385
+    },
+    {
+      "target": "test-num",
+      "thru": null,
+      "line": 394
+    },
+    {
+      "target": "test-num",
+      "thru": null,
+      "line": 402
+    },
+    {
+      "target": "listing",
+      "thru": null,
+      "line": 406
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 469
+    },
+    {
+      "target": "shorten-ws-date",
+      "thru": null,
+      "line": 470
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 477
+    },
+    {
+      "target": "shorten-ws-date",
+      "thru": null,
+      "line": 478
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 486
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 549
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 589
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 603
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "All-My-Constants",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-3",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "display-03",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 91
+    },
+    {
+      "name": "file-defs",
+      "line": 304
+    },
+    {
+      "name": "menu-exit",
+      "line": 328
+    },
+    {
+      "name": "read-loop",
+      "line": 345
+    },
+    {
+      "name": "test-num",
+      "line": 409
+    },
+    {
+      "name": "headings",
+      "line": 430
+    },
+    {
+      "name": "listing",
+      "line": 450
+    },
+    {
+      "name": "shorten-ws-date",
+      "line": 488
+    },
+    {
+      "name": "end-report",
+      "line": 502
+    },
+    {
+      "name": "accept-data",
+      "line": 513
+    },
+    {
+      "name": "main-exit",
+      "line": 556
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 586
+    },
+    {
+      "name": "zz050-exit",
+      "line": 591
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 626
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 656
+    },
+    {
+      "name": "maps04-exit",
+      "line": 664
+    }
+  ],
+  "metadata": {
+    "lines": 669,
+    "parseDate": "2025-09-17T19:45:42.783Z",
+    "hasMainProgram": true
+  }
+}

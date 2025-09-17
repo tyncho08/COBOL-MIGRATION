@@ -1,0 +1,100 @@
+{
+  "filePath": "../../Legacy_App/common/fhlogger.cbl",
+  "fileName": "fhlogger.cbl",
+  "programId": "fhlogger",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 26
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 106
+    },
+    {
+      "name": "DATA",
+      "line": 117
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 185
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "added",
+      "line": 67,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Log-File",
+      "line": 125,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Log-File-Open-Flag",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "fx-reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "WS-Logging-On",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-CDT",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 110
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 186
+    },
+    {
+      "name": "Ca010-Create-Log-Rec",
+      "line": 192
+    },
+    {
+      "name": "end-if",
+      "line": 215
+    },
+    {
+      "name": "ca999-Exit",
+      "line": 252
+    }
+  ],
+  "metadata": {
+    "lines": 258,
+    "parseDate": "2025-09-17T19:45:42.263Z",
+    "hasMainProgram": true
+  }
+}

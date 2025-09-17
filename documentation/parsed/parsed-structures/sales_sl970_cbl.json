@@ -1,0 +1,510 @@
+{
+  "filePath": "../../Legacy_App/sales/sl970.cbl",
+  "fileName": "sl970.cbl",
+  "programId": "sl970",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 18
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 137
+    },
+    {
+      "name": "DATA",
+      "line": 151
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 453
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 535,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 1096,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 175,
+      "type": "dynamic"
+    },
+    {
+      "program": "static",
+      "line": 952,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 498
+    },
+    {
+      "target": "ba000-Reports",
+      "thru": null,
+      "line": 539
+    },
+    {
+      "target": "CA000-Amend",
+      "thru": null,
+      "line": 543
+    },
+    {
+      "target": "ba020-Cust-Report",
+      "thru": "ba020-Exit",
+      "line": 558
+    },
+    {
+      "target": "ba030-Item-Report",
+      "thru": "ba030-Exit",
+      "line": 559
+    },
+    {
+      "target": "ba020-Cust-Report",
+      "thru": "ba020-Exit",
+      "line": 563
+    },
+    {
+      "target": "ba030-Item-Report",
+      "thru": "ba030-Exit",
+      "line": 566
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 581
+    },
+    {
+      "target": "end-read",
+      "thru": null,
+      "line": 584
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 588
+    },
+    {
+      "target": "ba110-Move-Cust",
+      "thru": null,
+      "line": 590
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 591
+    },
+    {
+      "target": "until",
+      "thru": null,
+      "line": 609
+    },
+    {
+      "target": "end-read",
+      "thru": null,
+      "line": 612
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 616
+    },
+    {
+      "target": "ba120-Move-Item",
+      "thru": null,
+      "line": 618
+    },
+    {
+      "target": "cycle",
+      "thru": null,
+      "line": 619
+    },
+    {
+      "target": "bb100-Cust-Heads",
+      "thru": null,
+      "line": 679
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 694
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 697
+    },
+    {
+      "target": "bc100-Item-Heads",
+      "thru": null,
+      "line": 722
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 737
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 740
+    },
+    {
+      "target": "Stock-Open-Input",
+      "thru": null,
+      "line": 769
+    },
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 774
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 841
+    },
+    {
+      "target": "Sales-Read-Indexed",
+      "thru": null,
+      "line": 847
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 891
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 894
+    },
+    {
+      "target": "zz080-Convert-Local-To-Bin-Date",
+      "thru": null,
+      "line": 912
+    },
+    {
+      "target": "AN-Test-Status",
+      "thru": null,
+      "line": 954
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 986
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 988
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 1003
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Temp-Date-YMD",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "hdtime",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Tables",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-3",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-8",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Line-9",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "COB-CRT-Status",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "To-Day",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-02",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-03",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-04-Cust-Stock",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 144
+    },
+    {
+      "name": "file-defs",
+      "line": 456
+    },
+    {
+      "name": "aa000-Main",
+      "line": 462
+    },
+    {
+      "name": "end-if",
+      "line": 491
+    },
+    {
+      "name": "L2-Name",
+      "line": 496
+    },
+    {
+      "name": "AN-Return-Code",
+      "line": 505
+    },
+    {
+      "name": "aa010-Menu",
+      "line": 512
+    },
+    {
+      "name": "aa010-Sub-Menu",
+      "line": 518
+    },
+    {
+      "name": "aa020-Menu-Input",
+      "line": 526
+    },
+    {
+      "name": "AA000-Menu-Exit",
+      "line": 546
+    },
+    {
+      "name": "goback",
+      "line": 547
+    },
+    {
+      "name": "ba010-Main",
+      "line": 552
+    },
+    {
+      "name": "ba020-Cust-Report",
+      "line": 569
+    },
+    {
+      "name": "end-perform",
+      "line": 592
+    },
+    {
+      "name": "ba020-Exit",
+      "line": 594
+    },
+    {
+      "name": "exit",
+      "line": 595
+    },
+    {
+      "name": "ba030-Item-Report",
+      "line": 597
+    },
+    {
+      "name": "end-perform",
+      "line": 620
+    },
+    {
+      "name": "ba030-Exit",
+      "line": 622
+    },
+    {
+      "name": "exit",
+      "line": 623
+    },
+    {
+      "name": "ba999-Exit",
+      "line": 625
+    },
+    {
+      "name": "end-if",
+      "line": 714
+    },
+    {
+      "name": "ba110-Exit",
+      "line": 716
+    },
+    {
+      "name": "end-if",
+      "line": 757
+    },
+    {
+      "name": "ba120-Exit",
+      "line": 759
+    },
+    {
+      "name": "CA010-Main",
+      "line": 767
+    },
+    {
+      "name": "CA020-Get-Mode",
+      "line": 783
+    },
+    {
+      "name": "CA030-Get-Key",
+      "line": 799
+    },
+    {
+      "name": "BO-Cust-Itm-No",
+      "line": 816
+    },
+    {
+      "name": "CA040-Get-Confirm-Delete",
+      "line": 853
+    },
+    {
+      "name": "CA050-Get-Ord-Date",
+      "line": 902
+    },
+    {
+      "name": "end-if",
+      "line": 919
+    },
+    {
+      "name": "CA060-Get-Est-Date",
+      "line": 922
+    },
+    {
+      "name": "CA070-Get-Inv-Type",
+      "line": 935
+    },
+    {
+      "name": "CA080-Price",
+      "line": 945
+    },
+    {
+      "name": "ca998-Exit",
+      "line": 984
+    },
+    {
+      "name": "ca999-Exit",
+      "line": 990
+    },
+    {
+      "name": "zz080-Conv-Common-Date",
+      "line": 1081
+    },
+    {
+      "name": "maps04-exit",
+      "line": 1098
+    }
+  ],
+  "metadata": {
+    "lines": 1105,
+    "parseDate": "2025-09-17T19:45:42.983Z",
+    "hasMainProgram": false
+  }
+}

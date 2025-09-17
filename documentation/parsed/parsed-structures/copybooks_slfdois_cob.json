@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/slfdois.cob",
+  "fileName": "slfdois.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "open-item-file-s",
+      "line": 9,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 12,
+    "parseDate": "2025-09-17T19:45:42.607Z",
+    "hasMainProgram": true
+  }
+}

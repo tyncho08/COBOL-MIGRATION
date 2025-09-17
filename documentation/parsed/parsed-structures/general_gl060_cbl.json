@@ -1,0 +1,258 @@
+{
+  "filePath": "../../Legacy_App/general/gl060.cbl",
+  "fileName": "gl060.cbl",
+  "programId": "gl060",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 87
+    },
+    {
+      "name": "DATA",
+      "line": 99
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 235
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 447,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 525,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 118,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-convert-date",
+      "thru": null,
+      "line": 264
+    },
+    {
+      "target": "gl060a",
+      "thru": null,
+      "line": 287
+    },
+    {
+      "target": "menu-input",
+      "thru": null,
+      "line": 299
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 307
+    },
+    {
+      "target": "GL-Batch-Open-Input",
+      "thru": null,
+      "line": 314
+    },
+    {
+      "target": "GL-Batch-Read-Next",
+      "thru": null,
+      "line": 319
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 337
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 342
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 347
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 352
+    },
+    {
+      "target": "detail-print",
+      "thru": null,
+      "line": 381
+    },
+    {
+      "target": "screen-clear",
+      "thru": null,
+      "line": 402
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 419
+    },
+    {
+      "target": "GL-Batch-Close",
+      "thru": null,
+      "line": 452
+    },
+    {
+      "target": "maps03",
+      "thru": null,
+      "line": 466
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "All-My-Constants",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-3",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 94
+    },
+    {
+      "name": "file-defs",
+      "line": 238
+    },
+    {
+      "name": "menu-input",
+      "line": 244
+    },
+    {
+      "name": "menu-input2",
+      "line": 273
+    },
+    {
+      "name": "menu-exit",
+      "line": 290
+    },
+    {
+      "name": "goback",
+      "line": 294
+    },
+    {
+      "name": "loop",
+      "line": 316
+    },
+    {
+      "name": "next-1",
+      "line": 354
+    },
+    {
+      "name": "screen-option",
+      "line": 393
+    },
+    {
+      "name": "screen-clear",
+      "line": 407
+    },
+    {
+      "name": "detail-print",
+      "line": 413
+    },
+    {
+      "name": "headings",
+      "line": 423
+    },
+    {
+      "name": "end-report",
+      "line": 442
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 489
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 519
+    },
+    {
+      "name": "maps04-exit",
+      "line": 527
+    }
+  ],
+  "metadata": {
+    "lines": 532,
+    "parseDate": "2025-09-17T19:45:42.658Z",
+    "hasMainProgram": false
+  }
+}

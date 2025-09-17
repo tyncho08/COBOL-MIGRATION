@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Procedure Flow: acas004</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style type="text/css">
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        #mynetwork { 
+            width: 100%; 
+            height: calc(100vh - 100px); 
+            border: 1px solid #ccc; 
+        }
+        #header { 
+            padding: 10px; 
+            background: #f0f0f0; 
+            height: 80px;
+        }
+        .back-link {
+            float: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>Procedure Flow: acas004</h2>
+        <p>File: ../../Legacy_App/common/acas004.cbl</p>
+        <a href="procedure-flow.html" class="back-link">← Back to Index</a>
+    </div>
+    <div id="mynetwork"></div>
+
+    <script type="text/javascript">
+        var nodes = new vis.DataSet([{"id":0,"label":"PROCEDURE DIVISION","level":0,"color":"#90EE90"},{"id":1,"label":"file-control","level":2,"color":"#FFD700"},{"id":2,"label":"ACAS-DAL-Common-data","level":2,"color":"#FFD700"},{"id":3,"label":"aa010-main","level":2,"color":"#FFD700"},{"id":4,"label":"end-evaluate","level":2,"color":"#FFD700"},{"id":5,"label":"end-if","level":2,"color":"#FFD700"},{"id":6,"label":"end-evaluate","level":2,"color":"#FFD700"},{"id":7,"label":"aa020-Process-Open","level":2,"color":"#FFD700"},{"id":8,"label":"end-if","level":2,"color":"#FFD700"},{"id":9,"label":"aa030-Process-Close","level":2,"color":"#FFD700"},{"id":10,"label":"aa040-Process-Read-Next","level":2,"color":"#FFD700"},{"id":11,"label":"end-read","level":2,"color":"#FFD700"},{"id":12,"label":"aa045-Eval-Keys","level":2,"color":"#FFD700"},{"id":13,"label":"end-evaluate","level":2,"color":"#FFD700"},{"id":14,"label":"aa050-Process-Read-Indexed","level":2,"color":"#FFD700"},{"id":15,"label":"end-if","level":2,"color":"#FFD700"},{"id":16,"label":"aa060-Process-Start","level":2,"color":"#FFD700"},{"id":17,"label":"WE-Error","level":2,"color":"#FFD700"},{"id":18,"label":"aa070-Process-Write","level":2,"color":"#FFD700"},{"id":19,"label":"end-write","level":2,"color":"#FFD700"},{"id":20,"label":"aa080-Process-Delete","level":2,"color":"#FFD700"},{"id":21,"label":"end-delete","level":2,"color":"#FFD700"},{"id":22,"label":"aa090-Process-Rewrite","level":2,"color":"#FFD700"},{"id":23,"label":"aa100-Bad-Function","level":2,"color":"#FFD700"},{"id":24,"label":"aa999-main-exit","level":2,"color":"#FFD700"},{"id":25,"label":"end-if","level":2,"color":"#FFD700"},{"id":26,"label":"aa-main-exit","level":2,"color":"#FFD700"},{"id":27,"label":"aa-Exit","level":2,"color":"#FFD700"},{"id":28,"label":"ba012-Test-WS-Rec-Size-2","level":2,"color":"#FFD700"},{"id":29,"label":"end-if","level":2,"color":"#FFD700"},{"id":30,"label":"ba015-Test-Ends","level":2,"color":"#FFD700"},{"id":31,"label":"end-call","level":2,"color":"#FFD700"},{"id":32,"label":"ba-rdbms-exit","level":2,"color":"#FFD700"},{"id":33,"label":"ACAS-DAL-Common-data","level":2,"color":"#FFD700"}]);
+        var edges = new vis.DataSet([{"from":1,"to":28,"label":"PERFORM","dashes":true},{"from":1,"to":24,"label":"PERFORM","dashes":true}]);
+
+        var container = document.getElementById('mynetwork');
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+        
+        var options = {
+            layout: {
+                hierarchical: {
+                    direction: 'UD',
+                    sortMethod: 'directed'
+                }
+            },
+            nodes: {
+                shape: 'box',
+                font: {
+                    face: 'monospace',
+                    align: 'left'
+                }
+            },
+            edges: {
+                arrows: {
+                    to: { enabled: true, scaleFactor: 1 }
+                }
+            },
+            physics: false
+        };
+        
+        var network = new vis.Network(container, data, options);
+    </script>
+</body>
+</html>

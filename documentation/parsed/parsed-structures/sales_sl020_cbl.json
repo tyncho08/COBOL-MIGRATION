@@ -1,0 +1,494 @@
+{
+  "filePath": "../../Legacy_App/sales/sl020.cbl",
+  "fileName": "sl020.cbl",
+  "programId": "sl020",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 111
+    },
+    {
+      "name": "DATA",
+      "line": 132
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 393
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 447,
+      "type": "static"
+    },
+    {
+      "program": "SYSTEM",
+      "line": 772,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 170,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 412
+    },
+    {
+      "target": "set-up-work-file",
+      "thru": null,
+      "line": 430
+    },
+    {
+      "target": "Sales-Open-Input",
+      "thru": null,
+      "line": 432
+    },
+    {
+      "target": "OTM3-Open-Input",
+      "thru": null,
+      "line": 433
+    },
+    {
+      "target": "enquiry",
+      "thru": null,
+      "line": 434
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 436
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 437
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 463
+    },
+    {
+      "target": "Sales-Start",
+      "thru": null,
+      "line": 494
+    },
+    {
+      "target": "OTM3-Start",
+      "thru": null,
+      "line": 496
+    },
+    {
+      "target": "Sales-Read-Next",
+      "thru": null,
+      "line": 510
+    },
+    {
+      "target": "get-unposted",
+      "thru": null,
+      "line": 554
+    },
+    {
+      "target": "OTM3-Read-Next",
+      "thru": null,
+      "line": 578
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 600
+    },
+    {
+      "target": "print-screen",
+      "thru": null,
+      "line": 733
+    },
+    {
+      "target": "set-query-flag",
+      "thru": null,
+      "line": 739
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 761
+    },
+    {
+      "target": "Heads1",
+      "thru": null,
+      "line": 766
+    },
+    {
+      "target": "write",
+      "thru": null,
+      "line": 768
+    },
+    {
+      "target": "main001",
+      "thru": null,
+      "line": 782
+    },
+    {
+      "target": "Invoice-Open-Input",
+      "thru": null,
+      "line": 789
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 793
+    },
+    {
+      "target": "Invoice-Read-Next-Header",
+      "thru": null,
+      "line": 798
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 823
+    },
+    {
+      "target": "Invoice-Close",
+      "thru": null,
+      "line": 839
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 891
+    },
+    {
+      "target": "OTM3-Open",
+      "thru": null,
+      "line": 895
+    },
+    {
+      "target": "OTM3-Read-Indexed",
+      "thru": null,
+      "line": 902
+    },
+    {
+      "target": "OTM3-Rewrite",
+      "thru": null,
+      "line": 918
+    },
+    {
+      "target": "OTM3-Close",
+      "thru": null,
+      "line": 934
+    },
+    {
+      "target": "OTM3-Open-Input",
+      "thru": null,
+      "line": 935
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 970
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 984
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Work-File",
+      "line": 138,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "print-file",
+      "line": 146,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Invoice-Record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "All-My-Constants",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "balances",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-0",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-3",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-7-19",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-20",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-21",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 118
+    },
+    {
+      "name": "file-defs",
+      "line": 396
+    },
+    {
+      "name": "menu-exit",
+      "line": 441
+    },
+    {
+      "name": "maps04",
+      "line": 444
+    },
+    {
+      "name": "Enquiry-Main",
+      "line": 456
+    },
+    {
+      "name": "main001",
+      "line": 457
+    },
+    {
+      "name": "after-disp-heads",
+      "line": 466
+    },
+    {
+      "name": "main-display-end",
+      "line": 474
+    },
+    {
+      "name": "work-customer",
+      "line": 489
+    },
+    {
+      "name": "inv-amount",
+      "line": 492
+    },
+    {
+      "name": "read-sales",
+      "line": 508
+    },
+    {
+      "name": "read-open-item",
+      "line": 576
+    },
+    {
+      "name": "item-comp-1",
+      "line": 625
+    },
+    {
+      "name": "calc-age",
+      "line": 656
+    },
+    {
+      "name": "bypass-ageing",
+      "line": 676
+    },
+    {
+      "name": "end-statement",
+      "line": 680
+    },
+    {
+      "name": "end-if",
+      "line": 696
+    },
+    {
+      "name": "disp-totals",
+      "line": 698
+    },
+    {
+      "name": "es-disp",
+      "line": 710
+    },
+    {
+      "name": "es-accept",
+      "line": 719
+    },
+    {
+      "name": "Heads1",
+      "line": 752
+    },
+    {
+      "name": "Heads2",
+      "line": 760
+    },
+    {
+      "name": "read-invoice",
+      "line": 796
+    },
+    {
+      "name": "invoice-eof",
+      "line": 837
+    },
+    {
+      "name": "eof-test",
+      "line": 842
+    },
+    {
+      "name": "main004-exit",
+      "line": 850
+    },
+    {
+      "name": "read-work",
+      "line": 859
+    },
+    {
+      "name": "main005-finish",
+      "line": 870
+    },
+    {
+      "name": "main005-exit",
+      "line": 874
+    },
+    {
+      "name": "accept006",
+      "line": 884
+    },
+    {
+      "name": "open006",
+      "line": 893
+    },
+    {
+      "name": "error006",
+      "line": 926
+    },
+    {
+      "name": "finish006",
+      "line": 932
+    },
+    {
+      "name": "main006-exit",
+      "line": 937
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 967
+    },
+    {
+      "name": "zz050-exit",
+      "line": 972
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 1007
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 1037
+    }
+  ],
+  "metadata": {
+    "lines": 1042,
+    "parseDate": "2025-09-17T19:45:42.840Z",
+    "hasMainProgram": true
+  }
+}

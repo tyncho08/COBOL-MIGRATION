@@ -1,0 +1,407 @@
+{
+  "filePath": "../../Legacy_App/common/slpostingMT.cbl",
+  "fileName": "slpostingMT.cbl",
+  "programId": "slpostingMT",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 9
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 188
+    },
+    {
+      "name": "DATA",
+      "line": 192
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 309
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "fhlogger",
+      "line": 1331,
+      "type": "static"
+    },
+    {
+      "program": "move",
+      "line": 483,
+      "type": "dynamic"
+    },
+    {
+      "program": "if",
+      "line": 622,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "MYSQL-1000-OPEN",
+      "thru": "MYSQL-1090-EXIT",
+      "line": 370
+    },
+    {
+      "target": "MYSQL-1000-OPEN",
+      "thru": "MYSQL-1090-EXIT",
+      "line": 397
+    },
+    {
+      "target": "ba998-Free",
+      "thru": null,
+      "line": 413
+    },
+    {
+      "target": "MYSQL-1980-CLOSE",
+      "thru": "MYSQL-1999-EXIT",
+      "line": 421
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 466
+    },
+    {
+      "target": "MYSQL-1220-STORE-RESULT",
+      "thru": "MYSQL-1239-EXIT",
+      "line": 467
+    },
+    {
+      "target": "bb100-UnloadHVs",
+      "thru": null,
+      "line": 545
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 588
+    },
+    {
+      "target": "MYSQL-1220-STORE-RESULT",
+      "thru": "MYSQL-1239-EXIT",
+      "line": 589
+    },
+    {
+      "target": "bb100-UnloadHVs",
+      "thru": null,
+      "line": 640
+    },
+    {
+      "target": "ba998-Free",
+      "thru": null,
+      "line": 659
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 717
+    },
+    {
+      "target": "MYSQL-1220-STORE-RESULT",
+      "thru": "MYSQL-1239-EXIT",
+      "line": 718
+    },
+    {
+      "target": "bb000-HV-Load",
+      "thru": null,
+      "line": 747
+    },
+    {
+      "target": "bb200-Insert",
+      "thru": null,
+      "line": 753
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 804
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 816
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 890
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 902
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 911
+    },
+    {
+      "target": "bb000-HV-Load",
+      "thru": null,
+      "line": 917
+    },
+    {
+      "target": "bb300-Update",
+      "thru": null,
+      "line": 935
+    },
+    {
+      "target": "Ca-Process-Logs",
+      "thru": null,
+      "line": 985
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 1176
+    },
+    {
+      "target": "MYSQL-1210-COMMAND",
+      "thru": "MYSQL-1219-EXIT",
+      "line": 1321
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ws-Where",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-MYSQL-I",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-MYSQL-EDIT",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Table-Of-Keynames",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "DAL-Data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "subscripts",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Old-File-Function",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "TP-PSIRSPOST-REC",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "TD-PSIRSPOST-REC",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-Message-1",
+      "section": "LINKAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-Message-2",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "ba010-Initialise",
+      "line": 324
+    },
+    {
+      "name": "SQL-Err",
+      "line": 334
+    },
+    {
+      "name": "end-evaluate",
+      "line": 365
+    },
+    {
+      "name": "ba020-Process-Open",
+      "line": 367
+    },
+    {
+      "name": "end-string",
+      "line": 375
+    },
+    {
+      "name": "end-string",
+      "line": 379
+    },
+    {
+      "name": "end-string",
+      "line": 383
+    },
+    {
+      "name": "end-string",
+      "line": 387
+    },
+    {
+      "name": "end-string",
+      "line": 391
+    },
+    {
+      "name": "end-string",
+      "line": 395
+    },
+    {
+      "name": "ba030-Process-Close",
+      "line": 411
+    },
+    {
+      "name": "ba040-Process-Read-Next",
+      "line": 426
+    },
+    {
+      "name": "end-if",
+      "line": 490
+    },
+    {
+      "name": "ba041-Reread",
+      "line": 491
+    },
+    {
+      "name": "end-if",
+      "line": 538
+    },
+    {
+      "name": "end-if",
+      "line": 544
+    },
+    {
+      "name": "ba050-Process-Read-Indexed",
+      "line": 551
+    },
+    {
+      "name": "end-if",
+      "line": 574
+    },
+    {
+      "name": "ba051-Reselect",
+      "line": 575
+    },
+    {
+      "name": "ba070-Process-Write",
+      "line": 746
+    },
+    {
+      "name": "end-if",
+      "line": 766
+    },
+    {
+      "name": "ba080-Process-Delete",
+      "line": 770
+    },
+    {
+      "name": "end-if",
+      "line": 822
+    },
+    {
+      "name": "WS-IRS-Post-Number",
+      "line": 850
+    },
+    {
+      "name": "end-if",
+      "line": 908
+    },
+    {
+      "name": "ba090-Process-Rewrite",
+      "line": 915
+    },
+    {
+      "name": "ba100-Bad-Function",
+      "line": 957
+    },
+    {
+      "name": "ba998-Free",
+      "line": 969
+    },
+    {
+      "name": "ba999-End",
+      "line": 981
+    },
+    {
+      "name": "end-if",
+      "line": 986
+    },
+    {
+      "name": "ba999-Exit",
+      "line": 988
+    },
+    {
+      "name": "bb000-Exit",
+      "line": 1014
+    },
+    {
+      "name": "bb100-Exit",
+      "line": 1039
+    },
+    {
+      "name": "bb200-Exit",
+      "line": 1180
+    },
+    {
+      "name": "bb300-Exit",
+      "line": 1325
+    },
+    {
+      "name": "Ca-Process-Logs",
+      "line": 1328
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 1332
+    }
+  ],
+  "metadata": {
+    "lines": 1337,
+    "parseDate": "2025-09-17T19:45:42.454Z",
+    "hasMainProgram": true
+  }
+}

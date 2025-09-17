@@ -1,0 +1,402 @@
+{
+  "filePath": "../../Legacy_App/common/acas-test-takeon-2.cbl",
+  "fileName": "acas-test-takeon-2.cbl",
+  "programId": "takeon-2",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 14
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 80
+    },
+    {
+      "name": "DATA",
+      "line": 93
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 210
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "acas022",
+      "line": 596,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 652,
+      "type": "static"
+    },
+    {
+      "program": "maps09",
+      "line": 657,
+      "type": "static"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 221
+    },
+    {
+      "target": "acas022-Close",
+      "thru": null,
+      "line": 243
+    },
+    {
+      "target": "lc-extract",
+      "thru": null,
+      "line": 247
+    },
+    {
+      "target": "lcb-proc-customers",
+      "thru": null,
+      "line": 255
+    },
+    {
+      "target": "acas022-Open",
+      "thru": null,
+      "line": 278
+    },
+    {
+      "target": "acas022-Close",
+      "thru": null,
+      "line": 284
+    },
+    {
+      "target": "acas022-Close",
+      "thru": null,
+      "line": 291
+    },
+    {
+      "target": "maps09",
+      "thru": null,
+      "line": 354
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 368
+    },
+    {
+      "target": "lcb080-Delete-Rec",
+      "thru": null,
+      "line": 396
+    },
+    {
+      "target": "lcb080-Delete-Rec",
+      "thru": null,
+      "line": 448
+    },
+    {
+      "target": "acas022-Close",
+      "thru": null,
+      "line": 494
+    },
+    {
+      "target": "acas022-Close",
+      "thru": null,
+      "line": 507
+    },
+    {
+      "target": "acas022-Close",
+      "thru": null,
+      "line": 520
+    },
+    {
+      "target": "acas022-Write",
+      "thru": null,
+      "line": 575
+    },
+    {
+      "target": "acas022-Rewrite",
+      "thru": null,
+      "line": 577
+    },
+    {
+      "target": "acas022-Delete",
+      "thru": null,
+      "line": 587
+    },
+    {
+      "target": "acas022-Delete",
+      "thru": null,
+      "line": 592
+    },
+    {
+      "target": "acas022",
+      "thru": null,
+      "line": 605
+    },
+    {
+      "target": "aa100-Check-4-Errors",
+      "thru": null,
+      "line": 606
+    },
+    {
+      "target": "acas022",
+      "thru": null,
+      "line": 611
+    },
+    {
+      "target": "aa100-Check-4-Errors",
+      "thru": null,
+      "line": 612
+    },
+    {
+      "target": "acas022",
+      "thru": null,
+      "line": 616
+    },
+    {
+      "target": "acas022",
+      "thru": null,
+      "line": 620
+    },
+    {
+      "target": "acas022",
+      "thru": null,
+      "line": 624
+    },
+    {
+      "target": "acas022",
+      "thru": null,
+      "line": 628
+    },
+    {
+      "target": "acas022",
+      "thru": null,
+      "line": 632
+    },
+    {
+      "target": "maps03",
+      "thru": null,
+      "line": 695
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "CustomersIn",
+      "line": 98,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "y",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "x",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Arg-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Vals",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "date-compiled",
+      "line": 25
+    },
+    {
+      "name": "file-control",
+      "line": 84
+    },
+    {
+      "name": "la-main",
+      "line": 213
+    },
+    {
+      "name": "goback",
+      "line": 243
+    },
+    {
+      "name": "lc-main",
+      "line": 252
+    },
+    {
+      "name": "lcb010-main",
+      "line": 262
+    },
+    {
+      "name": "goback",
+      "line": 284
+    },
+    {
+      "name": "lcb020-read",
+      "line": 287
+    },
+    {
+      "name": "lcb030-ReDo",
+      "line": 377
+    },
+    {
+      "name": "lcb040-Done",
+      "line": 389
+    },
+    {
+      "name": "end-if",
+      "line": 449
+    },
+    {
+      "name": "lcb050-Load-Address",
+      "line": 451
+    },
+    {
+      "name": "end-if",
+      "line": 476
+    },
+    {
+      "name": "lcb060-Abbrev-Address",
+      "line": 480
+    },
+    {
+      "name": "goback",
+      "line": 495
+    },
+    {
+      "name": "goback",
+      "line": 508
+    },
+    {
+      "name": "goback",
+      "line": 521
+    },
+    {
+      "name": "lcb070-Write",
+      "line": 569
+    },
+    {
+      "name": "lcb080-Delete-Rec",
+      "line": 589
+    },
+    {
+      "name": "acas022",
+      "line": 594
+    },
+    {
+      "name": "ACAS-DAL-Common-data",
+      "line": 599
+    },
+    {
+      "name": "acas022-Open",
+      "line": 601
+    },
+    {
+      "name": "acas022-Open-Input",
+      "line": 607
+    },
+    {
+      "name": "acas022-Close",
+      "line": 613
+    },
+    {
+      "name": "acas022-Read-Next",
+      "line": 617
+    },
+    {
+      "name": "acas022-Write",
+      "line": 621
+    },
+    {
+      "name": "acas022-Rewrite",
+      "line": 625
+    },
+    {
+      "name": "acas022-Delete",
+      "line": 629
+    },
+    {
+      "name": "aa100-Check-4-Errors",
+      "line": 633
+    },
+    {
+      "name": "end-if",
+      "line": 646
+    },
+    {
+      "name": "maps03",
+      "line": 648
+    },
+    {
+      "name": "maps09",
+      "line": 653
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 691
+    },
+    {
+      "name": "zz050-exit",
+      "line": 696
+    }
+  ],
+  "metadata": {
+    "lines": 702,
+    "parseDate": "2025-09-17T19:45:42.149Z",
+    "hasMainProgram": true
+  }
+}

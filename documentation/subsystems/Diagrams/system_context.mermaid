@@ -1,0 +1,110 @@
+graph TB
+    %% External Entities
+    subgraph "External Entities"
+        CUST[Customers]
+        VEND[Vendors]
+        BANK[Banks]
+        TAX[Tax Authorities]
+        AUDIT[Auditors]
+        MGMT[Management]
+        EMP[Employees]
+    end
+    
+    %% ACAS System Boundary
+    subgraph "ACAS System"
+        %% Core Business Subsystems
+        subgraph "Core Business Subsystems"
+            GL[GL_CORE<br/>General Ledger]
+            AR[AR_MGMT<br/>Accounts Receivable]
+            AP[AP_MGMT<br/>Accounts Payable]
+            INV[INV_CTRL<br/>Inventory Control]
+            IRS[IRS_PROC<br/>Tax Processing]
+        end
+        
+        %% Supporting Subsystems
+        subgraph "Supporting Subsystems"
+            MD[MASTER_DATA<br/>Master Data Mgmt]
+            CS[COMMON_SERVICES<br/>Security & Utilities]
+            RPT[REPORTING<br/>Reports & Analytics]
+            BAT[BATCH_PROC<br/>Batch Processing]
+        end
+    end
+    
+    %% Data Stores
+    subgraph "Data Layer"
+        DB[(ISAM Files<br/>Sequential Files<br/>Print Files)]
+    end
+    
+    %% External Interactions
+    CUST -->|Orders<br/>Payments| AR
+    AR -->|Invoices<br/>Statements| CUST
+    
+    VEND -->|Invoices| AP
+    AP -->|Payments<br/>Remittances| VEND
+    AP -->|EFT Files| BANK
+    
+    AR -->|Deposits| BANK
+    BANK -->|Statements| AR
+    BANK -->|Statements| AP
+    
+    IRS -->|Tax Returns<br/>Reports| TAX
+    TAX -->|Rates<br/>Rules| IRS
+    
+    GL -->|Financial Statements<br/>Trial Balance| AUDIT
+    RPT -->|Compliance Reports| AUDIT
+    
+    RPT -->|Dashboards<br/>Analytics| MGMT
+    
+    EMP -->|Transactions<br/>Inquiries| GL
+    EMP -->|Orders<br/>Receipts| AR
+    EMP -->|Purchases<br/>Payments| AP
+    EMP -->|Stock Ops| INV
+    
+    %% Internal Data Flows
+    AR -.->|Customer Data| DB
+    AP -.->|Vendor Data| DB
+    INV -.->|Item Data| DB
+    GL -.->|Financial Data| DB
+    IRS -.->|Tax Data| DB
+    MD -.->|Reference Data| DB
+    CS -.->|Security Data| DB
+    
+    DB -.->|Read All Data| RPT
+    DB -.->|Batch Access| BAT
+    
+    %% Cross-Subsystem Integration
+    AR ==>|GL Postings| GL
+    AP ==>|GL Postings| GL
+    INV ==>|GL Postings| GL
+    
+    AR <==>|Stock Check<br/>Reserve| INV
+    AP <==>|Receipts| INV
+    
+    AR -->|Tax Calc| IRS
+    AP -->|Tax Calc| IRS
+    
+    MD -.->|Parameters| GL
+    MD -.->|Customers| AR
+    MD -.->|Vendors| AP
+    MD -.->|Items| INV
+    
+    CS -.->|Security| GL
+    CS -.->|Security| AR
+    CS -.->|Security| AP
+    CS -.->|Security| INV
+    
+    BAT ==>|Schedule| GL
+    BAT ==>|Schedule| AR
+    BAT ==>|Schedule| AP
+    BAT ==>|Schedule| INV
+    
+    %% Styling
+    classDef external fill:#f9f,stroke:#333,stroke-width:2px
+    classDef core fill:#9ff,stroke:#333,stroke-width:2px
+    classDef support fill:#ff9,stroke:#333,stroke-width:2px
+    classDef data fill:#f99,stroke:#333,stroke-width:2px
+    
+    class CUST,VEND,BANK,TAX,AUDIT,MGMT,EMP external
+    class GL,AR,AP,INV,IRS core
+    class MD,CS,RPT,BAT support
+    class DB data

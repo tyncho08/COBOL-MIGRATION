@@ -1,0 +1,55 @@
+{
+  "filePath": "../../Legacy_App/common/dummy-rdbmsMT.cbl",
+  "fileName": "dummy-rdbmsMT.cbl",
+  "programId": "dummmy",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 11
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 106
+    },
+    {
+      "name": "DATA",
+      "line": 113
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 131
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "DUMMY-REC",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "DUMMY-REC",
+      "line": 133
+    },
+    {
+      "name": "goback",
+      "line": 172
+    }
+  ],
+  "metadata": {
+    "lines": 174,
+    "parseDate": "2025-09-17T19:45:42.262Z",
+    "hasMainProgram": false
+  }
+}

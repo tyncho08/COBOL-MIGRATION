@@ -1,0 +1,300 @@
+{
+  "filePath": "../../Legacy_App/irs/irs040.cbl",
+  "fileName": "irs040.cbl",
+  "programId": "irs040",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 123
+    },
+    {
+      "name": "DATA",
+      "line": 134
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 291
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "irsubn",
+      "line": 69,
+      "type": "static"
+    },
+    {
+      "program": "SYSTEM",
+      "line": 644,
+      "type": "static"
+    },
+    {
+      "program": "cpybk",
+      "line": 75,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 191,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "acasirsubn",
+      "thru": null,
+      "line": 70
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 379
+    },
+    {
+      "target": "get-record",
+      "thru": null,
+      "line": 402
+    },
+    {
+      "target": "if",
+      "thru": null,
+      "line": 415
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 417
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 420
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 441
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 499
+    },
+    {
+      "target": "disp-head-1",
+      "thru": null,
+      "line": 506
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 522
+    },
+    {
+      "target": "print-tb-1",
+      "thru": "print-tb-exit",
+      "line": 527
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 534
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 536
+    },
+    {
+      "target": "get-record",
+      "thru": null,
+      "line": 541
+    },
+    {
+      "target": "if",
+      "thru": null,
+      "line": 554
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 556
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 559
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 580
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 626
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 646
+    },
+    {
+      "target": "acasirsub1-Read-Next",
+      "thru": null,
+      "line": 673
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "print-file",
+      "line": 137,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-For-Unused-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 129
+    },
+    {
+      "name": "File-Defs",
+      "line": 293
+    },
+    {
+      "name": "run-loop",
+      "line": 321
+    },
+    {
+      "name": "ask-zero-bal",
+      "line": 346
+    },
+    {
+      "name": "output-select",
+      "line": 355
+    },
+    {
+      "name": "display-tb",
+      "line": 377
+    },
+    {
+      "name": "disp-head-1",
+      "line": 383
+    },
+    {
+      "name": "disp-head-end",
+      "line": 394
+    },
+    {
+      "name": "main-loop",
+      "line": 399
+    },
+    {
+      "name": "its-not-summary",
+      "line": 461
+    },
+    {
+      "name": "main-display-1",
+      "line": 485
+    },
+    {
+      "name": "screen-clear",
+      "line": 502
+    },
+    {
+      "name": "total-display",
+      "line": 509
+    },
+    {
+      "name": "print-tb",
+      "line": 525
+    },
+    {
+      "name": "print-tb-1",
+      "line": 530
+    },
+    {
+      "name": "main-loop-p",
+      "line": 538
+    },
+    {
+      "name": "p-its-not-summary",
+      "line": 600
+    },
+    {
+      "name": "main-print-1",
+      "line": 622
+    },
+    {
+      "name": "main-end",
+      "line": 632
+    },
+    {
+      "name": "print-tb-exit",
+      "line": 648
+    },
+    {
+      "name": "exit",
+      "line": 649
+    },
+    {
+      "name": "main01-exit",
+      "line": 651
+    },
+    {
+      "name": "main-exit",
+      "line": 668
+    },
+    {
+      "name": "exit",
+      "line": 669
+    },
+    {
+      "name": "main-exit",
+      "line": 675
+    },
+    {
+      "name": "exit",
+      "line": 676
+    }
+  ],
+  "metadata": {
+    "lines": 680,
+    "parseDate": "2025-09-17T19:45:42.701Z",
+    "hasMainProgram": true
+  }
+}

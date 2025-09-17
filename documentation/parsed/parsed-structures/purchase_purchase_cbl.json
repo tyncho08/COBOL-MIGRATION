@@ -1,0 +1,676 @@
+{
+  "filePath": "../../Legacy_App/purchase/purchase.cbl",
+  "fileName": "purchase.cbl",
+  "programId": "purchase",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 12
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 156
+    },
+    {
+      "name": "DATA",
+      "line": 167
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 309
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 405,
+      "type": "static"
+    },
+    {
+      "program": "SYSTEM",
+      "line": 619,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 933,
+      "type": "static"
+    },
+    {
+      "program": "-",
+      "line": 76,
+      "type": "dynamic"
+    },
+    {
+      "program": "to",
+      "line": 84,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 244,
+      "type": "dynamic"
+    },
+    {
+      "program": "ws-called",
+      "line": 343,
+      "type": "dynamic"
+    },
+    {
+      "program": "ws-called",
+      "line": 359,
+      "type": "dynamic"
+    },
+    {
+      "program": "if",
+      "line": 434,
+      "type": "dynamic"
+    },
+    {
+      "program": "ws-called",
+      "line": 598,
+      "type": "dynamic"
+    },
+    {
+      "program": "ws-called",
+      "line": 675,
+      "type": "dynamic"
+    },
+    {
+      "program": "if",
+      "line": 679,
+      "type": "dynamic"
+    },
+    {
+      "program": "ws-called",
+      "line": 696,
+      "type": "dynamic"
+    },
+    {
+      "program": "if",
+      "line": 701,
+      "type": "dynamic"
+    },
+    {
+      "program": "by",
+      "line": 814,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "overwrite",
+      "thru": null,
+      "line": 84
+    },
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 332
+    },
+    {
+      "target": "System-Open-Input",
+      "thru": null,
+      "line": 339
+    },
+    {
+      "target": "System-close",
+      "thru": null,
+      "line": 341
+    },
+    {
+      "target": "System-open",
+      "thru": null,
+      "line": 344
+    },
+    {
+      "target": "System-Read-Indexed",
+      "thru": null,
+      "line": 352
+    },
+    {
+      "target": "System-Read-Indexed",
+      "thru": null,
+      "line": 355
+    },
+    {
+      "target": "System-close",
+      "thru": null,
+      "line": 357
+    },
+    {
+      "target": "System-open",
+      "thru": null,
+      "line": 360
+    },
+    {
+      "target": "System-Close",
+      "thru": null,
+      "line": 375
+    },
+    {
+      "target": "System-Open",
+      "thru": null,
+      "line": 379
+    },
+    {
+      "target": "System-Read-Indexed",
+      "thru": null,
+      "line": 380
+    },
+    {
+      "target": "System-Read-Indexed",
+      "thru": null,
+      "line": 385
+    },
+    {
+      "target": "System-Write",
+      "thru": null,
+      "line": 388
+    },
+    {
+      "target": "System-Close",
+      "thru": null,
+      "line": 394
+    },
+    {
+      "target": "System-Close",
+      "thru": null,
+      "line": 399
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 407
+    },
+    {
+      "target": "Load00",
+      "thru": null,
+      "line": 465
+    },
+    {
+      "target": "conv-date",
+      "thru": null,
+      "line": 529
+    },
+    {
+      "target": "System-Open",
+      "thru": null,
+      "line": 591
+    },
+    {
+      "target": "System-Rewrite",
+      "thru": null,
+      "line": 592
+    },
+    {
+      "target": "System-Rewrite",
+      "thru": null,
+      "line": 595
+    },
+    {
+      "target": "System-Close",
+      "thru": null,
+      "line": 596
+    },
+    {
+      "target": "overrewrite",
+      "thru": null,
+      "line": 618
+    },
+    {
+      "target": "System-Open",
+      "thru": null,
+      "line": 626
+    },
+    {
+      "target": "System-Rewrite",
+      "thru": null,
+      "line": 629
+    },
+    {
+      "target": "System-Rewrite",
+      "thru": null,
+      "line": 632
+    },
+    {
+      "target": "System-Close",
+      "thru": null,
+      "line": 633
+    },
+    {
+      "target": "System-Open",
+      "thru": null,
+      "line": 643
+    },
+    {
+      "target": "System-Rewrite",
+      "thru": null,
+      "line": 646
+    },
+    {
+      "target": "System-rewrite",
+      "thru": null,
+      "line": 649
+    },
+    {
+      "target": "System-Close",
+      "thru": null,
+      "line": 651
+    },
+    {
+      "target": "overrewrite",
+      "thru": null,
+      "line": 684
+    },
+    {
+      "target": "overrewrite",
+      "thru": null,
+      "line": 703
+    },
+    {
+      "target": "load000",
+      "thru": null,
+      "line": 757
+    },
+    {
+      "target": "load000",
+      "thru": null,
+      "line": 761
+    },
+    {
+      "target": "load00",
+      "thru": null,
+      "line": 782
+    },
+    {
+      "target": "load00",
+      "thru": null,
+      "line": 818
+    },
+    {
+      "target": "load00",
+      "thru": null,
+      "line": 821
+    },
+    {
+      "target": "load00",
+      "thru": null,
+      "line": 832
+    },
+    {
+      "target": "load00",
+      "thru": null,
+      "line": 856
+    },
+    {
+      "target": "load000",
+      "thru": null,
+      "line": 861
+    },
+    {
+      "target": "load00",
+      "thru": null,
+      "line": 866
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 904
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Batch-Text",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Script-Name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Run-Backup",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Full-Backup-Script",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Arg-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Vals",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Saved-CD-Args",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Backup-Sw",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Linux-Backup-Script-Name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Windows-Backup-Script-Name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "OS2-Backup-Script-Name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Temp-System-Rec",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 162
+    },
+    {
+      "name": "Purchase-Main",
+      "line": 311
+    },
+    {
+      "name": "goback",
+      "line": 324
+    },
+    {
+      "name": "goback",
+      "line": 329
+    },
+    {
+      "name": "File-Duplicates-In-Use",
+      "line": 335
+    },
+    {
+      "name": "end-if",
+      "line": 344
+    },
+    {
+      "name": "aa010-Get-System-Recs",
+      "line": 346
+    },
+    {
+      "name": "end-if",
+      "line": 361
+    },
+    {
+      "name": "display-menu",
+      "line": 472
+    },
+    {
+      "name": "Conv-date",
+      "line": 485
+    },
+    {
+      "name": "end-if",
+      "line": 504
+    },
+    {
+      "name": "conv-date-end",
+      "line": 506
+    },
+    {
+      "name": "display-go",
+      "line": 509
+    },
+    {
+      "name": "accept-loop",
+      "line": 562
+    },
+    {
+      "name": "call-system-setup",
+      "line": 584
+    },
+    {
+      "name": "pre-overrewrite",
+      "line": 602
+    },
+    {
+      "name": "goback",
+      "line": 619
+    },
+    {
+      "name": "end-if",
+      "line": 634
+    },
+    {
+      "name": "File-Duplicates-In-Use",
+      "line": 639
+    },
+    {
+      "name": "overclose",
+      "line": 652
+    },
+    {
+      "name": "goback",
+      "line": 653
+    },
+    {
+      "name": "load-it",
+      "line": 655
+    },
+    {
+      "name": "loader",
+      "line": 665
+    },
+    {
+      "name": "load00",
+      "line": 670
+    },
+    {
+      "name": "load00-exit",
+      "line": 687
+    },
+    {
+      "name": "load000",
+      "line": 691
+    },
+    {
+      "name": "load000-exit",
+      "line": 706
+    },
+    {
+      "name": "load01",
+      "line": 710
+    },
+    {
+      "name": "load02",
+      "line": 716
+    },
+    {
+      "name": "load03",
+      "line": 722
+    },
+    {
+      "name": "load04",
+      "line": 728
+    },
+    {
+      "name": "load05",
+      "line": 734
+    },
+    {
+      "name": "load06",
+      "line": 740
+    },
+    {
+      "name": "load07",
+      "line": 746
+    },
+    {
+      "name": "load08",
+      "line": 752
+    },
+    {
+      "name": "load11",
+      "line": 776
+    },
+    {
+      "name": "load12",
+      "line": 786
+    },
+    {
+      "name": "load13",
+      "line": 792
+    },
+    {
+      "name": "load14",
+      "line": 798
+    },
+    {
+      "name": "load15",
+      "line": 804
+    },
+    {
+      "name": "load16",
+      "line": 810
+    },
+    {
+      "name": "load17",
+      "line": 826
+    },
+    {
+      "name": "load18",
+      "line": 836
+    },
+    {
+      "name": "load19",
+      "line": 842
+    },
+    {
+      "name": "load20",
+      "line": 848
+    },
+    {
+      "name": "load20a",
+      "line": 857
+    },
+    {
+      "name": "load21",
+      "line": 871
+    },
+    {
+      "name": "load22",
+      "line": 877
+    },
+    {
+      "name": "loadsr",
+      "line": 883
+    },
+    {
+      "name": "main-exit",
+      "line": 889
+    },
+    {
+      "name": "goback",
+      "line": 890
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 926
+    },
+    {
+      "name": "maps04-exit",
+      "line": 934
+    }
+  ],
+  "metadata": {
+    "lines": 940,
+    "parseDate": "2025-09-17T19:45:42.803Z",
+    "hasMainProgram": true
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "filePath": "../../Legacy_App/common/acasconvert2.cbl",
+  "fileName": "acasconvert2.cbl",
+  "programId": "acasconvert2",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 6
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 65
+    },
+    {
+      "name": "DATA",
+      "line": 73
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 374
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [
+    {
+      "target": "Disk-Error-Display",
+      "thru": null,
+      "line": 441
+    },
+    {
+      "target": "Disk-error",
+      "thru": null,
+      "line": 456
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "fs-reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "rec-count",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "A",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "B",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Rrn",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Display-Blk",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "System-Record",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 70
+    },
+    {
+      "name": "AA000-Start",
+      "line": 375
+    },
+    {
+      "name": "AA010-Read",
+      "line": 414
+    },
+    {
+      "name": "Disk-Error-Display",
+      "line": 451
+    },
+    {
+      "name": "Disk-Error",
+      "line": 458
+    }
+  ],
+  "metadata": {
+    "lines": 462,
+    "parseDate": "2025-09-17T19:45:42.198Z",
+    "hasMainProgram": true
+  }
+}

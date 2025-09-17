@@ -1,0 +1,877 @@
+{
+  "filePath": "../../Legacy_App/purchase/sl810.cbl",
+  "fileName": "sl810.cbl",
+  "programId": "sl810",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 20
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 138
+    },
+    {
+      "name": "DATA",
+      "line": 143
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 368
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "sl960",
+      "line": 1796,
+      "type": "static"
+    },
+    {
+      "program": "sl070",
+      "line": 1813,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 1972,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 210,
+      "type": "dynamic"
+    },
+    {
+      "program": "SL",
+      "line": 1794,
+      "type": "dynamic"
+    },
+    {
+      "program": "failed",
+      "line": 1817,
+      "type": "dynamic"
+    },
+    {
+      "program": "if",
+      "line": 1853,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "instead",
+      "thru": null,
+      "line": 90
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 387
+    },
+    {
+      "target": "abc",
+      "thru": null,
+      "line": 405
+    },
+    {
+      "target": "Program-Start",
+      "thru": null,
+      "line": 413
+    },
+    {
+      "target": "Invoice-Details",
+      "thru": null,
+      "line": 418
+    },
+    {
+      "target": "Inv-Level-1",
+      "thru": null,
+      "line": 437
+    },
+    {
+      "target": "Inv-Level-2",
+      "thru": null,
+      "line": 439
+    },
+    {
+      "target": "End-Totals",
+      "thru": null,
+      "line": 444
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 464
+    },
+    {
+      "target": "Delivery-Close",
+      "thru": null,
+      "line": 465
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 466
+    },
+    {
+      "target": "SLautogen-Close",
+      "thru": null,
+      "line": 467
+    },
+    {
+      "target": "Stock-Audit-Close",
+      "thru": null,
+      "line": 470
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 471
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 485
+    },
+    {
+      "target": "SLautogen-Write",
+      "thru": null,
+      "line": 516
+    },
+    {
+      "target": "Eval-Status",
+      "thru": null,
+      "line": 518
+    },
+    {
+      "target": "Update-Stock-n-Audit",
+      "thru": null,
+      "line": 528
+    },
+    {
+      "target": "sih-lines",
+      "thru": null,
+      "line": 537
+    },
+    {
+      "target": "SLautogen-Read-Next",
+      "thru": null,
+      "line": 541
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 629
+    },
+    {
+      "target": "Get-Data-1",
+      "thru": null,
+      "line": 651
+    },
+    {
+      "target": "Analysis-Read-Indexed",
+      "thru": null,
+      "line": 713
+    },
+    {
+      "target": "Accept-Money7a",
+      "thru": "Accept-Money7b",
+      "line": 724
+    },
+    {
+      "target": "Accept-Money6c",
+      "thru": null,
+      "line": 749
+    },
+    {
+      "target": "Running-Totals",
+      "thru": null,
+      "line": 756
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 785
+    },
+    {
+      "target": "Get-Data-2",
+      "thru": null,
+      "line": 815
+    },
+    {
+      "target": "Stock-Start",
+      "thru": null,
+      "line": 910
+    },
+    {
+      "target": "Stock-Read-Next",
+      "thru": null,
+      "line": 916
+    },
+    {
+      "target": "Stock-Read-Next",
+      "thru": null,
+      "line": 928
+    },
+    {
+      "target": "Stock-Start",
+      "thru": null,
+      "line": 950
+    },
+    {
+      "target": "Stock-Read-Next",
+      "thru": null,
+      "line": 956
+    },
+    {
+      "target": "Stock-Read-Next",
+      "thru": null,
+      "line": 978
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 1005
+    },
+    {
+      "target": "Stock-Read-Indexed",
+      "thru": null,
+      "line": 1015
+    },
+    {
+      "target": "Test-For-Read-Stock",
+      "thru": null,
+      "line": 1022
+    },
+    {
+      "target": "Analysis-Read-Indexed",
+      "thru": null,
+      "line": 1076
+    },
+    {
+      "target": "Accept-Money7a",
+      "thru": "Accept-Money7b",
+      "line": 1128
+    },
+    {
+      "target": "Running-Totals",
+      "thru": null,
+      "line": 1198
+    },
+    {
+      "target": "Eval-Status",
+      "thru": null,
+      "line": 1209
+    },
+    {
+      "target": "Total-Screen",
+      "thru": null,
+      "line": 1225
+    },
+    {
+      "target": "SLautogen-Write",
+      "thru": null,
+      "line": 1276
+    },
+    {
+      "target": "SLautogen-Rewrite",
+      "thru": null,
+      "line": 1279
+    },
+    {
+      "target": "Eval-Status",
+      "thru": null,
+      "line": 1282
+    },
+    {
+      "target": "Write-Details",
+      "thru": null,
+      "line": 1293
+    },
+    {
+      "target": "Accept-Money7c",
+      "thru": null,
+      "line": 1381
+    },
+    {
+      "target": "Accept-Money6c",
+      "thru": null,
+      "line": 1392
+    },
+    {
+      "target": "Accept-Money7a",
+      "thru": "Accept-Money7b",
+      "line": 1405
+    },
+    {
+      "target": "Accept-Money6c",
+      "thru": null,
+      "line": 1413
+    },
+    {
+      "target": "Accept-Money7c",
+      "thru": null,
+      "line": 1440
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 1471
+    },
+    {
+      "target": "Sales-Read-Indexed",
+      "thru": null,
+      "line": 1537
+    },
+    {
+      "target": "Delivery-Read-Indexed",
+      "thru": null,
+      "line": 1554
+    },
+    {
+      "target": "SLautogen-Read-Indexed",
+      "thru": null,
+      "line": 1613
+    },
+    {
+      "target": "Read-Details",
+      "thru": null,
+      "line": 1622
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 1663
+    },
+    {
+      "target": "zz050-Validate-Date",
+      "thru": null,
+      "line": 1672
+    },
+    {
+      "target": "SLautogen-Delete-All",
+      "thru": null,
+      "line": 1767
+    },
+    {
+      "target": "SLautogen-Delete",
+      "thru": null,
+      "line": 1769
+    },
+    {
+      "target": "sih-lines",
+      "thru": null,
+      "line": 1772
+    },
+    {
+      "target": "SLautogen-Delete",
+      "thru": null,
+      "line": 1775
+    },
+    {
+      "target": "end-if",
+      "thru": null,
+      "line": 1776
+    },
+    {
+      "target": "SLautogen-Close",
+      "thru": null,
+      "line": 1784
+    },
+    {
+      "target": "Sales-Close",
+      "thru": null,
+      "line": 1786
+    },
+    {
+      "target": "Delivery-Close",
+      "thru": null,
+      "line": 1787
+    },
+    {
+      "target": "Analysis-Close",
+      "thru": null,
+      "line": 1788
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1790
+    },
+    {
+      "target": "Stock-Audit-Close",
+      "thru": null,
+      "line": 1792
+    },
+    {
+      "target": "program-start",
+      "thru": null,
+      "line": 1797
+    },
+    {
+      "target": "Sales-Open",
+      "thru": null,
+      "line": 1827
+    },
+    {
+      "target": "Delivery-Open",
+      "thru": null,
+      "line": 1828
+    },
+    {
+      "target": "Analysis-Open",
+      "thru": null,
+      "line": 1829
+    },
+    {
+      "target": "SLautogen-Open-Output",
+      "thru": null,
+      "line": 1837
+    },
+    {
+      "target": "SLautogen-Close",
+      "thru": null,
+      "line": 1838
+    },
+    {
+      "target": "SLautogen-Open",
+      "thru": null,
+      "line": 1845
+    },
+    {
+      "target": "Stock-Open-Output",
+      "thru": null,
+      "line": 1855
+    },
+    {
+      "target": "Stock-Close",
+      "thru": null,
+      "line": 1856
+    },
+    {
+      "target": "Stock-Open",
+      "thru": null,
+      "line": 1858
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 1899
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 1913
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Exception-Msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Invoice-Record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-display6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-accept6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-work6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-ok6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-display7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-screen-accept7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-work7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-amount-ok7",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-discount-display",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-discount-accept",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-discount-work",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-discount",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "All-My-Constants",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "wScreenName",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "wInt",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-defs",
+      "line": 371
+    },
+    {
+      "name": "Main",
+      "line": 415
+    },
+    {
+      "name": "Data-Input",
+      "line": 431
+    },
+    {
+      "name": "More-Data",
+      "line": 446
+    },
+    {
+      "name": "sih-vat",
+      "line": 483
+    },
+    {
+      "name": "end-if",
+      "line": 526
+    },
+    {
+      "name": "end-perform",
+      "line": 545
+    },
+    {
+      "name": "Accept-Money6a",
+      "line": 563
+    },
+    {
+      "name": "Accept-Money6b",
+      "line": 568
+    },
+    {
+      "name": "Accept-Money6c",
+      "line": 576
+    },
+    {
+      "name": "Accept-Money7a",
+      "line": 586
+    },
+    {
+      "name": "Accept-Money7b",
+      "line": 591
+    },
+    {
+      "name": "Accept-Money7c",
+      "line": 599
+    },
+    {
+      "name": "Loop",
+      "line": 626
+    },
+    {
+      "name": "Get-Data-1-Main",
+      "line": 670
+    },
+    {
+      "name": "Get-Code",
+      "line": 680
+    },
+    {
+      "name": "Get-Net",
+      "line": 722
+    },
+    {
+      "name": "Get-Vat-Code",
+      "line": 729
+    },
+    {
+      "name": "Get-Vat-Rate",
+      "line": 747
+    },
+    {
+      "name": "Loop",
+      "line": 784
+    },
+    {
+      "name": "Get-Data-2-Main",
+      "line": 847
+    },
+    {
+      "name": "Get-Product",
+      "line": 856
+    },
+    {
+      "name": "Bypass-Product-Space-Tests",
+      "line": 878
+    },
+    {
+      "name": "WS-Temp-Stock-Key",
+      "line": 882
+    },
+    {
+      "name": "Process-Stock-Record",
+      "line": 1024
+    },
+    {
+      "name": "Get-Code",
+      "line": 1058
+    },
+    {
+      "name": "Get-Desc",
+      "line": 1081
+    },
+    {
+      "name": "Get-Qty",
+      "line": 1109
+    },
+    {
+      "name": "Get-Unit",
+      "line": 1126
+    },
+    {
+      "name": "Recomp-Net",
+      "line": 1133
+    },
+    {
+      "name": "Get-Disc",
+      "line": 1143
+    },
+    {
+      "name": "Get-Vat-Code",
+      "line": 1164
+    },
+    {
+      "name": "Jump-Totals",
+      "line": 1200
+    },
+    {
+      "name": "Test-For-Read-Stock",
+      "line": 1207
+    },
+    {
+      "name": "end-if",
+      "line": 1215
+    },
+    {
+      "name": "End-Totals-Main",
+      "line": 1223
+    },
+    {
+      "name": "Confirmation",
+      "line": 1246
+    },
+    {
+      "name": "Get-Days",
+      "line": 1354
+    },
+    {
+      "name": "Get-Extra",
+      "line": 1369
+    },
+    {
+      "name": "Get-Extra-Vat",
+      "line": 1384
+    },
+    {
+      "name": "Get-Carriage",
+      "line": 1403
+    },
+    {
+      "name": "Get-Carriage-Vat",
+      "line": 1411
+    },
+    {
+      "name": "Get-Deduct-Amt",
+      "line": 1418
+    },
+    {
+      "name": "Get-Deduct-Vat",
+      "line": 1443
+    },
+    {
+      "name": "Get-Deduct-Days",
+      "line": 1456
+    },
+    {
+      "name": "Invoice-Details-Main",
+      "line": 1468
+    },
+    {
+      "name": "Customer-Input",
+      "line": 1514
+    },
+    {
+      "name": "Customer-Test",
+      "line": 1527
+    },
+    {
+      "name": "Delivery-Read",
+      "line": 1547
+    },
+    {
+      "name": "Customer-Setup",
+      "line": 1563
+    },
+    {
+      "name": "Customer-Display",
+      "line": 1567
+    },
+    {
+      "name": "Check-For-Delete-Amend",
+      "line": 1600
+    },
+    {
+      "name": "end-if",
+      "line": 1623
+    },
+    {
+      "name": "Get-Invoice-No",
+      "line": 1627
+    },
+    {
+      "name": "Repeat-Count-Input",
+      "line": 1637
+    },
+    {
+      "name": "Freq-Input",
+      "line": 1652
+    },
+    {
+      "name": "Date-Input",
+      "line": 1660
+    },
+    {
+      "name": "Ref-Input",
+      "line": 1682
+    },
+    {
+      "name": "Type-Input",
+      "line": 1687
+    },
+    {
+      "name": "Delete-Current-Record",
+      "line": 1752
+    },
+    {
+      "name": "New-Customer",
+      "line": 1783
+    },
+    {
+      "name": "end-if",
+      "line": 1860
+    },
+    {
+      "name": "zz050-Test-Date",
+      "line": 1896
+    },
+    {
+      "name": "zz050-exit",
+      "line": 1901
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 1936
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 1966
+    },
+    {
+      "name": "maps04-exit",
+      "line": 1974
+    }
+  ],
+  "metadata": {
+    "lines": 1979,
+    "parseDate": "2025-09-17T19:45:42.811Z",
+    "hasMainProgram": true
+  }
+}

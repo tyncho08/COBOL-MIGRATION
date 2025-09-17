@@ -1,0 +1,360 @@
+{
+  "filePath": "../../Legacy_App/purchase/pl085.cbl",
+  "fileName": "pl085.cbl",
+  "programId": "pl085",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 89
+    },
+    {
+      "name": "DATA",
+      "line": 101
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 256
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 683,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 152,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 277
+    },
+    {
+      "target": "Purch-Open",
+      "thru": null,
+      "line": 283
+    },
+    {
+      "target": "OTM5-Open",
+      "thru": null,
+      "line": 284
+    },
+    {
+      "target": "new-payment",
+      "thru": null,
+      "line": 285
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 286
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 287
+    },
+    {
+      "target": "display-heads",
+      "thru": null,
+      "line": 293
+    },
+    {
+      "target": "display-heads",
+      "thru": null,
+      "line": 307
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 318
+    },
+    {
+      "target": "OTM5-Start",
+      "thru": null,
+      "line": 346
+    },
+    {
+      "target": "OTM5-Read-Next",
+      "thru": null,
+      "line": 351
+    },
+    {
+      "target": "Purch-Read-Indexed",
+      "thru": null,
+      "line": 378
+    },
+    {
+      "target": "accept-money2",
+      "thru": null,
+      "line": 413
+    },
+    {
+      "target": "OTM5-Delete",
+      "thru": null,
+      "line": 435
+    },
+    {
+      "target": "payment-appropriate",
+      "thru": null,
+      "line": 444
+    },
+    {
+      "target": "Purch-Rewrite",
+      "thru": null,
+      "line": 450
+    },
+    {
+      "target": "erase-screen",
+      "thru": null,
+      "line": 452
+    },
+    {
+      "target": "OTM5-Start",
+      "thru": null,
+      "line": 495
+    },
+    {
+      "target": "OTM5-Read-Next",
+      "thru": null,
+      "line": 500
+    },
+    {
+      "target": "accept-money",
+      "thru": null,
+      "line": 536
+    },
+    {
+      "target": "OTM5-Rewrite",
+      "thru": null,
+      "line": 550
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 610
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 624
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-display",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-accept",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-work",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-ok",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-display2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-screen-accept2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-work2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-amount-ok2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "File-Info",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 96
+    },
+    {
+      "name": "file-defs",
+      "line": 259
+    },
+    {
+      "name": "display-heads",
+      "line": 272
+    },
+    {
+      "name": "dh-exit",
+      "line": 280
+    },
+    {
+      "name": "menu-exit",
+      "line": 289
+    },
+    {
+      "name": "main-exit",
+      "line": 295
+    },
+    {
+      "name": "goback",
+      "line": 296
+    },
+    {
+      "name": "New-Payment-Main",
+      "line": 305
+    },
+    {
+      "name": "main-display-end",
+      "line": 315
+    },
+    {
+      "name": "get-batch",
+      "line": 321
+    },
+    {
+      "name": "customer-input",
+      "line": 330
+    },
+    {
+      "name": "find-trans-loop",
+      "line": 348
+    },
+    {
+      "name": "value-input",
+      "line": 408
+    },
+    {
+      "name": "value-input-req",
+      "line": 420
+    },
+    {
+      "name": "value-input-2",
+      "line": 429
+    },
+    {
+      "name": "data-input",
+      "line": 441
+    },
+    {
+      "name": "skip-pay-approp",
+      "line": 446
+    },
+    {
+      "name": "more-data",
+      "line": 455
+    },
+    {
+      "name": "accept-money",
+      "line": 467
+    },
+    {
+      "name": "accept-money2",
+      "line": 476
+    },
+    {
+      "name": "pay-loop",
+      "line": 497
+    },
+    {
+      "name": "get-deduct",
+      "line": 526
+    },
+    {
+      "name": "by-pass-deduct",
+      "line": 547
+    },
+    {
+      "name": "main-end",
+      "line": 557
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 607
+    },
+    {
+      "name": "zz050-exit",
+      "line": 612
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 647
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 677
+    },
+    {
+      "name": "maps04-exit",
+      "line": 685
+    }
+  ],
+  "metadata": {
+    "lines": 690,
+    "parseDate": "2025-09-17T19:45:42.766Z",
+    "hasMainProgram": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/plFDautogen.cob",
+  "fileName": "plFDautogen.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Agen-Invoice-File",
+      "line": 11,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 24,
+    "parseDate": "2025-09-17T19:45:42.582Z",
+    "hasMainProgram": true
+  }
+}

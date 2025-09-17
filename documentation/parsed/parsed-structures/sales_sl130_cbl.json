@@ -1,0 +1,264 @@
+{
+  "filePath": "../../Legacy_App/sales/sl130.cbl",
+  "fileName": "sl130.cbl",
+  "programId": "sl130",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 95
+    },
+    {
+      "name": "DATA",
+      "line": 109
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 243
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 378,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 488,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 134,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 255
+    },
+    {
+      "target": "Report1",
+      "thru": null,
+      "line": 259
+    },
+    {
+      "target": "zz900-Read-System-Param",
+      "thru": null,
+      "line": 260
+    },
+    {
+      "target": "zz910-Rewrite-System-Param",
+      "thru": null,
+      "line": 262
+    },
+    {
+      "target": "Value-Open-Input",
+      "thru": null,
+      "line": 273
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 275
+    },
+    {
+      "target": "Headings",
+      "thru": "Head-Exit",
+      "line": 285
+    },
+    {
+      "target": "Value-Read-Next",
+      "thru": null,
+      "line": 288
+    },
+    {
+      "target": "Headings",
+      "thru": "Head-Exit",
+      "line": 313
+    },
+    {
+      "target": "Headings",
+      "thru": "Head-Exit",
+      "line": 338
+    },
+    {
+      "target": "Value-Close",
+      "thru": null,
+      "line": 377
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 413
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 427
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Print-File",
+      "line": 115,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "menu-reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Eval-Msg",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-1",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-2",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-4",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-5",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "line-6",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 103
+    },
+    {
+      "name": "file-defs",
+      "line": 246
+    },
+    {
+      "name": "menu-Exit",
+      "line": 264
+    },
+    {
+      "name": "Read-Loop",
+      "line": 287
+    },
+    {
+      "name": "end-if",
+      "line": 301
+    },
+    {
+      "name": "Evaluate-Error-Msgs",
+      "line": 342
+    },
+    {
+      "name": "Headings",
+      "line": 347
+    },
+    {
+      "name": "Head-Exit",
+      "line": 370
+    },
+    {
+      "name": "exit",
+      "line": 371
+    },
+    {
+      "name": "End-Report",
+      "line": 373
+    },
+    {
+      "name": "Main-Exit",
+      "line": 380
+    },
+    {
+      "name": "goback",
+      "line": 381
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 410
+    },
+    {
+      "name": "zz050-Exit",
+      "line": 415
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 450
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 480
+    },
+    {
+      "name": "maps04-Exit",
+      "line": 490
+    }
+  ],
+  "metadata": {
+    "lines": 495,
+    "parseDate": "2025-09-17T19:45:42.879Z",
+    "hasMainProgram": false
+  }
+}

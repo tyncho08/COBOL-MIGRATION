@@ -1,0 +1,101 @@
+{
+  "filePath": "../../Legacy_App/irs/irs000.cbl",
+  "fileName": "irs000.cbl",
+  "programId": "irs000",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 81
+    },
+    {
+      "name": "DATA",
+      "line": 87
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 149
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 253,
+      "type": "static"
+    }
+  ],
+  "performStatements": [],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 86
+    },
+    {
+      "name": "to-day",
+      "line": 150
+    },
+    {
+      "name": "main",
+      "line": 153
+    },
+    {
+      "name": "date-entry",
+      "line": 194
+    },
+    {
+      "name": "end-if",
+      "line": 260
+    },
+    {
+      "name": "chain-menu",
+      "line": 264
+    },
+    {
+      "name": "main-exit",
+      "line": 271
+    }
+  ],
+  "metadata": {
+    "lines": 273,
+    "parseDate": "2025-09-17T19:45:42.679Z",
+    "hasMainProgram": true
+  }
+}

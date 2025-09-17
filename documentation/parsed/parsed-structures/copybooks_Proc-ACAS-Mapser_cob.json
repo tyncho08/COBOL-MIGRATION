@@ -1,0 +1,53 @@
+{
+  "filePath": "../../Legacy_App/copybooks/Proc-ACAS-Mapser.cob",
+  "fileName": "Proc-ACAS-Mapser.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps01",
+      "line": 44,
+      "type": "static"
+    },
+    {
+      "program": "maps01",
+      "line": 49,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 61,
+      "type": "static"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "level-setup",
+      "thru": null,
+      "line": 64
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "Capture-Data",
+      "line": 29
+    },
+    {
+      "name": "main-exit",
+      "line": 92
+    },
+    {
+      "name": "main-exit",
+      "line": 187
+    }
+  ],
+  "metadata": {
+    "lines": 190,
+    "parseDate": "2025-09-17T19:45:42.545Z",
+    "hasMainProgram": true
+  }
+}

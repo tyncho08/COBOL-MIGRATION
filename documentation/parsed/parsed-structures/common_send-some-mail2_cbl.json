@@ -1,0 +1,81 @@
+{
+  "filePath": "../../Legacy_App/common/send-some-mail2.cbl",
+  "fileName": "send-some-mail2.cbl",
+  "programId": "sendsomemail",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 16
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 19
+    },
+    {
+      "name": "DATA",
+      "line": 21
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 31
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 58,
+      "type": "static"
+    }
+  ],
+  "performStatements": [],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "01",
+      "name": "Mail-To-Address",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Mail-Subject",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Mail-Body",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Mail-Command",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Mail-Return",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Mail-Attachment-Filename",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "beginning",
+      "line": 32
+    },
+    {
+      "name": "goback",
+      "line": 60
+    }
+  ],
+  "metadata": {
+    "lines": 62,
+    "parseDate": "2025-09-17T19:45:42.411Z",
+    "hasMainProgram": true
+  }
+}

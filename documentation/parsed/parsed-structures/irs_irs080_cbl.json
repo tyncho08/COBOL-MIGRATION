@@ -1,0 +1,206 @@
+{
+  "filePath": "../../Legacy_App/irs/irs080.cbl",
+  "fileName": "irs080.cbl",
+  "programId": "irs080",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 7
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 129
+    },
+    {
+      "name": "DATA",
+      "line": 134
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 250
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "irsubn",
+      "line": 76,
+      "type": "static"
+    },
+    {
+      "program": "cpybk",
+      "line": 85,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 185,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "acasirsubn",
+      "thru": null,
+      "line": 77
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 277
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 284
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 298
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 313
+    },
+    {
+      "target": "acasirsub3",
+      "thru": null,
+      "line": 327
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 333
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 344
+    },
+    {
+      "target": "acasirsub4",
+      "thru": null,
+      "line": 360
+    },
+    {
+      "target": "acasirsub4",
+      "thru": null,
+      "line": 369
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 379
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 392
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 399
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 410
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 438
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 441
+    },
+    {
+      "target": "acasirsub4",
+      "thru": null,
+      "line": 444
+    },
+    {
+      "target": "acasirsub1",
+      "thru": null,
+      "line": 445
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "nl31-record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "nl32-record",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-For-Unused-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 132
+    },
+    {
+      "name": "File-Defs",
+      "line": 252
+    },
+    {
+      "name": "Clear-nl",
+      "line": 279
+    },
+    {
+      "name": "clear-end",
+      "line": 319
+    },
+    {
+      "name": "repost",
+      "line": 352
+    },
+    {
+      "name": "input-loop",
+      "line": 365
+    },
+    {
+      "name": "eoj",
+      "line": 434
+    },
+    {
+      "name": "main99-exit",
+      "line": 452
+    }
+  ],
+  "metadata": {
+    "lines": 457,
+    "parseDate": "2025-09-17T19:45:42.720Z",
+    "hasMainProgram": true
+  }
+}

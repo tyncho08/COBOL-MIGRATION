@@ -1,0 +1,193 @@
+{
+  "filePath": "../../Legacy_App/common/irsnominalUNL2.cbl",
+  "fileName": "irsnominalUNL2.cbl",
+  "programId": "irsnominalUNL2",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 9
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 90
+    },
+    {
+      "name": "DATA",
+      "line": 110
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 198
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "ACAS-Sysout",
+      "line": 277,
+      "type": "static"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 202
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 209
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 216
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 219
+    },
+    {
+      "target": "forever",
+      "thru": null,
+      "line": 226
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 235
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 249
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 268
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 270
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "nominal-ledger",
+      "line": 116,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "irsnominal-File-Seq",
+      "line": 139,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Arg-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Vals",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "SO-Print",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 97
+    },
+    {
+      "name": "aa000-Main-Start",
+      "line": 201
+    },
+    {
+      "name": "end-if",
+      "line": 221
+    },
+    {
+      "name": "aa010-Read-Recs",
+      "line": 225
+    },
+    {
+      "name": "end-perform",
+      "line": 256
+    },
+    {
+      "name": "aa020-Finish-Off",
+      "line": 258
+    },
+    {
+      "name": "Nominal-Ledger",
+      "line": 260
+    },
+    {
+      "name": "goback",
+      "line": 272
+    },
+    {
+      "name": "Call-Sysout",
+      "line": 276
+    }
+  ],
+  "metadata": {
+    "lines": 279,
+    "parseDate": "2025-09-17T19:45:42.312Z",
+    "hasMainProgram": true
+  }
+}

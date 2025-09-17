@@ -1,0 +1,201 @@
+{
+  "filePath": "../../Legacy_App/common/slautogenRES.cbl",
+  "fileName": "slautogenRES.cbl",
+  "programId": "slautogenRES",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 9
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 90
+    },
+    {
+      "name": "DATA",
+      "line": 105
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 150
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "ACAS-Sysout",
+      "line": 229,
+      "type": "static"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz020-Get-Program-Args",
+      "thru": null,
+      "line": 154
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 161
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 168
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 171
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 180
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 182
+    },
+    {
+      "target": "forever",
+      "thru": null,
+      "line": 188
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 197
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 204
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 220
+    },
+    {
+      "target": "Call-Sysout",
+      "thru": null,
+      "line": 222
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "Agen-Invoice-File-Seq",
+      "line": 112,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "z",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "OS-Delimiter",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "ACAS",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "Arg-Number",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Vals",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Arg-Test",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "work-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "SO-Print",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 97
+    },
+    {
+      "name": "aa000-Main-Start",
+      "line": 153
+    },
+    {
+      "name": "end-if",
+      "line": 173
+    },
+    {
+      "name": "goback",
+      "line": 183
+    },
+    {
+      "name": "aa010-Read-Recs",
+      "line": 187
+    },
+    {
+      "name": "end-perform",
+      "line": 208
+    },
+    {
+      "name": "aa020-Finish-Off",
+      "line": 210
+    },
+    {
+      "name": "Agen-Invoice-File",
+      "line": 212
+    },
+    {
+      "name": "goback",
+      "line": 224
+    },
+    {
+      "name": "Call-Sysout",
+      "line": 228
+    }
+  ],
+  "metadata": {
+    "lines": 231,
+    "parseDate": "2025-09-17T19:45:42.426Z",
+    "hasMainProgram": true
+  }
+}

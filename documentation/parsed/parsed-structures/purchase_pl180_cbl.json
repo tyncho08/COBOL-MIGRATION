@@ -1,0 +1,117 @@
+{
+  "filePath": "../../Legacy_App/purchase/pl180.cbl",
+  "fileName": "pl180.cbl",
+  "programId": "pl180",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 77
+    },
+    {
+      "name": "DATA",
+      "line": 90
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 118
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "WS-called",
+      "line": 171,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "Fixed-Data",
+      "thru": null,
+      "line": 128
+    },
+    {
+      "target": "Fixed-Data",
+      "thru": null,
+      "line": 152
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "WS-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 84
+    },
+    {
+      "name": "i-o-control",
+      "line": 87
+    },
+    {
+      "name": "file-defs",
+      "line": 121
+    },
+    {
+      "name": "Menu-Return",
+      "line": 130
+    },
+    {
+      "name": "Menu-Input",
+      "line": 146
+    },
+    {
+      "name": "loadit",
+      "line": 170
+    },
+    {
+      "name": "file-defs",
+      "line": 174
+    },
+    {
+      "name": "Menu-Exit",
+      "line": 177
+    },
+    {
+      "name": "menu-Ex",
+      "line": 181
+    },
+    {
+      "name": "goback",
+      "line": 182
+    },
+    {
+      "name": "Data-Entry",
+      "line": 205
+    },
+    {
+      "name": "Confirmation",
+      "line": 221
+    }
+  ],
+  "metadata": {
+    "lines": 232,
+    "parseDate": "2025-09-17T19:45:42.784Z",
+    "hasMainProgram": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/fdboitm.cob",
+  "fileName": "fdboitm.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "BO-Stk-Itm-File",
+      "line": 18,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 36,
+    "parseDate": "2025-09-17T19:45:42.553Z",
+    "hasMainProgram": true
+  }
+}

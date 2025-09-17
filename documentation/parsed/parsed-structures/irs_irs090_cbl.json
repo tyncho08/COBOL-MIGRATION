@@ -1,0 +1,287 @@
+{
+  "filePath": "../../Legacy_App/irs/irs090.cbl",
+  "fileName": "irs090.cbl",
+  "programId": "irs090",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 100
+    },
+    {
+      "name": "DATA",
+      "line": 125
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 284
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 398,
+      "type": "static"
+    },
+    {
+      "program": "cpybk",
+      "line": 55,
+      "type": "dynamic"
+    },
+    {
+      "program": "blk",
+      "line": 224,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "lb-init",
+      "thru": null,
+      "line": 292
+    },
+    {
+      "target": "lc-process",
+      "thru": null,
+      "line": 293
+    },
+    {
+      "target": "ld-output-final",
+      "thru": null,
+      "line": 294
+    },
+    {
+      "target": "le-close",
+      "thru": null,
+      "line": 295
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 310
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 331
+    },
+    {
+      "target": "lzc-set-report-months",
+      "thru": "lzc-exit",
+      "line": 333
+    },
+    {
+      "target": "lzd-headings",
+      "thru": "lzd-exit",
+      "line": 334
+    },
+    {
+      "target": "lze-print-line",
+      "thru": "lzf-exit",
+      "line": 345
+    },
+    {
+      "target": "lzf-get-nominal",
+      "thru": "lzf-exit",
+      "line": 348
+    },
+    {
+      "target": "lze-print-line",
+      "thru": "lze-exit",
+      "line": 352
+    },
+    {
+      "target": "lzf-get-nominal",
+      "thru": "lzf-exit",
+      "line": 353
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 367
+    },
+    {
+      "target": "acasirsub1-Open-Input",
+      "thru": null,
+      "line": 368
+    },
+    {
+      "target": "lzg-read-nl-seq",
+      "thru": "lzg-exit",
+      "line": 372
+    },
+    {
+      "target": "lzd-headings",
+      "thru": "lzd-exit",
+      "line": 382
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 396
+    },
+    {
+      "target": "varying",
+      "thru": null,
+      "line": 479
+    },
+    {
+      "target": "move",
+      "thru": null,
+      "line": 481
+    },
+    {
+      "target": "acasirsub1-Read-Indexed",
+      "thru": null,
+      "line": 501
+    },
+    {
+      "target": "acasirsub1-Close",
+      "thru": null,
+      "line": 508
+    },
+    {
+      "target": "acasirsub1-Read-Next",
+      "thru": null,
+      "line": 525
+    }
+  ],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "work-file",
+      "line": 131,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "nominal-ledger",
+      "line": 138,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "work-file-2",
+      "line": 140,
+      "hasRecording": false
+    },
+    {
+      "type": "FD",
+      "fileName": "print-file",
+      "line": 147,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "77",
+      "name": "sr-reply",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "filler",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-For-Unused-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 104
+    },
+    {
+      "name": "File-Defs",
+      "line": 286
+    },
+    {
+      "name": "laa-exit",
+      "line": 297
+    },
+    {
+      "name": "lbb-screen-heads",
+      "line": 316
+    },
+    {
+      "name": "lbc-get-year-start",
+      "line": 324
+    },
+    {
+      "name": "lca-start",
+      "line": 342
+    },
+    {
+      "name": "ldb",
+      "line": 370
+    },
+    {
+      "name": "lez-exit",
+      "line": 402
+    },
+    {
+      "name": "lzc-set-report-months",
+      "line": 414
+    },
+    {
+      "name": "lzc-set-mth",
+      "line": 419
+    },
+    {
+      "name": "lzd-headings",
+      "line": 433
+    },
+    {
+      "name": "lze-print-line",
+      "line": 446
+    },
+    {
+      "name": "lze-set-mth",
+      "line": 451
+    },
+    {
+      "name": "lze-work",
+      "line": 467
+    },
+    {
+      "name": "lzf-get-nominal",
+      "line": 494
+    },
+    {
+      "name": "lzf-read",
+      "line": 499
+    },
+    {
+      "name": "lzg-read-nl-seq",
+      "line": 523
+    }
+  ],
+  "metadata": {
+    "lines": 541,
+    "parseDate": "2025-09-17T19:45:42.722Z",
+    "hasMainProgram": true
+  }
+}

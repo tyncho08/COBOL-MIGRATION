@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COBOL Copybook Usage Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 { color: #333; }
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .copybook-list {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #f0f0f0;
+            font-weight: bold;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .usage-bar {
+            background: #4CAF50;
+            height: 20px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .expand-btn {
+            cursor: pointer;
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        .users-list {
+            display: none;
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COBOL Copybook Usage Analysis</h1>
+        
+        <div class="chart-container">
+            <h2>Top 20 Most Used Copybooks</h2>
+            <canvas id="usageChart" width="400" height="200"></canvas>
+        </div>
+
+        <div class="copybook-list">
+            <h2>Complete Copybook List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Copybook</th>
+                        <th>Usage Count</th>
+                        <th>Usage Visualization</th>
+                        <th>Used By</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td><strong>Book</strong></td>
+                        <td>4</td>
+                        <td>
+                            <span class="usage-bar" style="width: 200px"></span>
+                        </td>
+                        <td>
+                            <span class="expand-btn" onclick="toggleUsers('users-0')">
+                                Show 4 programs
+                            </span>
+                            <div id="users-0" class="users-list">
+                                analMT, auditMT, purchMT, stockMT
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>block</strong></td>
+                        <td>3</td>
+                        <td>
+                            <span class="usage-bar" style="width: 150px"></span>
+                        </td>
+                        <td>
+                            <span class="expand-btn" onclick="toggleUsers('users-1')">
+                                Show 3 programs
+                            </span>
+                            <div id="users-1" class="users-list">
+                                UNKNOWN, UNKNOWN, UNKNOWN
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>proc</strong></td>
+                        <td>2</td>
+                        <td>
+                            <span class="usage-bar" style="width: 100px"></span>
+                        </td>
+                        <td>
+                            <span class="expand-btn" onclick="toggleUsers('users-2')">
+                                Show 2 programs
+                            </span>
+                            <div id="users-2" class="users-list">
+                                sales, stock
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Chart.js configuration
+        const ctx = document.getElementById('usageChart').getContext('2d');
+        const chartData = [{"name":"Book","usedBy":["analMT","auditMT","purchMT","stockMT"],"frequency":4},{"name":"block","usedBy":["UNKNOWN","UNKNOWN","UNKNOWN"],"frequency":3},{"name":"proc","usedBy":["sales","stock"],"frequency":2}];
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartData.map(d => d.name),
+                datasets: [{
+                    label: 'Usage Count',
+                    data: chartData.map(d => d.frequency),
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        function toggleUsers(id) {
+            const elem = document.getElementById(id);
+            elem.style.display = elem.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

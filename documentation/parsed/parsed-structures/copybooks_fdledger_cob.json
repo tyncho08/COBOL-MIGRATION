@@ -1,0 +1,25 @@
+{
+  "filePath": "../../Legacy_App/copybooks/fdledger.cob",
+  "fileName": "fdledger.cob",
+  "programId": "UNKNOWN",
+  "divisions": [],
+  "copyStatements": [],
+  "callStatements": [],
+  "performStatements": [],
+  "fileDescriptions": [
+    {
+      "type": "FD",
+      "fileName": "ledger-file",
+      "line": 9,
+      "hasRecording": false
+    }
+  ],
+  "dataDefinitions": [],
+  "sections": [],
+  "paragraphs": [],
+  "metadata": {
+    "lines": 37,
+    "parseDate": "2025-09-17T19:45:42.555Z",
+    "hasMainProgram": true
+  }
+}

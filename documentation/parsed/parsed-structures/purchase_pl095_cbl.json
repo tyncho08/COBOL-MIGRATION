@@ -1,0 +1,240 @@
+{
+  "filePath": "../../Legacy_App/purchase/pl095.cbl",
+  "fileName": "pl095.cbl",
+  "programId": "pl095",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 8
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 89
+    },
+    {
+      "name": "DATA",
+      "line": 103
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 260
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "SYSTEM",
+      "line": 478,
+      "type": "static"
+    },
+    {
+      "program": "maps04",
+      "line": 607,
+      "type": "static"
+    },
+    {
+      "program": "blk",
+      "line": 131,
+      "type": "dynamic"
+    }
+  ],
+  "performStatements": [
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 276
+    },
+    {
+      "target": "report1",
+      "thru": null,
+      "line": 278
+    },
+    {
+      "target": "OTM5-Open-Input",
+      "thru": null,
+      "line": 297
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 299
+    },
+    {
+      "target": "Purch-Open-Input",
+      "thru": null,
+      "line": 303
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 305
+    },
+    {
+      "target": "OTM5-Read-Next-Sorted-By-Batch",
+      "thru": null,
+      "line": 320
+    },
+    {
+      "target": "OTM5-Close",
+      "thru": null,
+      "line": 322
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 354
+    },
+    {
+      "target": "Purch-Read-Indexed",
+      "thru": null,
+      "line": 362
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 388
+    },
+    {
+      "target": "zz060-Convert-Date",
+      "thru": null,
+      "line": 412
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 426
+    },
+    {
+      "target": "headings",
+      "thru": null,
+      "line": 433
+    },
+    {
+      "target": "Purch-Close",
+      "thru": null,
+      "line": 473
+    },
+    {
+      "target": "zz070-Convert-Date",
+      "thru": null,
+      "line": 484
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 534
+    },
+    {
+      "target": "maps04",
+      "thru": null,
+      "line": 548
+    }
+  ],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Dummies-4-Unused-ACAS-FH-Calls",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-Test-Date",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "print-lines",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "report-fields",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 96
+    },
+    {
+      "name": "file-defs",
+      "line": 263
+    },
+    {
+      "name": "menu-exit",
+      "line": 280
+    },
+    {
+      "name": "goback",
+      "line": 281
+    },
+    {
+      "name": "read-loop",
+      "line": 307
+    },
+    {
+      "name": "Read-Loop-Tests",
+      "line": 333
+    },
+    {
+      "name": "process-invoice",
+      "line": 397
+    },
+    {
+      "name": "loop-end",
+      "line": 429
+    },
+    {
+      "name": "headings",
+      "line": 481
+    },
+    {
+      "name": "zz050-test-date",
+      "line": 531
+    },
+    {
+      "name": "zz050-exit",
+      "line": 536
+    },
+    {
+      "name": "zz060-Exit",
+      "line": 571
+    },
+    {
+      "name": "zz070-Exit",
+      "line": 601
+    },
+    {
+      "name": "maps04-exit",
+      "line": 609
+    }
+  ],
+  "metadata": {
+    "lines": 614,
+    "parseDate": "2025-09-17T19:45:42.769Z",
+    "hasMainProgram": false
+  }
+}

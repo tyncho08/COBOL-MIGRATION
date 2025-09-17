@@ -1,0 +1,102 @@
+{
+  "filePath": "../../Legacy_App/stock/st000.cbl",
+  "fileName": "st000.cbl",
+  "programId": "st000",
+  "divisions": [
+    {
+      "name": "IDENTIFICATION",
+      "line": 9
+    },
+    {
+      "name": "ENVIRONMENT",
+      "line": 80
+    },
+    {
+      "name": "DATA",
+      "line": 86
+    },
+    {
+      "name": "PROCEDURE",
+      "line": 154
+    }
+  ],
+  "copyStatements": [],
+  "callStatements": [
+    {
+      "program": "maps04",
+      "line": 248,
+      "type": "static"
+    },
+    {
+      "program": "maps01",
+      "line": 264,
+      "type": "static"
+    }
+  ],
+  "performStatements": [],
+  "fileDescriptions": [],
+  "dataDefinitions": [
+    {
+      "level": "77",
+      "name": "prog-name",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-data",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "ws-date-formats",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "Error-Messages",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "error-code",
+      "section": "WORKING-STORAGE"
+    },
+    {
+      "level": "01",
+      "name": "to-day",
+      "section": "LINKAGE"
+    }
+  ],
+  "sections": [],
+  "paragraphs": [
+    {
+      "name": "file-control",
+      "line": 85
+    },
+    {
+      "name": "file-defs",
+      "line": 157
+    },
+    {
+      "name": "aa010-main",
+      "line": 160
+    },
+    {
+      "name": "aa020-Date-Entry",
+      "line": 193
+    },
+    {
+      "name": "aa030-Chain-Menu",
+      "line": 277
+    },
+    {
+      "name": "aa999-Exit",
+      "line": 282
+    }
+  ],
+  "metadata": {
+    "lines": 285,
+    "parseDate": "2025-09-17T19:45:42.986Z",
+    "hasMainProgram": true
+  }
+}
