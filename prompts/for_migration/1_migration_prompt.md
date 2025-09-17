@@ -239,6 +239,6 @@ def post_journal_entry(entry):
 2. Read each file to understand what it does
 3. Cross-reference with documentation/functional/COMPONENT_CATALOG.md
 4. Begin migration with the simplest program first
-5. Generate complete working code in Migrated_App/
+5. Generate complete working code in Migrated_App/ and also one script to setup and run the new project
 
 Remember: The COBOL source code is the truth. The documentation helps explain it, but the actual code must be migrated exactly as it works.
