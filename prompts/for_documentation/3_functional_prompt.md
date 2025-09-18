@@ -1,122 +1,439 @@
-# Execute Functional Analysis (ACAS)
+# Comprehensive Functional Documentation - ACAS Business Logic Extraction
 
-Task: Generate exhaustive functional documentation and artifacts for ACAS (Applewood Computers Accounting System) to enable understanding, subsystem identification, architecture diagrams, and modernization roadmap.
+## Context
+You are analyzing ACAS - Applewood Computers Accounting System, a COBOL-based accounting application that includes Sales, Purchase and Nominal Ledgers (AR/AP/GL) plus Stock Control and IRS (Incomplete Records System). The system uses GnuCOBOL compiler and supports both standard COBOL files (sequential/indexed) and MySQL/MariaDB databases.
 
-Input:
-- Original COBOL source: `.cob`, `.cbl`, `.cpy`, `.copy`
-- Parsed JSON structures from Phases 1–2
-- Business domain: Accounting System (AR/AP/GL + Stock + IRS)
-- Runtime: GnuCOBOL
-- Storage: COBOL files and MySQL/MariaDB
+## Primary Objective
+Generate exhaustive functional documentation of this COBOL accounting system to enable the technical team to identify subsystems, create architectural diagrams, develop comprehensive technical documentation, and plan a complete modernization strategy. Focus on WHAT the system does (functional) before HOW it does it (technical implementation).
 
-Repository Scan:
-- INCLUDE: `.cob`, `.cbl`, `.cpy`, `.copy`, `.jcl`, `.sql`, `config.*`, `*.conf`, `*.ini`, `.scr`, `.frm`, `.rpt`, `.sh`, `.bat`, `.cmd`, make/compile scripts, test data
-- EXCLUDE: README, CHANGELOG, LICENSE, `.gitignore`, `.dockerignore`, compiled objects (`.o`, `.so`, `.exe`), temporary/backup files, non-schema documentation folders
+## Phase 1: COBOL-Specific Repository Analysis
 
-Outputs (`documentation/functional/`):
+### 1.1 Intelligent Repository Scanning
+```
+Perform a comprehensive scan with COBOL-specific criteria:
 
-1. `documentation/functional/FUNCTIONAL_OVERVIEW.md`
+INCLUDE (Priority Order):
+- COBOL source files (.cob, .cbl, .cpy)
+- Copybooks and includes (.copy, .cpy)
+- JCL files if present (.jcl)
+- SQL scripts and database schemas (.sql)
+- Configuration files (config.*, *.conf, *.ini)
+- Screen definitions and forms (.scr, .frm)
+- Report layouts (.rpt)
+- Batch processing scripts (.sh, .bat, .cmd)
+- Make files and compilation scripts
+- Test data files and validation scripts
+
+EXCLUDE:
+- README.md, CHANGELOG, LICENSE files
+- .gitignore, .dockerignore
+- Compiled objects (.o, .so, .exe)
+- Temporary and backup files
+- Documentation folders (unless containing schemas)
+```
+
+### 1.2 COBOL Architecture Identification
+```
+Document the following COBOL-specific patterns:
+1. Program organization (main programs vs subprograms)
+2. DIVISION structure patterns across programs
+3. File handling approach (sequential, indexed, relative)
+4. Database integration method (embedded SQL, file-based)
+5. COPY book usage and shared data structures
+6. CALL hierarchy and program dependencies
+7. Batch vs interactive program identification
+8. Report generation mechanisms
+9. Error handling patterns
+10. Transaction processing approach
+```
+
+## Phase 2: Accounting Domain Analysis
+
+### 2.1 Module Identification by Business Function
+```
+Map COBOL programs to accounting modules:
+
+CORE ACCOUNTING MODULES:
+- General Ledger (GL/Nominal Ledger)
+  * Chart of Accounts management
+  * Journal entries
+  * Trial balance
+  * Financial statements
+  
+- Accounts Receivable (AR/Sales Ledger)
+  * Customer master management
+  * Invoice generation
+  * Payment processing
+  * Aging reports
+  
+- Accounts Payable (AP/Purchase Ledger)
+  * Vendor management
+  * Purchase orders
+  * Payment scheduling
+  * Liability tracking
+  
+- Inventory Control (Stock Control)
+  * Item master maintenance
+  * Stock movements
+  * Valuation methods
+  * Reorder processing
+  
+- IRS (Incomplete Records System)
+  * Special handling routines
+  * Reconciliation processes
+```
+
+### 2.2 For Each COBOL Program, Document:
+```yaml
+program_name: [PROGRAM-ID from IDENTIFICATION DIVISION]
+source_file: [path/to/file.cob]
+program_type: [main|subprogram|copybook|batch|interactive]
+business_module: [GL|AR|AP|INVENTORY|IRS|COMMON]
+
+data_division_analysis:
+  files_used:
+    - file_name: [from SELECT statements]
+      organization: [sequential|indexed|relative]
+      key_fields: [if indexed]
+      record_layout: [key fields and types]
+  
+  working_storage:
+    - key_variables: [business-critical fields]
+    - control_flags: [processing indicators]
+    - accumulators: [totals, counters]
+  
+  linkage_section: [parameters passed between programs]
+
+procedure_division_analysis:
+  main_sections:
+    - section_name:
+      purpose: [business function]
+      database_operations: [CRUD operations performed]
+      calculations: [business rules implemented]
+      validations: [data integrity checks]
+  
+  called_programs:
+    - program_id: [CALL targets]
+      purpose: [why called]
+      parameters: [data passed]
+  
+  file_operations:
+    - operation: [READ|WRITE|REWRITE|DELETE]
+      file: [target file]
+      business_purpose: [why this operation]
+
+business_rules:
+  - rule: [accounting principle or business logic]
+  - implementation: [how coded]
+
+error_handling:
+  - condition: [error scenario]
+  - action: [response/recovery]
+
+report_generation: [if applicable]
+  - report_name:
+  - frequency: [daily|monthly|on-demand]
+  - key_calculations:
+```
+
+## Phase 3: Data Flow and Integration Analysis
+
+### 3.1 File/Database Schema Mapping
+```
+Create comprehensive data dictionary:
+
+For Each File/Table:
+- Physical name and location
+- Logical business name
+- Record/Row structure
+- Key fields and indexes
+- Relationships to other files
+- Programs that access it
+- CRUD matrix (which programs Create/Read/Update/Delete)
+- Data retention rules
+- Backup/Recovery considerations
+```
+
+### 3.2 Transaction Flow Documentation
+```
+Map complete transaction lifecycles:
+
+Example - Sales Invoice Flow:
+1. Entry point (program/screen)
+2. Data validation steps
+3. File updates sequence
+4. GL posting logic
+5. Inventory adjustments
+6. Report generation triggers
+7. Audit trail creation
+8. Error rollback procedures
+```
+
+## Phase 4: COBOL-Specific Visualizations
+
+### 4.1 Program Call Hierarchy
+```mermaid
+graph TD
+    %% Generate a tree showing CALL relationships
+    %% Include PERFORM chains within programs
+    %% Show copybook dependencies
+    %% Indicate batch vs online programs with different styles
+```
+
+### 4.2 File Access Matrix
+```
+Create a matrix showing:
+- Rows: COBOL Programs
+- Columns: Files/Tables
+- Cells: C(reate), R(ead), U(pdate), D(elete) operations
+- Color coding: Frequency of access
+```
+
+### 4.3 Accounting Module Interaction Diagram
+```mermaid
+graph LR
+    %% Show data flow between accounting modules
+    %% Include batch processing sequences
+    %% Mark critical integration points
+    %% Show external interfaces
+```
+
+## Phase 5: Technical Debt and Migration Readiness
+
+### 5.1 Code Quality Assessment
+```
+Identify for each program:
+- Obsolete COBOL constructs (if any)
+- GnuCOBOL compatibility issues
+- Hard-coded values that should be parameterized
+- Missing error handling
+- Performance bottlenecks (nested loops, inefficient searches)
+- Dead code sections
+- Duplicate logic across programs
+```
+
+### 5.2 Database Integration Analysis
+```
+Document current state and recommendations:
+- File-based vs MySQL/MariaDB usage
+- Migration candidates (files that should be tables)
+- Transaction boundary issues
+- Locking and concurrency handling
+- Backup and recovery gaps
+```
+
+## Phase 6: Comprehensive Documentation Generation
+
+### 6.1 Executive Summary Structure
+```
+1. System Overview
+   - Business purpose and scope
+   - Key accounting functions supported
+   - User base and transaction volumes
+   - Technology stack summary
+
+2. Architecture Assessment
+   - Current COBOL architecture pattern
+   - Module interdependencies
+   - Data management approach
+   - Integration points
+
+3. Functional Coverage
+   - Implemented accounting standards
+   - Compliance features
+   - Reporting capabilities
+   - Audit trail completeness
+
+4. Technical Health
+   - Code quality metrics
+   - Maintenance complexity
+   - Security considerations
+   - Performance characteristics
+
+5. Modernization Recommendations
+   - Priority refactoring areas
+   - Database migration strategy
+   - UI modernization options
+   - API enablement possibilities
+```
+
+### 6.2 Detailed Documentation Artifacts
+
+Generate these documents:
+
+1. **FUNCTIONAL_OVERVIEW.md**
    - System purpose and scope
    - Business functions (GL, AR, AP, Stock, IRS)
    - User roles and workflows
    - Technology stack (GnuCOBOL, file vs MySQL/MariaDB)
    - User base / transaction volumes
    - Functional coverage / compliance
-   - Executive summary structure: System Overview, Architecture Assessment, Functional Coverage, Technical Health, Modernization Recommendations
 
-2. `documentation/functional/COMPONENT_CATALOG.md` / `documentation/functional/PROGRAM_CATALOG.md`
-   - Alphabetical program list with PROGRAM-ID + source_file
-   - Business module mapping
-   - Module organization (GL, AR, AP, Stock, IRS)
-   - Batch vs interactive classification
-   - Dependencies: CALL targets, PERFORM chains
-   - Maintenance priority / migration candidates
-   - Template per program:
-```yaml
-program_name:
-source_file:
-program_type: [main|subprogram|copybook|batch|interactive]
-business_module:
-data_division_analysis:
-  files_used: [...]
-  working_storage: [...]
-  linkage_section: [...]
-procedure_division_analysis:
-  main_sections: [...]
-  called_programs: [...]
-  file_operations: [...]
-business_rules: [...]
-error_handling: [...]
-report_generation: [...]
+2. **PROGRAM_CATALOG.md**
+   - Alphabetical listing of all programs
+   - Business function mapping
+   - Dependency information
+   - Maintenance priority
+
+3. **DATA_DICTIONARY.md**
+   - All files and database tables
+   - Field-level documentation
+   - Business meaning of codes
+   - Validation rules
+
+4. **BUSINESS_FLOWS.md**
+   - End-to-end process documentation
+   - Decision trees for complex logic
+   - Accounting period processing
+   - Year-end procedures
+
+5. **TECHNICAL_ARCHITECTURE.md**
+   - Call graphs and dependencies
+   - File organization strategy
+   - Batch job scheduling
+   - Error handling patterns
+
+6. **COBOL_PATTERNS.md**
+   - Common coding patterns used
+   - Naming conventions
+   - Program structure standards
+   - Best practices followed/violated
+
+7. **MIGRATION_ROADMAP.md**
+   - Modernization opportunities
+   - Risk assessment
+   - Phased approach recommendations
+   - Technology alternatives
+
+8. **ARCHITECTURE_ANALYSIS.md**
+   - Module structure
+   - Integration patterns (embedded SQL vs file)
+   - GnuCOBOL compatibility
+   - Technical debt analysis
+   - Migration recommendations
+
+9. **CALCULATION_ENGINE.md**
+   - Financial calculation documentation
+   - Formula/algorithm details
+   - Rounding rules
+   - Currency handling
+   - Tax calculations
+   - Discount/pricing logic
+   - Interest computations
+   - Depreciation methods
+
+## Phase 7: Accounting-Specific Analysis
+
+### 7.1 Compliance and Controls
+```
+Document:
+- Segregation of duties implementation
+- Audit trail completeness
+- Data validation rules
+- Approval workflows
+- Security controls
+- Regulatory compliance features
 ```
 
-3. `documentation/functional/BUSINESS_FLOWS.md`
+### 7.2 Calculation Engine Documentation
+```
+For each financial calculation:
+- Formula/algorithm used
+- Rounding rules
+- Currency handling
+- Tax calculations
+- Discount/pricing logic
+- Interest computations
+- Depreciation methods
+```
 
-   * End-to-end flows: Sales, Purchase, Financial Close, Inventory
-   * Step-by-step maps: entry → validations → file updates → GL posting → inventory → reports → audit → rollback
+## Special Considerations for COBOL Analysis
 
-4. `documentation/functional/DATA_DICTIONARY.md`
+### COBOL-Specific Patterns to Document:
+```
+1. PERFORM paragraph/section usage patterns
+2. GO TO usage (if any) and control flow impact
+3. Level 88 condition names and business meaning
+4. REDEFINES clauses and data structure variants
+5. OCCURS clauses and table handling
+6. STRING/UNSTRING operations for data parsing
+7. SORT/MERGE usage for batch processing
+8. File status checking patterns
+9. COMMIT/ROLLBACK transaction boundaries
+10. Embedded SQL or file-based persistence
+```
 
-   * File/table name, structure, key fields, indexes
-   * Programs accessing the file
-   * CRUD matrix
-   * Retention, backup/recovery
-   * Validations and code lookups
+### Legacy System Indicators:
+```
+Flag these for modernization consideration:
+- ALTER statements (obsolete)
+- GO TO DEPENDING ON (consider refactoring)
+- Excessive GO TO usage
+- Missing structured programming constructs
+- Hardcoded file paths
+- Platform-specific code
+- Y2K workarounds still in place
+- Commented-out code blocks
+- Inconsistent naming conventions
+```
 
-5. `documentation/functional/ARCHITECTURE_ANALYSIS.md`
+## Output Quality Criteria
 
-   * Module structure
-   * Integration patterns (embedded SQL vs file)
-   * GnuCOBOL compatibility
-   * Technical debt: obsolete constructs, hard-coded values, missing error handling, performance bottlenecks, dead/duplicate code
-   * Batch vs interactive, scheduling, dependencies
-   * Transaction boundaries, commit/rollback
-   * Migration recommendations: DB migration, API, UI modernization
+Your documentation should enable:
+1. New developers to understand system functionality without reading code
+2. Architects to design modernization strategies
+3. Business analysts to validate requirements coverage
+4. Testers to design comprehensive test cases
+5. Operations teams to understand batch dependencies
+6. Database administrators to optimize data structures
 
-Additional Artifacts:
+## Interactive Analysis Process
 
-* `documentation/functional/COBOL_PATTERNS.md`: PERFORM, GO TO, Level-88, REDEFINES, OCCURS, STRING/UNSTRING, SORT/MERGE, file status, embedded SQL
-* `documentation/functional/TECHNICAL_ARCHITECTURE.md`: call graphs, file organization, batch scheduling, error patterns
-* `documentation/functional/MIGRATION_ROADMAP.md`: modernization opportunities, risk, phased recommendations
-* `documentation/functional/COBOL_COMPATIBILITY_ISSUES.md`: GnuCOBOL compatibility notes
-* `documentation/functional/CALCULATION_ENGINE.md`: formulas, rounding, currency, taxes, discounts, interest, depreciation
+Before starting, answer these questions:
+1. What version of GnuCOBOL compatibility is required?
+2. Is this using file-based or database storage primarily?
+3. What accounting standards/regulations does it support?
+4. What is the typical transaction volume?
+5. Are there any custom business rules or industry-specific features?
 
-Visualizations:
+Then proceed with iterative analysis:
+- **First pass**: Program inventory and structure
+- **Second pass**: Business function mapping
+- **Third pass**: Data flow and dependencies
+- **Fourth pass**: Detailed logic documentation
+- **Fifth pass**: Synthesis and recommendations
 
-* `documentation/functional/visualization/call-graph.html`: CALL hierarchy, PERFORM chains, batch vs online, copybook dependencies
-* `documentation/functional/visualization/procedure-flow\.html`: critical procedure flowcharts
-* `documentation/functional/visualization/copybook-usage.html`: dependency maps
-* `documentation/functional/visualization/file-access-matrix`: programs × files/tables CRUD, color-coded
-* `documentation/functional/visualization/accounting-module-interaction`: GL, AR, AP, Inventory, IRS interactions
+## Visualization Requirements
 
-Accounting Analysis:
+Create interactive visualizations in `documentation/functional/visualization/`:
 
-* Chart of Accounts, GL posting, trial balance, AR aging, AP liabilities, tax rules, audit trail, IRS routines, discounts/pricing/interest/depreciation rules
+1. **call-graph.html**: Interactive program dependency graph
+   - CALL hierarchy visualization
+   - PERFORM chains within programs
+   - Batch vs online program identification
+   - Copybook dependency mapping
 
-Technical Debt / Code Quality:
+2. **procedure-flow.html**: Critical procedure flowcharts
+   - Main business process flows
+   - Decision points and branching
+   - Error handling paths
 
-* Obsolete COBOL constructs
-* Hard-coded values
-* Missing error handling
-* Performance bottlenecks
-* Dead/duplicate code
-* Inconsistent naming
+3. **copybook-usage.html**: COPYBOOK dependency maps
+   - Which programs use which copybooks
+   - Impact analysis for changes
 
-Database Integration:
+4. **file-access-matrix.html**: Programs × Files CRUD matrix
+   - Color-coded by operation type
+   - Frequency indicators
+   - Access pattern analysis
 
-* File vs MySQL/MariaDB usage
-* Migration candidates
-* Transaction boundaries
-* Locking/concurrency
-* Backup/recovery
+5. **accounting-module-interaction.html**: Module interaction diagram
+   - GL, AR, AP, Inventory, IRS data flows
+   - Integration points
+   - Batch processing sequences
 
-Output Goals:
+## Summary
 
-* Enable developers, architects, analysts, testers, operations, DBAs to understand and act on system
-
-Interactive Analysis:
-
-* Iterative passes: program inventory, business mapping, data flows, detailed logic, synthesis/recommendations
-* Focus: *what system does* before *how it does it*
+Remember: Focus on WHAT the system does (functional) before HOW it does it (technical implementation). The goal is to create documentation that bridges business understanding and technical implementation. Every business rule, calculation, and process flow must be captured and documented in business terms that stakeholders can understand.
 
 Think ultra mega hard at each step.

@@ -4,8 +4,8 @@
 Migrate the ACAS system from COBOL to a modern stack. Deliver a fully functional, production-ready accounting system preserving all business logic. Users should see it as a brand-new app.
 
 ## INPUT SOURCES
-- `documentation/` (root): parsed COBOL project in JSON, functional documentation, subsystem documentation
 - `Legacy_App/` (root): original COBOL application; serves as the source of truth for any missing or unclear information
+- `documentation/` (root): parsed COBOL project in JSON, functional documentation, subsystem documentation
 
 ## CRITICAL CONSTRAINTS
 - No migration references in UI
@@ -98,3 +98,5 @@ Migrated\_App/
 - User-friendly, professional interface
 - Fully operational app with end-to-end functionality
 - Modern, maintainable, and scalable codebase
+
+Think ultra mega hard at each step.
