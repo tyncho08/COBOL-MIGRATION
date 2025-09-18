@@ -9,46 +9,46 @@ Input:
 Outputs (in `documentation/subsystems/`):
 
 Master Documentation:
-- `00_MASTER_SUBSYSTEM_ARCHITECTURE.md`
-- `01_SUBSYSTEM_INVENTORY.md`
-- `02_INTEGRATION_ARCHITECTURE.md`
-- `03_DATA_OWNERSHIP_MAP.md`
-- `04_PROCESS_ALLOCATION.md`
-- `05_DEPENDENCY_ANALYSIS.md`
+- `documentation/subsystems/00_MASTER_SUBSYSTEM_ARCHITECTURE.md`
+- `documentation/subsystems/01_SUBSYSTEM_INVENTORY.md`
+- `documentation/subsystems/02_INTEGRATION_ARCHITECTURE.md`
+- `documentation/subsystems/03_DATA_OWNERSHIP_MAP.md`
+- `documentation/subsystems/04_PROCESS_ALLOCATION.md`
+- `documentation/subsystems/05_DEPENDENCY_ANALYSIS.md`
 
 Subsystem Folders:
-- Subsystems/GL_CORE/
-  - `GL_CORE_SPECIFICATION.md`
-  - `GL_CORE_INTERFACES.md`
-  - `GL_CORE_FLOWS.md`
-  - `GL_CORE_DIAGRAMS.md`
-- Subsystems/AR_MGMT/
-- Subsystems/AP_MGMT/
-- Subsystems/INV_CTRL/
-- Subsystems/IRS_PROC/
-- Subsystems/MDM/
-- Subsystems/RPT_ENGINE/
-- Subsystems/BATCH_FW/
-- Subsystems/INTEGRATION/
-- Subsystems/SEC_AUDIT/
-- Subsystems/DATE_UTIL/
-- Subsystems/CURR_UTIL/
-- Subsystems/FILE_SVC/
-- Subsystems/ERROR_FW/
+- `documentation/subsystems/GL_CORE/`
+  - `documentation/subsystems/GL_CORE/GL_CORE_SPECIFICATION.md`
+  - `documentation/subsystems/GL_CORE/GL_CORE_INTERFACES.md`
+  - `documentation/subsystems/GL_CORE/GL_CORE_FLOWS.md`
+  - `documentation/subsystems/GL_CORE/GL_CORE_DIAGRAMS.md`
+- `documentation/subsystems/AR_MGMT/`
+- `documentation/subsystems/AP_MGMT/`
+- `documentation/subsystems/INV_CTRL/`
+- `documentation/subsystems/IRS_PROC/`
+- `documentation/subsystems/MDM/`
+- `documentation/subsystems/RPT_ENGINE/`
+- `documentation/subsystems/BATCH_FW/`
+- `documentation/subsystems/INTEGRATION/`
+- `documentation/subsystems/SEC_AUDIT/`
+- `documentation/subsystems/DATE_UTIL/`
+- `documentation/subsystems/CURR_UTIL/`
+- `documentation/subsystems/FILE_SVC/`
+- `documentation/subsystems/ERROR_FW/`
 - [Other identified subsystems]
 
 Analysis Artifacts:
-- Diagrams/
-  - `system_context.mermaid`
-  - `subsystem_interactions.mermaid`
-  - `data_flow_complete.mermaid`
-  - `state_transitions.mermaid`
+- `documentation/subsystems/Diagrams/`
+  - `documentation/subsystems/Diagrams/system_context.mermaid`
+  - `documentation/subsystems/Diagrams/subsystem_interactions.mermaid`
+  - `documentation/subsystems/Diagrams/data_flow_complete.mermaid`
+  - `documentation/subsystems/Diagrams/state_transitions.mermaid`
   - [per-subsystem diagrams]
-- Analysis/
-  - `coupling_analysis.md`
-  - `cohesion_metrics.md`
-  - `modernization_impact.md`
-  - `risk_assessment.md`
+- `documentation/subsystems/Analysis/`
+  - `documentation/subsystems/Analysis/coupling_analysis.md`
+  - `documentation/subsystems/Analysis/cohesion_metrics.md`
+  - `documentation/subsystems/Analysis/modernization_impact.md`
+  - `documentation/subsystems/Analysis/risk_assessment.md`
 
 Subsystem Identification Criteria:
 - Functional cohesion (shared programs, data, business rules, error handling)

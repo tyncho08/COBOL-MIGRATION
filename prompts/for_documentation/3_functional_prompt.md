@@ -15,7 +15,7 @@ Repository Scan:
 
 Outputs (`documentation/functional/`):
 
-1. FUNCTIONAL_OVERVIEW.md
+1. `documentation/functional/FUNCTIONAL_OVERVIEW.md`
    - System purpose and scope
    - Business functions (GL, AR, AP, Stock, IRS)
    - User roles and workflows
@@ -24,7 +24,7 @@ Outputs (`documentation/functional/`):
    - Functional coverage / compliance
    - Executive summary structure: System Overview, Architecture Assessment, Functional Coverage, Technical Health, Modernization Recommendations
 
-2. COMPONENT_CATALOG.md / PROGRAM_CATALOG.md
+2. `documentation/functional/COMPONENT_CATALOG.md` / `documentation/functional/PROGRAM_CATALOG.md`
    - Alphabetical program list with PROGRAM-ID + source_file
    - Business module mapping
    - Module organization (GL, AR, AP, Stock, IRS)
@@ -50,12 +50,12 @@ error_handling: [...]
 report_generation: [...]
 ```
 
-3. `BUSINESS_FLOWS.md`
+3. `documentation/functional/BUSINESS_FLOWS.md`
 
    * End-to-end flows: Sales, Purchase, Financial Close, Inventory
    * Step-by-step maps: entry → validations → file updates → GL posting → inventory → reports → audit → rollback
 
-4. `DATA_DICTIONARY.md`
+4. `documentation/functional/DATA_DICTIONARY.md`
 
    * File/table name, structure, key fields, indexes
    * Programs accessing the file
@@ -63,7 +63,7 @@ report_generation: [...]
    * Retention, backup/recovery
    * Validations and code lookups
 
-5. `ARCHITECTURE_ANALYSIS.md`
+5. `documentation/functional/ARCHITECTURE_ANALYSIS.md`
 
    * Module structure
    * Integration patterns (embedded SQL vs file)
@@ -75,19 +75,19 @@ report_generation: [...]
 
 Additional Artifacts:
 
-* `COBOL_PATTERNS.md`: PERFORM, GO TO, Level-88, REDEFINES, OCCURS, STRING/UNSTRING, SORT/MERGE, file status, embedded SQL
-* `TECHNICAL_ARCHITECTURE.md`: call graphs, file organization, batch scheduling, error patterns
-* `MIGRATION_ROADMAP.md`: modernization opportunities, risk, phased recommendations
-* `COBOL_COMPATIBILITY_ISSUES.md`: GnuCOBOL compatibility notes
-* `CALCULATION_ENGINE.md`: formulas, rounding, currency, taxes, discounts, interest, depreciation
+* `documentation/functional/COBOL_PATTERNS.md`: PERFORM, GO TO, Level-88, REDEFINES, OCCURS, STRING/UNSTRING, SORT/MERGE, file status, embedded SQL
+* `documentation/functional/TECHNICAL_ARCHITECTURE.md`: call graphs, file organization, batch scheduling, error patterns
+* `documentation/functional/MIGRATION_ROADMAP.md`: modernization opportunities, risk, phased recommendations
+* `documentation/functional/COBOL_COMPATIBILITY_ISSUES.md`: GnuCOBOL compatibility notes
+* `documentation/functional/CALCULATION_ENGINE.md`: formulas, rounding, currency, taxes, discounts, interest, depreciation
 
 Visualizations:
 
-* `call-graph.html`: CALL hierarchy, PERFORM chains, batch vs online, copybook dependencies
-* `procedure-flow\.html`: critical procedure flowcharts
-* `copybook-usage.html`: dependency maps
-* `file-access-matrix`: programs × files/tables CRUD, color-coded
-* `accounting-module-interaction`: GL, AR, AP, Inventory, IRS interactions
+* `documentation/functional/visualization/call-graph.html`: CALL hierarchy, PERFORM chains, batch vs online, copybook dependencies
+* `documentation/functional/visualization/procedure-flow\.html`: critical procedure flowcharts
+* `documentation/functional/visualization/copybook-usage.html`: dependency maps
+* `documentation/functional/visualization/file-access-matrix`: programs × files/tables CRUD, color-coded
+* `documentation/functional/visualization/accounting-module-interaction`: GL, AR, AP, Inventory, IRS interactions
 
 Accounting Analysis:
 
