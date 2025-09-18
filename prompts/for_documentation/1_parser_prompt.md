@@ -8,14 +8,14 @@ Input:
 - Process all subdirectories
 - Handle COBOL programs + copybooks
 
-Outputs (in `documentation/parser/`):
+Outputs (in `documentation/parsed/`):
 
-1. `documentation/parser/parsed-structures/`
+1. `documentation/parsed/parsed-structures/`
    - One JSON per COBOL source
    - Naming: [path]_[filename].json (e.g., `sales_sl000.cbl.json`)
    - Include parse timestamps + file metadata
 
-2. `documentation/parser/parser-summary.json`
+2. `documentation/parsed/parser-summary.json`
    - File inventory
    - Statistics + metrics
    - Error log (detailed, per file)
@@ -33,7 +33,7 @@ Extraction Requirements:
 
 Error Handling:
 - Continue on failure
-- Log errors in `documentation/parser/parser-summary.json`
+- Log errors in `documentation/parsed/parser-summary.json`
 
 Performance:
 - Efficient pattern matching (not full AST)
@@ -41,10 +41,10 @@ Performance:
 - Progress feedback
 
 Files to Generate:
-- `documentation/parser/parse-cobol.js`
-- `documentation/parser/analyze-structures.js`
-- `documentation/parser/test-parser.js`
-- `documentation/parser/package.json` (with npm scripts)
+- `documentation/parsed/parse-cobol-simple.js`
+- `documentation/parsed/analyze-structures.js`
+- `documentation/parsed/test-parser.js`
+- `documentation/parsed/package.json` (with npm scripts)
 
 Notes:
 - Use cobol-parsers npm package or similar
