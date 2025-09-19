@@ -1,14 +1,14 @@
 # COBOL Analysis Suite - Comprehensive Code Intelligence Platform
 
 ## Context
-You are creating an advanced analysis suite for the parsed ACAS COBOL structures. This suite will provide deep insights into code quality, architecture patterns, dependencies, and migration readiness through interactive visualizations and comprehensive documentation.
+You are creating an advanced analysis suite for the parsed ACAS COBOL structures. This suite will provide deep insights into code quality, architecture patterns, dependencies, and migration readiness through visualizations and comprehensive documentation.
 
 ## Primary Objective
-Build a comprehensive analysis and visualization platform that transforms parsed COBOL structures into actionable intelligence for architects, developers, and migration teams.
+Create a comprehensive analysis and visualization documentation for the parsed COBOL structures. In this step do the analysis directly, don't generate analysis scripts. However, DO create the SQL schema files (cobol-metrics-schema.sql and analysis-queries.sql) shown in section 4.
 
 ## Input Sources
 - Parsed JSON structures in `documentation/parsed/parsed-structures/`
-- Parser summary from `documentation/parsed/parser-summary.json`
+- Parser summary from `documentation/parsed/parser-summary.md`
 - Original COBOL source in `Legacy_App/` for reference and validation
 
 ## Output Structure
@@ -20,65 +20,61 @@ Build a comprehensive analysis and visualization platform that transforms parsed
 `documentation/parsed/parser_analysis/visualizations/`
 
 #### 1.1 Program Dependency Graph
-**File**: `call-graph.html`
-```html
-<!-- Interactive D3.js visualization showing: -->
-- Hierarchical program call relationships
-- Bidirectional dependency arrows
-- Node sizing by complexity
-- Color coding by module (GL/AR/AP/Stock/IRS)
-- Click-to-expand details
-- Search and filter capabilities
-- Export to SVG/PNG
-```
+**File**: `call-graph.md`  
+**Instructions**:  
+- Generate a **Markdown file** with a **Mermaid graph** showing:  
+  - Hierarchical program call relationships  
+  - Bidirectional dependency arrows  
+  - Node sizing by complexity  
+  - Color coding by module (GL/AR/AP/Stock/IRS)  
+  - Optional click-to-expand notes (if supported by Mermaid)  
+- The Markdown file should contain only valid Mermaid syntax ready to render.
 
 #### 1.2 Procedure Flow Diagrams
-**File**: `procedure-flow.html`
-```html
-<!-- Interactive flowcharts showing: -->
-- PERFORM chains within programs
-- Section and paragraph relationships
-- Conditional branching visualization
-- Loop detection and highlighting
-- Dead code identification
-- Complexity hot spots
-```
+**File**: `procedure-flow.md`  
+**Instructions**:  
+- Generate **flowcharts in Mermaid** inside a Markdown file that show:  
+  - PERFORM chains within programs  
+  - Section and paragraph relationships  
+  - Conditional branching  
+  - Loops and exit points  
+  - Dead code identification  
+- The Markdown file should contain only valid Mermaid syntax ready to render.
 
 #### 1.3 COPYBOOK Usage Map
-**File**: `copybook-usage.html`
-```html
-<!-- Dependency visualization showing: -->
-- COPYBOOK to program relationships
-- Shared data structure impact
-- Version control considerations
-- Change impact analysis
-- Usage frequency heat map
-```
+**File**: `copybook-usage.md`  
+**Instructions**:  
+- Generate **flowcharts in Mermaid** inside a Markdown file that show:  
+  - COPYBOOK → Program relationships  
+  - Shared data structure impact  
+  - Change impact / version considerations  
+  - Usage frequency heatmap (conceptual, via node coloring)  
+- The Markdown file should contain only valid Mermaid syntax ready to render.
 
 #### 1.4 Data Flow Visualization
-**File**: `data-flow.html`
-```html
-<!-- File and data movement showing: -->
-- File access patterns (CRUD matrix)
-- Data transformation flows
-- Cross-program data dependencies
-- Transaction boundaries
-- Batch job sequences
-```
+**File**: `data-flow.md`  
+**Instructions**:  
+- Generate **flowcharts in Mermaid** inside a Markdown file that show:  
+  - File access patterns (CRUD matrix)  
+  - Data transformation flows  
+  - Cross-program data dependencies  
+  - Transaction boundaries  
+  - Batch job sequences  
+- The Markdown file should contain only valid Mermaid syntax ready to render.
 
 #### 1.5 Individual Program Flows
-**Pattern**: `flow-[program-id].html`
-```html
-<!-- Per-program detailed flow showing: -->
-- Internal control flow
-- Data access sequence
-- External calls
-- Error handling paths
-- Business logic visualization
-```
+**Pattern**: `flow-[program-id].md`  
+**Instructions**:  
+- Produce **per-program detailed flows** using Mermaid in Markdown:  
+  - Internal control flow  
+  - Data access sequence  
+  - External calls  
+  - Error handling paths  
+  - Business logic visualization  
+- The Markdown file should contain only valid Mermaid syntax ready to render.
 
 ### 2. Documentation Generation
-`documentation/parsed/parser_analysis/docs/`
+`documentation/parsed/parser_analysis/technical_docs/`
 
 #### 2.1 System Documentation
 **File**: `system-documentation.md`
@@ -114,46 +110,32 @@ Build a comprehensive analysis and visualization platform that transforms parsed
 - Circular dependency detection
 ```
 
-#### 2.2 Subsystem Documentation
-**File**: `subsystem-documentation.md`
+#### 2.3 Code Quality Analysis Report
+**File**: `code-quality-analysis.md`
 ```markdown
-# Subsystem Analysis
+# Code Quality Analysis
 
-## Identified Subsystems
-1. General Ledger (GL)
-2. Accounts Receivable (AR)  
-3. Accounts Payable (AP)
-4. Inventory Management (Stock)
-5. IRS Compliance
-6. Common Services
+## Technical Debt Inventory
+- Legacy constructs found
+- GO TO usage statistics
+- Missing error handling locations
+- Hardcoded values inventory
+- Dead code detection
 
-## Per Subsystem:
-- Component programs
-- Internal cohesion metrics
-- External coupling analysis
-- Business functions
-- Migration complexity
+## Code Smell Analysis
+- Long methods/paragraphs
+- Duplicate code blocks
+- Complex conditionals
+- Obsolete patterns
+
+## Refactoring Priorities
+[Programs requiring urgent refactoring]
+
+## Modernization Readiness
+[Assessment of code readiness for migration]
 ```
 
-#### 2.3 Program Index
-**File**: `program-index.md`
-```markdown
-# Program Index
-
-| Program ID | Source Path | Type | Module | Lines | Complexity | Dependencies | Risk Level |
-|------------|-------------|------|--------|-------|------------|--------------|------------|
-| SL000 | sales/sl000.cbl | Main | Sales | 1500 | 15 | 5 | Medium |
-| ... | ... | ... | ... | ... | ... | ... | ... |
-
-## Program Categories
-- Main Programs: [list]
-- Subprograms: [list]
-- Batch Programs: [list]
-- Online Programs: [list]
-- Utility Programs: [list]
-```
-
-#### 2.4 COPYBOOK Index
+#### 2.2 COPYBOOK Index
 **File**: `copybook-index.md`
 ```markdown
 # COPYBOOK Index
@@ -167,10 +149,9 @@ Build a comprehensive analysis and visualization platform that transforms parsed
 - Most used COPYBOOKs
 - Least used COPYBOOKs
 - Candidates for consolidation
-- Version control recommendations
 ```
 
-#### 2.5 Dependency Analysis Report
+#### 2.4 Dependency Analysis Report
 **File**: `dependency-analysis.md`
 ```markdown
 # Dependency Analysis
@@ -194,118 +175,37 @@ Build a comprehensive analysis and visualization platform that transforms parsed
 [Dependency breaking strategies]
 ```
 
-### 3. Metrics Dashboard
-`documentation/parsed/parser_analysis/dashboard/`
+### 3. Metrics
+`documentation/parsed/parser_analysis/metrics/`
 
-#### 3.1 Interactive Dashboard
-**File**: `index.html`
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ACAS COBOL Metrics Dashboard</title>
-    <!-- Include Chart.js, D3.js -->
-</head>
-<body>
-    <!-- Navigation -->
-    <nav>System Overview | Complexity Analysis | Quality Metrics | Migration Readiness</nav>
-    
-    <!-- Summary Cards -->
-    <div class="metrics-summary">
-        <div class="card">Total Programs: 278</div>
-        <div class="card">Total Lines: 500K</div>
-        <div class="card">Avg Complexity: 12.5</div>
-        <div class="card">Migration Risk: Medium</div>
-    </div>
-    
-    <!-- Interactive Charts -->
-    <div class="charts">
-        <!-- Complexity Distribution -->
-        <!-- Module Size Comparison -->
-        <!-- Dependency Network -->
-        <!-- Quality Trends -->
-    </div>
-    
-    <!-- Detailed Tables -->
-    <div class="data-tables">
-        <!-- Sortable/Filterable Program List -->
-        <!-- Risk Assessment Matrix -->
-        <!-- Refactoring Priorities -->
-    </div>
-</body>
-</html>
-```
+#### 3.1 Report (Markdown Report)
+**File**: `metrics_report.md`  
+**Instructions**:  
+- Produce a **Markdown report** that summarizes all metrics.
+- Include the following sections:
 
-#### 3.2 Complexity Metrics
-**File**: `complexity-metrics.json`
-```json
-{
-  "timestamp": "2024-01-15T12:00:00Z",
-  "summary": {
-    "averageCyclomaticComplexity": 12.5,
-    "maxCyclomaticComplexity": 85,
-    "complexityDistribution": {
-      "low (1-10)": 150,
-      "medium (11-20)": 80,
-      "high (21-50)": 40,
-      "very high (>50)": 8
-    }
-  },
-  "programs": [
-    {
-      "programId": "SL000",
-      "metrics": {
-        "cyclomaticComplexity": 15,
-        "cognitiveComplexity": 22,
-        "halstead": {
-          "difficulty": 45.2,
-          "volume": 5823,
-          "effort": 263200,
-          "bugs": 1.94
-        },
-        "nestingLevel": 4,
-        "parameterCount": 8
-      }
-    }
-  ],
-  "hotspots": [
-    {
-      "program": "GL100",
-      "reason": "Cyclomatic complexity > 50",
-      "recommendation": "Split into smaller procedures"
-    }
-  ]
-}
-```
+##### 3.1.1 System Overview
+- Total Programs
+- Total Lines of Code
+- Average Complexity
+- Migration Risk
+- Represent summary metrics as **cards or bullet points**.
 
-#### 3.3 Maintainability Index
-**File**: `maintainability-index.json`
-```json
-{
-  "timestamp": "2024-01-15T12:00:00Z",
-  "systemMaintainabilityIndex": 65.4,
-  "interpretation": "Moderate - Some refactoring needed",
-  "byModule": {
-    "GL": 72.1,
-    "AR": 68.5,
-    "AP": 66.3,
-    "Stock": 61.2,
-    "IRS": 58.9
-  },
-  "factors": {
-    "codeComplexity": 0.3,
-    "codeVolume": 0.2,
-    "commentRatio": 0.15,
-    "duplication": 0.25,
-    "testCoverage": 0.1
-  },
-  "recommendations": [
-    "Increase documentation in IRS module",
-    "Reduce duplication in Stock module",
-    "Simplify complex procedures in GL"
-  ]
-}
-```
+##### 3.1.2 Complexity Metrics
+- Average Cyclomatic Complexity
+- Maximum Cyclomatic Complexity
+- Complexity Distribution (Low, Medium, High, Very High)  
+  - Represent as **tables or simple ASCII/Markdown charts**
+- Hotspots:  
+  - List programs with high complexity and recommendations  
+  - Include cyclomatic, cognitive complexity, nesting level, parameter count
+
+##### 3.1.3 Maintainability Index
+- Overall System Maintainability Index with interpretation
+- By Module Maintainability (GL/AR/AP/Stock/IRS)  
+  - Use **tables**
+- Contributing Factors (complexity, volume, comments, duplication, test coverage)
+- Recommendations for improvement
 
 ### 4. Database Storage
 `documentation/parsed/parser_analysis/database/`
@@ -360,6 +260,17 @@ CREATE TABLE file_usage (
     access_mode VARCHAR(20),
     FOREIGN KEY (program_id) REFERENCES programs(program_id)
 );
+
+-- Copybook usage table
+CREATE TABLE copybook_usage (
+    program_id VARCHAR(30),
+    copybook_name VARCHAR(50),
+    line_number INTEGER,
+    division VARCHAR(20),
+    section VARCHAR(50),
+    FOREIGN KEY (program_id) REFERENCES programs(program_id),
+    FOREIGN KEY (copybook_name) REFERENCES copybooks(copybook_name)
+);
 ```
 
 #### 4.2 Analysis Queries
@@ -401,66 +312,6 @@ JOIN programs p ON cu.program_id = p.program_id
 JOIN copybooks c ON cu.copybook_name = c.copybook_name
 GROUP BY c.copybook_name
 ORDER BY usage_count DESC;
-```
-
-### 5. Analysis Scripts
-`documentation/parsed/parser_analysis/`
-
-#### 5.1 Main Analysis Orchestrator
-**File**: `run-analysis-suite.js`
-```javascript
-#!/usr/bin/env node
-
-const fs = require('fs');
-const path = require('path');
-const { generateVisualizations } = require('./generate-visualizations');
-const { generateDocumentation } = require('./generate-documentation');
-const { generateMetrics } = require('./generate-metrics');
-const { generateDatabase } = require('./generate-database');
-
-async function runAnalysisSuite() {
-    console.log('Starting COBOL Analysis Suite...');
-    
-    // Load parsed structures
-    const structures = loadParsedStructures();
-    console.log(`Loaded ${structures.length} parsed structures`);
-    
-    // Run analysis phases
-    await generateMetrics(structures);
-    await generateVisualizations(structures);
-    await generateDocumentation(structures);
-    await generateDatabase(structures);
-    
-    // Generate final report
-    generateAnalysisReport();
-    
-    console.log('Analysis complete!');
-}
-```
-
-#### 5.2 Package Configuration
-**File**: `package.json`
-```json
-{
-  "name": "cobol-analysis-suite",
-  "version": "1.0.0",
-  "scripts": {
-    "analyze": "node run-analysis-suite.js",
-    "visualize": "node generate-visualizations.js",
-    "document": "node generate-documentation.js",
-    "metrics": "node generate-metrics.js",
-    "database": "node generate-database.js",
-    "serve": "http-server dashboard -p 8080",
-    "test": "jest"
-  },
-  "dependencies": {
-    "d3": "^7.0.0",
-    "chart.js": "^3.0.0",
-    "sqlite3": "^5.0.0",
-    "markdown-pdf": "^latest",
-    "http-server": "^latest"
-  }
-}
 ```
 
 ## Metrics Calculation Specifications
@@ -535,6 +386,13 @@ async function runAnalysisSuite() {
    - API-ready metrics
    - CI/CD integration capable
 
-Remember: This analysis suite is critical for understanding the current system state and planning the migration strategy. The insights generated here will drive architectural decisions and risk assessments throughout the modernization project.
+Remember: This analysis is critical for understanding the current system state and planning the migration strategy. The insights generated here will drive architectural decisions and risk assessments throughout the modernization project.
 
-Think ultra mega hard at each step.
+## Quality Checklist:
+- [ ] All visualizations render correctly in Markdown
+- [ ] Metrics calculated for 100% of parsed programs
+- [ ] No orphaned dependencies in graphs
+- [ ] SQL schema creates without errors
+- [ ] All high-complexity programs identified
+- [ ] Technical debt clearly quantified
+- [ ] Migration risks documented with severity

@@ -12,57 +12,59 @@ You have access to both the original COBOL source code and the comprehensive fun
 Outputs (in `documentation/subsystems/`):
 
 Master Documentation:
-- `documentation/subsystems/00_MASTER_SUBSYSTEM_ARCHITECTURE.md`
-- `documentation/subsystems/01_SUBSYSTEM_INVENTORY.md`
-- `documentation/subsystems/02_INTEGRATION_ARCHITECTURE.md`
-- `documentation/subsystems/03_DATA_OWNERSHIP_MAP.md`
-- `documentation/subsystems/04_PROCESS_ALLOCATION.md`
-- `documentation/subsystems/05_DEPENDENCY_ANALYSIS.md`
+- `documentation/subsystems/analysis/master_subsystems_architecture.md`
+- `documentation/subsystems/analysis/subsystems_inventory.md`
+- `documentation/subsystems/analysis/integration_architecture.md`
+- `documentation/subsystems/analysis/data_ownership_map.md`
+- `documentation/subsystems/analysis/process_allocation.md`
+- `documentation/subsystems/analysis/dependency_analysis.md`
 
 Subsystem Folders:
-- `documentation/subsystems/GL_CORE/`
-  - `documentation/subsystems/GL_CORE/GL_CORE_SPECIFICATION.md`
-  - `documentation/subsystems/GL_CORE/GL_CORE_INTERFACES.md`
-  - `documentation/subsystems/GL_CORE/GL_CORE_FLOWS.md`
-  - `documentation/subsystems/GL_CORE/GL_CORE_DIAGRAMS.md`
-- `documentation/subsystems/AR_MGMT/`
-- `documentation/subsystems/AP_MGMT/`
-- `documentation/subsystems/INV_CTRL/`
-- `documentation/subsystems/IRS_PROC/`
-- `documentation/subsystems/MDM/`
-- `documentation/subsystems/RPT_ENGINE/`
-- `documentation/subsystems/BATCH_FW/`
-- `documentation/subsystems/INTEGRATION/`
-- `documentation/subsystems/SEC_AUDIT/`
-- `documentation/subsystems/DATE_UTIL/`
-- `documentation/subsystems/CURR_UTIL/`
-- `documentation/subsystems/FILE_SVC/`
-- `documentation/subsystems/ERROR_FW/`
+- `documentation/subsystems/identified_subsystems/GL_CORE/`
+  - `specifications.md`
+  - `interfaces.md`
+  - `flows.md`
+  - `diagrams.md`
+- `documentation/subsystems/identified_subsystems/AR_MGMT/`
+- `documentation/subsystems/identified_subsystems/AP_MGMT/`
+- `documentation/subsystems/identified_subsystems/INV_CTRL/`
+- `documentation/subsystems/identified_subsystems/IRS_PROC/`
+- `documentation/subsystems/identified_subsystems/MDM/`
+- `documentation/subsystems/identified_subsystems/RPT_ENGINE/`
+- `documentation/subsystems/identified_subsystems/BATCH_FW/`
+- `documentation/subsystems/identified_subsystems/INTEGRATION/`
+- `documentation/subsystems/identified_subsystems/SEC_AUDIT/`
+- `documentation/subsystems/identified_subsystems/DATE_UTIL/`
+- `documentation/subsystems/identified_subsystems/CURR_UTIL/`
+- `documentation/subsystems/identified_subsystems/FILE_SVC/`
+- `documentation/subsystems/identified_subsystems/ERROR_FW/`
 - [Other identified subsystems]
 
 Analysis Artifacts:
-- `documentation/subsystems/Diagrams/`
-  - `documentation/subsystems/Diagrams/system_context.mermaid`
-  - `documentation/subsystems/Diagrams/subsystem_interactions.mermaid`
-  - `documentation/subsystems/Diagrams/data_flow_complete.mermaid`
-  - `documentation/subsystems/Diagrams/state_transitions.mermaid`
+- `documentation/subsystems/diagrams/`
+  - `documentation/subsystems/diagrams/system_context.md`
+  - `documentation/subsystems/diagrams/subsystem_interactions.md`
+  - `documentation/subsystems/diagrams/data_flow_complete.md`
+  - `documentation/subsystems/diagrams/state_transitions.md`
   - [per-subsystem diagrams]
-- `documentation/subsystems/Analysis/`
-  - `documentation/subsystems/Analysis/coupling_analysis.md`
-  - `documentation/subsystems/Analysis/cohesion_metrics.md`
-  - `documentation/subsystems/Analysis/modernization_impact.md`
-  - `documentation/subsystems/Analysis/risk_assessment.md`
+- `documentation/subsystems/analysis/`
+  - `documentation/subsystems/analysis/coupling_analysis.md`
+  - `documentation/subsystems/analysis/cohesion_metrics.md`
+  - `documentation/subsystems/analysis/modernization_impact.md`
+  - `documentation/subsystems/analysis/risk_assessment.md`
 
 ## Phase 1: Subsystem Discovery and Boundaries
 
 ### 1.1 Review Existing Documentation
-```
-Start by analyzing the documentation in documentation/functional/:
-- FUNCTIONAL_OVERVIEW.md - for high-level system understanding
-- COMPONENT_CATALOG.md - for program groupings
-- BUSINESS_FLOWS.md - for process boundaries
-- DATA_DICTIONARY.md - for data domain separation
-- ARCHITECTURE_ANALYSIS.md - for current module structure
+Start by analyzing the documentation in `documentation/functional/analysis/`:
+- **functional_overview.md** – Overview of system purpose, business functions (GL, AR, AP, Stock, IRS), user roles, workflows, technology stack, user base, and functional coverage.
+- **program_catalog.md** – Alphabetical listing of all programs with business module mapping, dependencies, and maintenance priority.
+- **data_dictionary.md** – Documentation of all files and tables including fields, code meanings, and validation rules.
+- **business_flow.md** – End-to-end process documentation with decision trees, accounting period processing, and year-end procedures.
+- **system_architecture.md** - Program call graphs, Module structure, integration patterns
+- **cobol_patterns.md** – Common COBOL coding patterns, naming conventions, program structures, and best practices.
+- **migration_roadmap.md** – Modernization opportunities, risk assessment, phased approach, and technology alternatives.
+- **calculation_engine.md** – Financial calculation documentation covering formulas, rounding, currency, taxes, discounts, interest, and depreciation.
 
 Identify natural boundaries based on:
 - Business domain separation
@@ -70,7 +72,6 @@ Identify natural boundaries based on:
 - Transaction boundaries
 - User interaction patterns
 - Temporal coupling (batch vs real-time)
-```
 
 ### 1.2 Subsystem Identification Criteria
 ```
@@ -459,12 +460,12 @@ SUBSYSTEM_[NAME]_SPECIFICATION.md
 ### 7.1 Completeness Verification
 ```
 Ensure every subsystem document includes:
-☐ All programs from original system are allocated
-☐ All data entities are owned by exactly one subsystem
-☐ All business processes are fully contained or clearly split
-☐ All interfaces are bidirectionally documented
-☐ All critical paths are identified
-☐ All compliance requirements are addressed
+- All programs from original system are allocated
+- All data entities are owned by exactly one subsystem
+- All business processes are fully contained or clearly split
+- All interfaces are bidirectionally documented
+- All critical paths are identified
+- All compliance requirements are addressed
 ```
 
 ### 7.2 Consistency Checks
@@ -489,7 +490,7 @@ Verify across all subsystems:
 ## Interactive Process
 
 Before starting the analysis:
-1. Review all documents in documentation/functional/
+1. Review all documents in `documentation/functional/`
 2. Identify any domain-specific business rules or industry requirements
 3. Understand the current pain points and modernization goals
 4. Determine if there are any regulatory or compliance boundaries
@@ -503,4 +504,11 @@ Then proceed with:
 
 Remember: The goal is to create a subsystem architecture that could guide future modularization, whether for microservices migration, component replacement, or system modernization. Each subsystem should be documented thoroughly enough that a team could potentially extract and reimplement it independently.
 
-Think ultra mega hard at each step.
+## Quality Checklist:
+- [ ] Every program assigned to exactly one subsystem
+- [ ] All data entities have clear ownership
+- [ ] No circular dependencies between subsystems
+- [ ] All interfaces documented bidirectionally
+- [ ] Each subsystem can theoretically run independently
+- [ ] Integration points minimized and well-defined
+- [ ] Governance model complete for all subsystems

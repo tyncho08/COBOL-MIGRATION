@@ -19,6 +19,7 @@ Build a robust Node.js-based COBOL parser that extracts comprehensive program st
 - Copybooks (shared data structures and procedures)
 - Include files
 - Any embedded SQL or script files referenced
+- Unsupported file types should be ignored
 
 ## Output Specifications
 
@@ -218,74 +219,35 @@ Build a robust Node.js-based COBOL parser that extracts comprehensive program st
 ```
 
 ### 2. Parser Summary
-`documentation/parsed/parser-summary.json`
+`documentation/parsed/parser-summary.md`
 
-```json
-{
-  "parserMetadata": {
-    "version": "1.0",
-    "startTime": "2024-01-15T10:00:00Z",
-    "endTime": "2024-01-15T10:30:00Z",
-    "totalProcessingTime": "30 minutes",
-    "systemInfo": {
-      "nodeVersion": "18.x",
-      "platform": "linux|darwin|win32"
-    }
-  },
-  "statistics": {
-    "totalFiles": 450,
-    "successfullyParsed": 448,
-    "failedToParse": 2,
-    "byType": {
-      "mainPrograms": 150,
-      "subPrograms": 100,
-      "copybooks": 200
-    },
-    "byDirectory": {
-      "common": 50,
-      "sales": 80,
-      "purchase": 80,
-      "stock": 40,
-      "general": 50,
-      "irs": 50,
-      "copybooks": 100
-    },
-    "totalLinesOfCode": 500000,
-    "averageComplexity": 12.5
-  },
-  "inventory": [
-    {
-      "file": "sales/sl000.cbl",
-      "programId": "SL000",
-      "type": "main",
-      "lines": 1500,
-      "complexity": 15,
-      "dependencies": 5,
-      "status": "parsed"
-    }
-  ],
-  "errors": [
-    {
-      "file": "path/to/file.cbl",
-      "error": "Parsing error description",
-      "line": 100,
-      "timestamp": "2024-01-15T10:15:00Z",
-      "recoverable": true
-    }
-  ],
-  "dependencyGraph": {
-    "programs": {},
-    "copybooks": {},
-    "externalCalls": []
-  },
-  "recommendations": [
-    {
-      "type": "complexity",
-      "message": "Programs with complexity > 50 should be refactored",
-      "affectedPrograms": ["PROG1", "PROG2"]
-    }
-  ]
-}
+**Parser Metadata**
+- Information about the analysis execution:
+- Statistics: Overall analysis results, By file type, By directory
+- Inventory
+- Errors (Detected issues)
+
+**Example Output:**
+```markdown
+# COBOL Parser Summary
+
+## Execution Statistics
+- Total files processed: 453
+- Successfully parsed: 443 (97.8%)
+- Failed parsing: 10 (2.2%)
+- Total lines of code: 523,456
+- Parse duration: 4m 32s
+
+## Inventory by Type
+| Type | Count | Success Rate |
+|------|-------|--------------|
+| Programs (.cbl) | 278 | 98.2% |
+| Copybooks (.cpy) | 175 | 97.1% |
+
+## Failed Files
+| File | Error | Severity |
+|------|-------|----------|
+| legacy/old001.cbl | Unsupported COBOL-74 syntax | High |
 ```
 
 ## Extraction Requirements
@@ -368,6 +330,7 @@ Build a robust Node.js-based COBOL parser that extracts comprehensive program st
 ```
 
 ### Core Scripts
+`documentation/parsed/scripts/`: All the scripts needed for COBOL parsing, including node_modules folder
 
 1. **parse-cobol-simple.js**
    - Main parsing engine
@@ -395,6 +358,7 @@ Build a robust Node.js-based COBOL parser that extracts comprehensive program st
    - Summary report generation
    - Visualization preparation
    - Migration readiness assessment
+   - Results must be in markdown format
 
 ## Error Handling Strategy
 
@@ -463,16 +427,18 @@ Build a robust Node.js-based COBOL parser that extracts comprehensive program st
    - Accurate dependency mapping
    - Valid complexity metrics
 
-3. **Performance**
-   - < 1 second per program average
-   - < 30 minutes for full codebase
-   - Memory usage < 2GB
-
-4. **Usability**
+3. **Usability**
    - Clear progress indication
    - Actionable error messages
    - Comprehensive final report
 
 Remember: This parser is the foundation for all subsequent analysis and migration efforts. Every piece of business logic, every data structure, and every dependency must be captured accurately. The quality of the migration depends on the completeness of this parsing phase.
 
-Think ultra mega hard at each step.
+## Quality Checklist:
+- [ ] 100% of files attempted (check parser-summary.md)
+- [ ] <5% parsing failure rate
+- [ ] All PROGRAM-IDs extracted correctly
+- [ ] All CALL dependencies mapped
+- [ ] All COPY statements tracked
+- [ ] JSON validates against schema
+- [ ] No critical business logic missed

@@ -7,6 +7,7 @@ You are analyzing ACAS - Applewood Computers Accounting System, a COBOL-based ac
 Generate exhaustive functional documentation of this COBOL accounting system to enable the technical team to identify subsystems, create architectural diagrams, develop comprehensive technical documentation, and plan a complete modernization strategy. Focus on WHAT the system does (functional) before HOW it does it (technical implementation).
 
 ## Phase 1: COBOL-Specific Repository Analysis
+**Important:** In this step do the analysis directly, don’t generate a script.
 
 ### 1.1 Intelligent Repository Scanning
 ```
@@ -258,10 +259,11 @@ Document current state and recommendations:
 ```
 
 ### 6.2 Detailed Documentation Artifacts
+`documentation/functional/analysis/`
 
 Generate these documents:
 
-1. **FUNCTIONAL_OVERVIEW.md**
+1. **documentation/functional/analysis/functional_overview.md**
    - System purpose and scope
    - Business functions (GL, AR, AP, Stock, IRS)
    - User roles and workflows
@@ -269,50 +271,48 @@ Generate these documents:
    - User base / transaction volumes
    - Functional coverage / compliance
 
-2. **PROGRAM_CATALOG.md**
+2. **documentation/functional/analysis/program_catalog.md**
    - Alphabetical listing of all programs
    - Business function mapping
    - Dependency information
    - Maintenance priority
 
-3. **DATA_DICTIONARY.md**
+3. **documentation/functional/analysis/data_dictionary.md**
    - All files and database tables
    - Field-level documentation
    - Business meaning of codes
    - Validation rules
 
-4. **BUSINESS_FLOWS.md**
+4. **documentation/functional/analysis/business_flow.md**
    - End-to-end process documentation
    - Decision trees for complex logic
    - Accounting period processing
    - Year-end procedures
 
-5. **TECHNICAL_ARCHITECTURE.md**
+5. **documentation/functional/analysis/system_architecture.md**
    - Call graphs and dependencies
    - File organization strategy
    - Batch job scheduling
    - Error handling patterns
-
-6. **COBOL_PATTERNS.md**
-   - Common coding patterns used
-   - Naming conventions
-   - Program structure standards
-   - Best practices followed/violated
-
-7. **MIGRATION_ROADMAP.md**
-   - Modernization opportunities
-   - Risk assessment
-   - Phased approach recommendations
-   - Technology alternatives
-
-8. **ARCHITECTURE_ANALYSIS.md**
    - Module structure
    - Integration patterns (embedded SQL vs file)
    - GnuCOBOL compatibility
    - Technical debt analysis
    - Migration recommendations
 
-9. **CALCULATION_ENGINE.md**
+6. **documentation/functional/analysis/cobol_patterns.md**
+   - Common coding patterns used
+   - Naming conventions
+   - Program structure standards
+   - Best practices followed/violated
+
+7. **documentation/functional/analysis/migration_roadmap.md**
+   - Modernization opportunities
+   - Risk assessment
+   - Phased approach recommendations
+   - Technology alternatives
+
+8. **documentation/functional/analysis/calculation_engine.md**
    - Financial calculation documentation
    - Formula/algorithm details
    - Rounding rules
@@ -333,48 +333,6 @@ Document:
 - Approval workflows
 - Security controls
 - Regulatory compliance features
-```
-
-### 7.2 Calculation Engine Documentation
-```
-For each financial calculation:
-- Formula/algorithm used
-- Rounding rules
-- Currency handling
-- Tax calculations
-- Discount/pricing logic
-- Interest computations
-- Depreciation methods
-```
-
-## Special Considerations for COBOL Analysis
-
-### COBOL-Specific Patterns to Document:
-```
-1. PERFORM paragraph/section usage patterns
-2. GO TO usage (if any) and control flow impact
-3. Level 88 condition names and business meaning
-4. REDEFINES clauses and data structure variants
-5. OCCURS clauses and table handling
-6. STRING/UNSTRING operations for data parsing
-7. SORT/MERGE usage for batch processing
-8. File status checking patterns
-9. COMMIT/ROLLBACK transaction boundaries
-10. Embedded SQL or file-based persistence
-```
-
-### Legacy System Indicators:
-```
-Flag these for modernization consideration:
-- ALTER statements (obsolete)
-- GO TO DEPENDING ON (consider refactoring)
-- Excessive GO TO usage
-- Missing structured programming constructs
-- Hardcoded file paths
-- Platform-specific code
-- Y2K workarounds still in place
-- Commented-out code blocks
-- Inconsistent naming conventions
 ```
 
 ## Output Quality Criteria
@@ -403,37 +361,15 @@ Then proceed with iterative analysis:
 - **Fourth pass**: Detailed logic documentation
 - **Fifth pass**: Synthesis and recommendations
 
-## Visualization Requirements
-
-Create interactive visualizations in `documentation/functional/visualization/`:
-
-1. **call-graph.html**: Interactive program dependency graph
-   - CALL hierarchy visualization
-   - PERFORM chains within programs
-   - Batch vs online program identification
-   - Copybook dependency mapping
-
-2. **procedure-flow.html**: Critical procedure flowcharts
-   - Main business process flows
-   - Decision points and branching
-   - Error handling paths
-
-3. **copybook-usage.html**: COPYBOOK dependency maps
-   - Which programs use which copybooks
-   - Impact analysis for changes
-
-4. **file-access-matrix.html**: Programs × Files CRUD matrix
-   - Color-coded by operation type
-   - Frequency indicators
-   - Access pattern analysis
-
-5. **accounting-module-interaction.html**: Module interaction diagram
-   - GL, AR, AP, Inventory, IRS data flows
-   - Integration points
-   - Batch processing sequences
-
 ## Summary
 
 Remember: Focus on WHAT the system does (functional) before HOW it does it (technical implementation). The goal is to create documentation that bridges business understanding and technical implementation. Every business rule, calculation, and process flow must be captured and documented in business terms that stakeholders can understand.
 
-Think ultra mega hard at each step.
+## Quality Checklist:
+- [ ] All business processes have clear start/end points
+- [ ] Every program mapped to a business function
+- [ ] All calculations explained in business terms
+- [ ] Data dictionary complete with business meanings
+- [ ] No technical jargon in functional descriptions
+- [ ] Compliance requirements identified
+- [ ] All user roles and workflows documented
