@@ -62,10 +62,10 @@ Create a comprehensive analysis and visualization documentation for the parsed C
   - Batch job sequences  
 - The Markdown file should contain only valid Mermaid syntax ready to render.
 
-#### 1.5 Individual Program Flows
+#### 1.5 Program Flows
 **Pattern**: `flow-[program-id].md`  
 **Instructions**:  
-- Produce **per-program detailed flows** using Mermaid in Markdown:  
+- Produce **per-program detailed flows** (1 program flow per program) using Mermaid in Markdown:  
   - Internal control flow  
   - Data access sequence  
   - External calls  

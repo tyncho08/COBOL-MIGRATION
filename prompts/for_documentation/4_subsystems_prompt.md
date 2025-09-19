@@ -21,23 +21,33 @@ Master Documentation:
 
 Subsystem Folders:
 - `documentation/subsystems/identified_subsystems/GL_CORE/`
-  - `specifications.md`
-  - `interfaces.md`
-  - `flows.md`
-  - `diagrams.md`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/AR_MGMT/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/AP_MGMT/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/INV_CTRL/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/IRS_PROC/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/MDM/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/RPT_ENGINE/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/BATCH_FW/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/INTEGRATION/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/SEC_AUDIT/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/DATE_UTIL/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/CURR_UTIL/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/FILE_SVC/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - `documentation/subsystems/identified_subsystems/ERROR_FW/`
+    - `specifications.md`, `interfaces.md`, `flows.md`
 - [Other identified subsystems]
 
 Analysis Artifacts:

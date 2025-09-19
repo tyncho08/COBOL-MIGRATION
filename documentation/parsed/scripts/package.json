@@ -1,0 +1,20 @@
+{
+  "name": "acas-cobol-parser",
+  "version": "1.0.0",
+  "description": "COBOL parser for ACAS system analysis and documentation",
+  "main": "parse-cobol-simple.js",
+  "scripts": {
+    "parse": "node parse-cobol-simple.js",
+    "analyze": "node analyze-structures.js",
+    "test": "node test-parser.js",
+    "parse:single": "node parse-cobol-simple.js --file",
+    "validate": "node validate-output.js",
+    "report": "node generate-report.js"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "glob": "^10.3.10"
+  }
+}
